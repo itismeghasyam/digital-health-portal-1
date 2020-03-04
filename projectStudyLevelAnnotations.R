@@ -37,6 +37,7 @@
 library(plyr)
 library(tidyverse)
 library(synapser)
+library(githubr)
 synLogin()
 
 ##############
@@ -117,10 +118,10 @@ projects.annotations <- list(
   'syn20681023' = list('Data collection method' = c('active', 'survey'),
                        'Device type' = c('wearable'),
                        'Sensor type' = c('accelerometer', 'gyroscope', 'magnetometer',
-                                         'pebble','GeneAcvtiv'),
+                                         'pebble', 'GeneAcvtiv'),
                        'Device location' = c('wrist'),
                        'Diagnosis' = c('parkinsons', 'control'),
-                       'Assay' = c('tremor', 'bradykinesia','dyskinesia')))
+                       'Assay' = c('tremor', 'bradykinesia', 'dyskinesia')))
 
 ##############
 # Update Annotations in Synapse
@@ -145,3 +146,46 @@ for(proj.id in projects.list){
   print(proj.id)
   print(projects.annotations[[proj.id]])
 }
+
+##############
+# Update list of Annotations (key-value pairs) in Synapse
+##############  
+# initialization
+annotations.key.value.list <- NULL
+
+# Run through all possible annotations to generate a key-value pair  
+for(proj.id in projects.list){
+  
+  current.annotation <- projects.annotations[[proj.id]]
+  
+  for(key in names(current.annotation)){
+    annotations.key.value.list[[key]] <- c(annotations.key.value.list[[key]], 
+                                          current.annotation[[key]]) %>% unique()
+  }
+}
+
+# Merge a list of values for a given key into a string
+for(key in names(annotations.key.value.list)){
+  annotations.key.value.list[[key]] <- paste0(annotations.key.value.list[[key]], collapse = ', ')
+}
+
+# Make a table out of the previous list
+annotations.key.value.tbl <- annotations.key.value.list %>% 
+  as.data.frame(stringsAsFactors = F) %>% 
+  `colnames<-`(names(annotations.key.value.list)) %>% 
+  tidyr::gather(key = 'annotation key', value = 'list of possible values')
+
+# Upload to Synapse
+# Github link
+gtToken = 'github_token.txt';
+githubr::setGithubToken(as.character(read.table(gtToken)$V1))
+thisFileName <- 'projectStudyLevelAnnotations.R'
+thisRepo <- getRepo(repository = "itismeghasyam/digital-health-portal", ref="branch", refName='master')
+thisFile <- getPermlink(repository = thisRepo, repositoryPath=thisFileName)
+
+# Write to Synapse
+write.csv(annotations.key.value.tbl,file = paste0('annotation_key_value_pairs','.csv'),na="")
+obj = File(paste0('annotation_key_value_pairs','.csv'), 
+           name = paste0('annotation_key_value_pairs','.csv'), 
+           parentId = 'syn21574434')
+obj = synStore(obj, executed = thisFile)
