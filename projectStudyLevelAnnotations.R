@@ -80,6 +80,7 @@ projects.annotations <- list(
                       'Assay' = c('tremor', 'walking', 'tap', 'visual/digit symbol substitution task(vsst/dsst)')),
   
   ## Parkinsons Disease Digital Biomarker DREAM Challenge (check anno - Solly)
+  ## This will be a Project, rather than a study on the portal
   'syn8717496' = list('Data collection method' = c('active', 'survey'),
                       'Device type' = c('phone'),
                       'Sensor type' = c('accelerometer', 'gyroscope', 'magnetometer'),
@@ -132,7 +133,8 @@ projects.annotations <- list(
                        # opening a bottle and pouring water (three times), arranging sheets of paper in a folder (twice), 
                        # assembling nuts and bolts for 30s, folding a towel three times, and sitting
                        sensorDataType = 'raw', investigator= c('MJFF', 'Bonato'), resourceType = 'experimentalData',
-                       intervention = 'levodopa', keywords = c('neurodegeneration', 'neurology', "Parkinson's"), dhPortalIndex = 'TRUE')
+                       intervention = 'levodopa', keywords = c('neurodegeneration', 'neurology', "Parkinson's"), dhPortalIndex = 'TRUE',
+                       studyDescriptionLocation = 'syn20681023', studyDataDescriptionLocation = 'syn20681023/wiki/594680')
 )
   
 ##############

@@ -37,7 +37,8 @@ tables.list = list(
                      dataCollectionMethod= c('patient reported outcome', 'clinical assessment'),
                      diagnosis= "Parkinson's Disease", 
                      reportedOutcome =c('MDS-UPDRS', 'tremor', 'dyskinesia', 'bradykinesia', 'freezing of gait'),
-                     dataType=c('clinical', 'surveyData'), dataSubtype='metadata', metadataType=c('individual', 'sensor'), dhPortalIndex = 'TRUE'),
+                     dataType=c('clinical', 'surveyData'), dataSubtype='metadata', metadataType=c('individual', 'sensor'), 
+                     dhPortalIndex = 'TRUE', dataDescriptionLocation = 'syn20681023/wiki/594683'),
 
 #Metadata of patient onboarding dictionary
 'syn20681895' = list(consortium = 'mHealth', study = 'MJFF Levodopa Response Study',
@@ -50,7 +51,8 @@ tables.list = list(
                      dataCollectionMethod= c('clinical assessment'),
                      diagnosis= "Parkinson's Disease", 
                      reportedOutcome =c('MDS-UPDRS'),
-                     dataType=c('clinical'), dataSubtype=c('raw'), dhPortalIndex = 'TRUE'),
+                     dataType=c('clinical'), dataSubtype=c('raw'), dhPortalIndex = 'TRUE',
+                     dataDescriptionLocation = 'syn20681023/wiki/594683'),
 
 #Sensor Data- Part I
 'syn20681931' = list(consortium = 'mHealth', study = 'MJFF Levodopa Response Study',
@@ -64,7 +66,8 @@ tables.list = list(
                      digitalAssessmentDetails = c('finger-to-nose', 'walking (flat)', 'walking (stairs)', 'standing', 'sitting', 
                                                   'alternating hand movements', 'drawing', 'typing', 'opening a water bottle and pouring', 
                                                   'arranging paper','assembling nuts and bolts', 'folding towels'),
-                     dataType=c('sensor'), dataSubtype=c('raw', 'metadata'), metadataType='sensor', dhPortalIndex = 'TRUE'),
+                     dataType=c('sensor'), dataSubtype=c('raw', 'metadata'), metadataType='sensor', dhPortalIndex = 'TRUE',
+                     dataDescriptionLocation = 'syn20681023/wiki/594685'),
 
 #Sensor Data- Part II
 'syn20681932' = list(consortium = 'mHealth', study = 'MJFF Levodopa Response Study',
@@ -79,7 +82,8 @@ tables.list = list(
                      digitalAssessmentDetails = c('finger-to-nose', 'walking (flat)', 'walking (stairs)', 'standing', 'sitting', 
                                                   'alternating hand movements', 'drawing', 'typing', 'opening a water bottle and pouring', 
                                                   'arranging paper','assembling nuts and bolts', 'folding towels'),
-                     dataType=c('sensor'), dataSubtype=c('raw', 'metadata'), metadataType='sensor', dhPortalIndex = 'TRUE'),
+                     dataType=c('sensor'), dataSubtype=c('raw', 'metadata'), metadataType='sensor', dhPortalIndex = 'TRUE',
+                     dataDescriptionLocation = 'syn20681023/wiki/594685'),
 
 # Task Scores- Part I
 'syn20681937' = list(consortium = 'mHealth', study = 'MJFF Levodopa Response Study',
@@ -91,7 +95,8 @@ tables.list = list(
                      digitalAssessmentDetails = c('finger-to-nose', 'walking (flat)', 'walking (stairs)', 'standing', 'sitting', 
                                                   'alternating hand movements', 'drawing', 'typing', 'opening a water bottle and pouring', 
                                                   'arranging paper','assembling nuts and bolts', 'folding towels'),
-                     dataType=c('clinical'), dataSubtype=c('raw', 'metadata'), metadataType=c('experiment', 'assessment'), dhPortalIndex = 'TRUE'),
+                     dataType=c('clinical'), dataSubtype=c('raw', 'metadata'), metadataType=c('experiment', 'assessment'), 
+                     dhPortalIndex = 'TRUE', dataDescriptionLocation = 'syn20681023/wiki/594685'),
 
 # Task Scores- Part II
 'syn20681938' = list(consortium = 'mHealth', study = 'MJFF Levodopa Response Study',
@@ -103,7 +108,8 @@ tables.list = list(
                      digitalAssessmentDetails = c('finger-to-nose', 'walking (flat)', 'walking (stairs)', 'standing', 'sitting', 
                                                   'alternating hand movements', 'drawing', 'typing', 'opening a water bottle and pouring', 
                                                   'arranging paper','assembling nuts and bolts', 'folding towels'),
-                     dataType=c('clinical'), dataSubtype=c('raw', 'metadata'), metadataType=c('experiment', 'assessment'), dhPortalIndex = 'TRUE'),
+                     dataType=c('clinical'), dataSubtype=c('raw', 'metadata'), metadataType=c('experiment', 'assessment'), 
+                     dhPortalIndex = 'TRUE', dataDescriptionLocation = 'syn20681023/wiki/594685'),
 
 
 # Home Tasks
@@ -114,7 +120,8 @@ tables.list = list(
                       reportedOutcome =c('medication report'),
                       digitalAssessmentCategory= c('Resting tremor', 'active tremor'),
                       digitalAssessmentDetails = c('finger-to-nose', 'sitting', 'alternating hand movements'),
-                      dataType=c('surveyData'), dataSubtype=c('raw', 'metadata'), metadataType = c('experiment', 'assessment'), dhPortalIndex = 'TRUE'),
+                      dataType=c('surveyData'), dataSubtype=c('raw', 'metadata'), metadataType = c('experiment', 'assessment'), 
+                      dhPortalIndex = 'TRUE', dataDescriptionLocation = 'syn20681023/wiki/594685'),
 
 # Metadata of Laboratory Visits
 'syn20681892' = list(consortium = 'mHealth', study = 'MJFF Levodopa Response Study',
@@ -122,7 +129,8 @@ tables.list = list(
                      dataCollectionMethod= c('patient reported outcome', 'clinical assessment'),
                      diagnosis= "Parkinson's Disease", 
                      reportedOutcome =c('medication report'),
-                     dataType=c('clinical', 'surveyData'), dataSubtype='metadata', metadataType='experiment', dhPortalIndex = 'TRUE'),
+                     dataType=c('clinical', 'surveyData'), dataSubtype='metadata', metadataType='experiment', 
+                     dhPortalIndex = 'TRUE', dataDescriptionLocation = 'syn20681023/wiki/594685'),
 
 # Metadata of Laboratory Visits Dictionary
 'syn20681893'  = list(consortium = 'mHealth', study = 'MJFF Levodopa Response Study',
@@ -139,7 +147,8 @@ tables.list = list(
                       dataCollectionMethod= c('patient reported outcome'),
                       diagnosis= "Parkinson's Disease", 
                       reportedOutcome =c('tremor', 'dyskinesia', 'bradykinesia', 'freezing of gait'),
-                      dataType=c('surveyData'), dataSubtype=c('raw'), dhPortalIndex = 'TRUE'),
+                      dataType=c('surveyData'), dataSubtype=c('raw'), dhPortalIndex = 'TRUE', 
+                      dataDescriptionLocation = 'syn20681023/wiki/594684'),
 
 #Subject Diary Data Dictionary
 'syn20681935' = list(consortium = 'mHealth', study = 'MJFF Levodopa Response Study',
@@ -152,7 +161,8 @@ tables.list = list(
                       dataCollectionMethod= c('patient reported outcome'),
                       diagnosis= "Parkinson's Disease", 
                       reportedOutcome =c('medication report'),
-                      dataType=c('surveyData'), dataSubtype=c('raw'), dhPortalIndex = 'TRUE'),
+                      dataType=c('surveyData'), dataSubtype=c('raw'), dhPortalIndex = 'TRUE', 
+                      dataDescriptionLocation = 'syn20681023/wiki/594684'),
 
 #Sleep Diary
 'syn20681933' =  list(consortium = 'mHealth', study = 'MJFF Levodopa Response Study',
@@ -160,7 +170,8 @@ tables.list = list(
                       dataCollectionMethod= c('patient reported outcome'),
                       diagnosis= "Parkinson's Disease", 
                       reportedOutcome =c('sleep report'),
-                      dataType=c('surveyData'), dataSubtype=c('raw'), dhPortalIndex = 'TRUE'),
+                      dataType=c('surveyData'), dataSubtype=c('raw'), dhPortalIndex = 'TRUE', 
+                      dataDescriptionLocation = 'syn20681023/wiki/594684'),
 
 #Feedback Survey
 'syn20681033' =  list(consortium = 'mHealth', study = 'MJFF Levodopa Response Study',
@@ -168,7 +179,8 @@ tables.list = list(
                       dataCollectionMethod= c('patient reported outcome'),
                       diagnosis= "Parkinson's Disease", 
                       reportedOutcome =c('feedback survey'),
-                      dataType=c('surveyData'), dataSubtype=c('raw'), dhPortalIndex = 'TRUE'),
+                      dataType=c('surveyData'), dataSubtype=c('raw'), dhPortalIndex = 'TRUE',
+                      dataDescriptionLocation = 'syn20681023/wiki/594684'),
 
 #Feedback Survey Data Dictionary
 'syn20681034' = list(consortium = 'mHealth', study = 'MJFF Levodopa Response Study',
