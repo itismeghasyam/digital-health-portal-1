@@ -80,6 +80,7 @@ projects.annotations <- list(
                       'Assay' = c('tremor', 'walking', 'tap', 'visual/digit symbol substitution task(vsst/dsst)')),
   
   ## Parkinsons Disease Digital Biomarker DREAM Challenge (check anno - Solly)
+  ## This will be a Project, rather than a study on the portal
   'syn8717496' = list('Data collection method' = c('active', 'survey'),
                       'Device type' = c('phone'),
                       'Sensor type' = c('accelerometer', 'gyroscope', 'magnetometer'),
@@ -114,14 +115,28 @@ projects.annotations <- list(
                        'Assay' = c('tremor', 'tap', 'sleep', 'heartrate')),
   
   ## MJFF Levodopa Response Study (check anno - solly)
-  'syn20681023' = list('Data collection method' = c('active', 'survey'),
-                       'Device type' = c('wearable'),
-                       'Sensor type' = c('accelerometer', 'gyroscope', 'magnetometer',
-                                         'pebble','GeneAcvtiv'),
-                       'Device location' = c('wrist'),
-                       'Diagnosis' = c('parkinsons', 'control'),
-                       'Assay' = c('tremor', 'bradykinesia','dyskinesia')))
-
+  'syn20681023' = list(consortium = 'mHealth', study = 'MJFF Levodopa Response Study',
+                       numberParticipants= 29, 
+                       dataCollectionMethod= c('active', 'passive', 'patient reported outcome', 'clinical assessment'),
+                       deviceType = c('handheld', 'wearable'), sensorType = 'accelerometer',
+                       devicePlatform = c('Shimmer', 'GENEActiv', 'Android', 'Pebble OS'), 
+                       deviceLocation = c('wrist', 'waist', 'forearm', 'shank', 'back'),
+                       diagnosis= "Parkinson's Disease", 
+                       reportedOutcome =c('MDS-UPDRS', 'tremor', 'dyskinesia', 'bradykinesia', 'freezing of gait', 'medication report', 'sleep report'),
+                       digitalAssessmentCategory= c('Resting tremor', 'postural tremor', 'active tremor', 'gait'),
+                       digitalAssessmentDetails = c('finger-to-nose', 'walking (flat)', 'walking (stairs)', 'standing', 'sitting', 
+                                                    'alternating hand movements', 'drawing', 'typing', 'opening a water bottle and pouring', 
+                                                    'arranging paper','assembling nuts and bolts', 'folding towels'),
+                       # standing, walking in a straight line for 30s, walking in a straight line for 30s while counting backwards, 
+                       # walking upstairs, walking down stairs, walking through a narrow corridor, finger-to-nose for 15s (twice with each arm), 
+                       # alternating hand movements for 15s (twice with each arm), drawing, typing on a keyboard for 30s, 
+                       # opening a bottle and pouring water (three times), arranging sheets of paper in a folder (twice), 
+                       # assembling nuts and bolts for 30s, folding a towel three times, and sitting
+                       sensorDataType = 'raw', investigator= c('MJFF', 'Bonato'), resourceType = 'experimentalData',
+                       intervention = 'levodopa', keywords = c('neurodegeneration', 'neurology', "Parkinson's"), dhPortalIndex = 'TRUE',
+                       studyDescriptionLocation = 'syn20681023', studyDataDescriptionLocation = 'syn20681023/wiki/594680')
+)
+  
 ##############
 # Update Annotations in Synapse
 ##############  
