@@ -4,6 +4,7 @@
 # Author: Meghasyam Tummalacherla
 # email: meghasyam@sagebase.org
 ########################################################################
+# Using https://docs.google.com/document/d/19VZ0dWVzFBnWj11xSU0seiFU0pFpVkRK/edit as list of annotations
 ##############
 # Notes, Ideas, To-Dos
 ##############
@@ -11,23 +12,11 @@
 ## To successfully run this code, you need write permissions to all the following
 # mhealth projects
 ## Not considering gravity as a sensor, as it is a derived measures
+## All projects have a template annotation list assigned. Any annotation classes 
+# from that list can be edited/removed. Any new annotation class will be added
+# to the overall template of all relevant projects (project vs study eg., PDDB)
 
-
-### Ideas-needed:
-## How do we distingush between kinetic tremor and rest tremor at the project level?
-# Do we have a task annotation? for eg., like hand in lap, hand at shoulder, finger to nose etc.,
-## How do we mention manufacturer for wearables/phones?
-# How do we represent fitbit/Nonin/Apple watch etc., iOS vs Android?
-# Because if we just say PPG, fitbit also has some sleep quality measures which
-# are derived by their own proprietary algorithms, which people might want to use
-# as endpoint measures. 
-## How do we distinguish between different types of surveys?
-# For eg., in Asthma Health public researcher portal we have different types of surveys
-# like Asthma history, medication history etc., How do we distinguish between these as
-# we do for say kinetic and rest tremor via Assay?
-
-
-### To-Dos:
+### To-Dos(continous update):
 ## Keep the Excel sheet of all metadata possibilities for each metadata type
 # For eg., sensor - accelerometer, PPG, gyroscope, camera, touchscreen etc.,
 
@@ -47,102 +36,231 @@ synLogin()
 projects.annotations <- list(
   
   ## mPower 1.0 (check anno - Larsson)
-  'syn4993293' = list('DataCollectionMethod' = c('active', 'survey'),
-                      'DeviceType' = c('phone'),
-                      'SensorType' = c('accelerometer', 'gyroscope', 'magnetometer',
-                                        'touchscreen', 'microphone'),
-                      'DeviceLocation' = c('pocket', 'hand'),
-                      'Diagnosis' = c('parkinsons', 'control'),
-                      'Assay' = c('tremor', 'walking', 'tap', 'voice')),
+  'syn4993293' = list(consortium = 'mHealth',
+                      study = 'mPower mobile Parkinson Disease study',
+                      numberParticipants= '', 
+                      dataCollectionMethod= c(''),
+                      deviceType = c(''),
+                      sensorType = c(''),
+                      devicePlatform = c(''), 
+                      deviceLocation = c(''),
+                      diagnosis=  c(''), 
+                      reportedOutcome =c(''),
+                      digitalAssessmentCategory= c(''),
+                      digitalAssessmentDetails = c(''),
+                      sensorDataType = '',
+                      investigator= c(''),
+                      resourceType = '',
+                      intervention = '',
+                      keywords = c(''),
+                      dhPortalIndex = 'FALSE', # Change after filling annotations
+                      studyDescriptionLocation = 'syn4993293', 
+                      studyDataDescriptionLocation = 'syn4993293/wiki/247861',
+                      dataAccessInstructions = 'syn4993293/wiki/247860'),
   
   ## MoleMapper Public Researcher Portal (check anno - Dan)
-  'syn5576734' = list('DataCollectionMethod' = c('active', 'survey'),
-                      'DeviceType' = c('phone'),
-                      'SensorType' = c('accelerometer', 'gyroscope', 'magnetometer'),
-                      'DeviceLocation' = c('pocket', 'wrist'),
-                      'Diagnosis' = c('control'),
-                      'Assay' = c('tremor', 'walking', 'tap', 'voice')),
+  'syn5576734' = list(consortium = 'mHealth',
+                      study = 'Mole Mapper Study',
+                      numberParticipants= '', 
+                      dataCollectionMethod= c(''),
+                      deviceType = c(''),
+                      sensorType = c(''),
+                      devicePlatform = c(''), 
+                      deviceLocation = c(''),
+                      diagnosis=  c(''), 
+                      reportedOutcome =c(''),
+                      digitalAssessmentCategory= c(''),
+                      digitalAssessmentDetails = c(''),
+                      sensorDataType = '',
+                      investigator= c(''),
+                      resourceType = '',
+                      intervention = '',
+                      keywords = c(''),
+                      dhPortalIndex = 'FALSE', # Change after filling annotations
+                      studyDescriptionLocation = 'syn5576734', 
+                      studyDataDescriptionLocation = 'syn5576734/wiki/406009',
+                      dataAccessInstructions = 'syn5576734/wiki/391119'),
   
   ## Asthma Health Public Researcher Portal (check anno - Larsson)
-  'syn8361748' = list('DataCollectionMethod' = c('survey'),
-                      'DeviceType' = c('phone'),
-                      'SensorType' = c('touchscreen'),
-                      'DeviceLocation' = c('hand'),
-                      'Diagnosis' = c('asthma', 'control'),
-                      'Assay' = c('')),
+  'syn8361748' = list(consortium = 'mHealth',
+                      study = 'Asthma Mobile Health Study',
+                      numberParticipants= '', 
+                      dataCollectionMethod= c(''),
+                      deviceType = c(''),
+                      sensorType = c(''),
+                      devicePlatform = c(''), 
+                      deviceLocation = c(''),
+                      diagnosis=  c(''), 
+                      reportedOutcome =c(''),
+                      digitalAssessmentCategory= c(''),
+                      digitalAssessmentDetails = c(''),
+                      sensorDataType = '',
+                      investigator= c(''),
+                      resourceType = '',
+                      intervention = '',
+                      keywords = c(''),
+                      dhPortalIndex = 'FALSE', # Change after filling annotations
+                      studyDescriptionLocation = 'syn8361748', 
+                      studyDataDescriptionLocation = 'syn8361748/wiki/415365',
+                      dataAccessInstructions = 'syn8361748/wiki/415364'),
   
   ## elevateMS (check anno - Abhi)
-  'syn9746170' = list('DataCollectionMethod' = c('active', 'passive', 'survey'),
-                      'DeviceType' = c('phone'),
-                      'SensorType' = c('accelerometer', 'gyroscope', 'magnetometer',
-                                        'touchscreen'),
-                      'DeviceLocation' = c('pocket', 'hand'),
-                      'Diagnosis' = c('multiple sclerosis', 'control'),
-                      'Assay' = c('tremor', 'walking', 'tap', 'visual/digit symbol substitution task(vsst/dsst)')),
+  'syn21140362' = list(consortium = 'mHealth',
+                      study = 'elevateMS Study',
+                      numberParticipants= '', 
+                      dataCollectionMethod= c(''),
+                      deviceType = c(''),
+                      sensorType = c(''),
+                      devicePlatform = c(''), 
+                      deviceLocation = c(''),
+                      diagnosis=  c(''), 
+                      reportedOutcome =c(''),
+                      digitalAssessmentCategory= c(''),
+                      digitalAssessmentDetails = c(''),
+                      sensorDataType = '',
+                      investigator= c(''),
+                      resourceType = '',
+                      intervention = '',
+                      keywords = c(''),
+                      dhPortalIndex = 'FALSE', # Change after filling annotations
+                      studyDescriptionLocation = 'syn21140362', 
+                      studyDataDescriptionLocation = 'syn21140362/wiki/602267',
+                      dataAccessInstructions = 'syn21140362/wiki/602266'),
   
   ## Parkinsons Disease Digital Biomarker DREAM Challenge (check anno - Solly)
-<<<<<<< HEAD
-  'syn8717496' = list('DataCollectionMethod' = c('active', 'survey'),
-                      'DeviceType' = c('phone'),
-                      'SensorType' = c('accelerometer', 'gyroscope', 'magnetometer'),
-                      'DeviceLocation' = c('pocket', 'hand'),
-=======
   ## This will be a Project, rather than a study on the portal
-  'syn8717496' = list('Data collection method' = c('active', 'survey'),
-                      'Device type' = c('phone'),
-                      'Sensor type' = c('accelerometer', 'gyroscope', 'magnetometer'),
-                      'Device location' = c('pocket', 'hand'),
->>>>>>> c6a65f3e6dac5cfc16a3329a5ada5c1b5f5b4067
-                      'Diagnosis' = c('parkinsons', 'control'),
-                      'Assay' = c('tremor', 'walking', 'dyskinesia','bradykinesia')),
+  'syn8717496' = list(consortium = 'mHealth',
+                      study = 'Parkinsons Disease Digital Biomarker DREAM Challenge',
+                      numberParticipants= '', 
+                      dataCollectionMethod= c(''),
+                      deviceType = c(''),
+                      sensorType = c(''),
+                      devicePlatform = c(''), 
+                      deviceLocation = c(''),
+                      diagnosis=  c(''), 
+                      reportedOutcome =c(''),
+                      digitalAssessmentCategory= c(''),
+                      digitalAssessmentDetails = c(''),
+                      sensorDataType = '',
+                      investigator= c(''),
+                      resourceType = '',
+                      intervention = '',
+                      keywords = c(''),
+                      dhPortalIndex = 'FALSE', # Change after filling annotations
+                      studyDescriptionLocation = 'syn8717496', 
+                      studyDataDescriptionLocation = '',
+                      dataAccessInstructions = ''),
   
   ## CRF Module (check anno - Dan/Megha)
-  'syn10837149' = list('DataCollectionMethod' = c('active', 'survey'),
-                       'DeviceType' = c('phone', 'wearable'),
-                       'SensorType' = c('accelerometer', 'gyroscope', 'magnetometer',
-                                         'camera', 'gps', 'fitbit', 'nonin'),
-                       'DeviceLocation' = c('hand'),
-                       'Diagnosis' = c('control'),
-                       'Assay' = c('heartrate', 'walking')),
+  'syn10837149' = list(consortium = 'mHealth',
+                       study = 'Heart Snapshot',
+                       numberParticipants= '', 
+                       dataCollectionMethod= c(''),
+                       deviceType = c(''),
+                       sensorType = c(''),
+                       devicePlatform = c(''), 
+                       deviceLocation = c(''),
+                       diagnosis=  c(''), 
+                       reportedOutcome =c(''),
+                       digitalAssessmentCategory= c(''),
+                       digitalAssessmentDetails = c(''),
+                       sensorDataType = '',
+                       investigator= c(''),
+                       resourceType = '',
+                       intervention = '',
+                       keywords = c(''),
+                       dhPortalIndex = 'FALSE', # Change after filling annotations
+                       studyDescriptionLocation = '', 
+                       studyDataDescriptionLocation = '',
+                       dataAccessInstructions = ''),
   
   ## MyHeart Counts Public Researcher Portal (check anno - Larsson)
-  'syn11269541' = list('DataCollectionMethod' = c('active', 'survey'),
-                       'DeviceType' = c('phone'),
-                       'SensorType' = c('accelerometer', 'gyroscope', 'magnetometer'),
-                       'DeviceLocation' = c('pocket', 'wrist'),
-                       'Diagnosis' = c('control'),
-                       'Assay' = c('tremor', 'walking', 'tap', 'voice')),
+  'syn11269541' = list(consortium = 'mHealth',
+                       study = 'MyHeart Counts Cardiovascular Health Study',
+                       numberParticipants= '', 
+                       dataCollectionMethod= c(''),
+                       deviceType = c(''),
+                       sensorType = c(''),
+                       devicePlatform = c(''), 
+                       deviceLocation = c(''),
+                       diagnosis=  c(''), 
+                       reportedOutcome =c(''),
+                       digitalAssessmentCategory= c(''),
+                       digitalAssessmentDetails = c(''),
+                       sensorDataType = '',
+                       investigator= c(''),
+                       resourceType = '',
+                       intervention = '',
+                       keywords = c(''),
+                       dhPortalIndex = 'FALSE', # Change after filling annotations
+                       studyDescriptionLocation = 'syn11269541', 
+                       studyDataDescriptionLocation = 'syn11269541/wiki/485635',
+                       dataAccessInstructions = 'syn11269541/wiki/485634'),
   
   ## PKU Study Project (check anno - Dan/Megha)
-  'syn20486872' = list('DataCollectionMethod' = c('active', 'passive', 'survey'),
-                       'DeviceType' = c('phone', 'wearable'),
-                       'SensorType' = c('accelerometer', 'gyroscope', 'magnetometer',
-                                         'fitbit'),
-                       'DeviceLocation' = c('pocket', 'wrist'),
-                       'Diagnosis' = c('phenylketonuria', 'control'),
-                       'Assay' = c('tremor', 'tap', 'sleep', 'heartrate')),
-  
+  'syn20486872' = list(consortium = 'mHealth',
+                       study = 'BioMarin PKU Study',
+                       numberParticipants= 18, # recruitment ongoing 
+                       dataCollectionMethod= c('active', 'passive', 'patient reported outcome',
+                                               'clinical assessment'),
+                       deviceType = c('handheld', 'wearable'),
+                       sensorType = c('accelerometer', 'gyroscope', 'magnetometer',
+                                      'fitbit'),
+                       devicePlatform = c('iOS'), 
+                       deviceLocation = c('hand', 'wrist', 'pocket'),
+                       diagnosis=  c('phenylketonuria', 'control'), 
+                       reportedOutcome =c('tremor'),
+                       digitalAssessmentCategory= c('Resting tremor', 'kinetic tremor',
+                                                    'cognition',  'sleep', 'heartrate'),
+                       digitalAssessmentDetails = c('tap', 'hand-in-lap', 'finger-to-nose',
+                                                    'alternating hand movements', 'drawing',
+                                                    'typing', 'opening a water bottle and pouring', 
+                                                    'arranging paper','assembling nuts and bolts',
+                                                    'folding towels'),
+                       sensorDataType = 'raw',
+                       investigator= c('BioMarin', 'Sage Bionetworks'),
+                       resourceType = 'curatedData',
+                       intervention = '',
+                       keywords = c('Phenylketonuria', 'PKU', 'rare disease'),
+                       dhPortalIndex = 'FALSE', # Change after filling annotations
+                       studyDescriptionLocation = '', # syn ID of the public facing project
+                       studyDataDescriptionLocation = '',
+                       dataAccessInstructions = ''),
+
   ## MJFF Levodopa Response Study (check anno - solly)
-  'syn20681023' = list(consortium = 'mHealth', study = 'MJFF Levodopa Response Study',
+  'syn20681023' = list(consortium = 'mHealth',
+                       study = 'MJFF Levodopa Response Study',
                        numberParticipants= 29, 
-                       dataCollectionMethod= c('active', 'passive', 'patient reported outcome', 'clinical assessment'),
-                       deviceType = c('handheld', 'wearable'), sensorType = 'accelerometer',
+                       dataCollectionMethod= c('active', 'passive', 'patient reported outcome',
+                                               'clinical assessment'),
+                       deviceType = c('handheld', 'wearable'),
+                       sensorType = 'accelerometer',
                        devicePlatform = c('Shimmer', 'GENEActiv', 'Android', 'Pebble OS'), 
                        deviceLocation = c('wrist', 'waist', 'forearm', 'shank', 'back'),
                        diagnosis= "Parkinson's Disease", 
-                       reportedOutcome =c('MDS-UPDRS', 'tremor', 'dyskinesia', 'bradykinesia', 'freezing of gait', 'medication report', 'sleep report'),
-                       digitalAssessmentCategory= c('Resting tremor', 'postural tremor', 'active tremor', 'gait'),
-                       digitalAssessmentDetails = c('finger-to-nose', 'walking (flat)', 'walking (stairs)', 'standing', 'sitting', 
-                                                    'alternating hand movements', 'drawing', 'typing', 'opening a water bottle and pouring', 
-                                                    'arranging paper','assembling nuts and bolts', 'folding towels'),
+                       reportedOutcome =c('MDS-UPDRS', 'tremor', 'dyskinesia', 'bradykinesia',
+                                          'freezing of gait', 'medication report', 'sleep report'),
+                       digitalAssessmentCategory= c('resting tremor', 'action tremor', 'gait'),
+                       digitalAssessmentDetails = c('walking (flat)', 'walking (stairs)',
+                                                    'standing', 'sitting', 
+                                                    'alternating hand movements', 'drawing',
+                                                    'typing', 'opening a water bottle and pouring', 
+                                                    'arranging paper','assembling nuts and bolts',
+                                                    'folding towels'),
                        # standing, walking in a straight line for 30s, walking in a straight line for 30s while counting backwards, 
                        # walking upstairs, walking down stairs, walking through a narrow corridor, finger-to-nose for 15s (twice with each arm), 
                        # alternating hand movements for 15s (twice with each arm), drawing, typing on a keyboard for 30s, 
                        # opening a bottle and pouring water (three times), arranging sheets of paper in a folder (twice), 
                        # assembling nuts and bolts for 30s, folding a towel three times, and sitting
-                       sensorDataType = 'raw', investigator= c('MJFF', 'Bonato'), resourceType = 'experimentalData',
-                       intervention = 'levodopa', keywords = c('neurodegeneration', 'neurology', "Parkinson's"), dhPortalIndex = 'TRUE',
-                       studyDescriptionLocation = 'syn20681023', studyDataDescriptionLocation = 'syn20681023/wiki/594680')
+                       sensorDataType = 'raw',
+                       investigator= c('MJFF', 'Bonato'),
+                       resourceType = 'experimentalData',
+                       intervention = 'levodopa',
+                       keywords = c('neurodegeneration', 'neurology', "Parkinson's"),
+                       dhPortalIndex = 'TRUE',
+                       studyDescriptionLocation = 'syn20681023',
+                       studyDataDescriptionLocation = 'syn20681023/wiki/594680',
+                       dataAccessInstructions = 'syn20681023/wiki/594679')
 )
   
 ##############
@@ -181,20 +299,27 @@ for(proj.id in projects.list){
   current.annotation <- projects.annotations[[proj.id]]
   
   for(key in names(current.annotation)){
-    annotations.key.value.list[[key]] <- c(annotations.key.value.list[[key]], 
-                                          current.annotation[[key]]) %>% unique()
+    if(is.null(annotations.key.value.list[[key]])){
+      annotations.key.value.list[[key]] <- current.annotation[[key]] %>% unique() %>% as.list()
+    }else{
+      annotations.key.value.list[[key]] <- c(annotations.key.value.list[[key]],
+                                             current.annotation[[key]]) %>% unique()
+    }
+    print(key)
   }
 }
 
 # Merge a list of values for a given key into a string
 for(key in names(annotations.key.value.list)){
-  annotations.key.value.list[[key]] <- as.data.frame(annotations.key.value.list[[key]])
+  annotations.key.value.list[[key]] <- as.data.frame(annotations.key.value.list[[key]]) %>%
+    t() %>% as.data.frame()
 }
 
 # Make a table out of the previous list
 annotations.key.value.tbl <- annotations.key.value.list %>% 
-  data.table::rbindlist(use.names = T, idcol = T) %>% 
-  `colnames<-`(c('key','val'))
+  data.table::rbindlist(use.names = T, idcol = T, fill = T) %>% 
+  `colnames<-`(c('key','val')) %>% 
+  dplyr::filter(!val == '') # remove empty fields
 
 # Upload to Synapse
 # Github link
