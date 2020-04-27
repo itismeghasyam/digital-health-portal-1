@@ -29,7 +29,7 @@ synLogin()
 ##############
 # List of tables and related annotations
 ##############
-tables.list = list(
+tables.annotations = list(
   ## Metadata of patient onboarding
   'syn20681894' = list(consortium = 'mHealth',
                        study = 'MJFF Levodopa Response Study',
@@ -293,7 +293,7 @@ tables.list = list(
 #################
 # Now set annotations
 #################
-for(proj.id in tables.list){
+for(proj.id in names(tables.annotations)){
   proj.syn <- synGet(proj.id)
   
   #### Uncomment this before updating for real
