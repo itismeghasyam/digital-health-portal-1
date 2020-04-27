@@ -269,10 +269,9 @@ projects.annotations <- list(
 # Update annotations
 projects.list <- names(projects.annotations) 
 for(proj.id in projects.list){
-  proj.syn <- synGet(proj.id)
-  
+
   #### Uncomment this before updating for real
-  # synSetAnnotations(proj.syn, annotations = projects.annotations[[proj.id]])
+  # synSetAnnotations(proj.id, annotations = projects.annotations[[proj.id]])
   ####
   
   print(proj.id)

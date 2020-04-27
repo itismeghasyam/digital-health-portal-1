@@ -167,10 +167,9 @@ tables.annotations = list(
 #################
 projects.list =  names(tables.annotations)
 for(proj.id in projects.list){
-  # proj.syn <- synGet(proj.id)
-  
+
   #### Uncomment this before updating for real
-  # synSetAnnotations(proj.syn, annotations = tables.annotations[[proj.id]])
+  # synSetAnnotations(proj.id, annotations = tables.annotations[[proj.id]])
   ####
   
   print(proj.id)

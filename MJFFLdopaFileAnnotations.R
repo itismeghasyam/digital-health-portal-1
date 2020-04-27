@@ -294,10 +294,9 @@ tables.annotations = list(
 # Now set annotations
 #################
 for(proj.id in names(tables.annotations)){
-  proj.syn <- synGet(proj.id)
-  
+
   #### Uncomment this before updating for real
-  # synSetAnnotations(proj.syn, annotations = tables.annotations[[proj.id]])
+  # synSetAnnotations(proj.id, annotations = tables.annotations[[proj.id]])
   ####
   
   print(proj.id)
@@ -344,34 +343,30 @@ for(fold in Folders$id){
   
   # Day 1
   synid <- filesAndFolders$id[grep("ay1", filesAndFolders$name)]
-  proj.syn <- synGet(synid)
-  
+
   #### Uncomment this before updating for real
-  # synSetAnnotations(proj.syn, annotations = geneactiveannot)
+  # synSetAnnotations(synid, annotations = geneactiveannot)
   ####
   
   # Day 4
   synid <- filesAndFolders$id[grep("ay4", filesAndFolders$name)]
-  proj.syn <- synGet(synid)
-  
+
   #### Uncomment this before updating for real
-  # synSetAnnotations(proj.syn, annotations = geneactiveannot)
+  # synSetAnnotations(synid, annotations = geneactiveannot)
   ####  
   
   # Day 2
   synid <- filesAndFolders$id[grep("ay2", filesAndFolders$name)]
-  proj.syn <- synGet(synid)
-  
+
   #### Uncomment this before updating for real
-  # synSetAnnotations(proj.syn, annotations = geneactiveannotpassive)
+  # synSetAnnotations(synid, annotations = geneactiveannotpassive)
   ####
   
   # Day 3
   synid <- filesAndFolders$id[grep("ay3", filesAndFolders$name)]
-  proj.syn <- synGet(synid)
-  
+
   #### Uncomment this before updating for real
-  # synSetAnnotations(proj.syn, annotations = geneactiveannotpassive)
+  # synSetAnnotations(synid, annotations = geneactiveannotpassive)
   ####
 }
 
@@ -409,34 +404,30 @@ for(fold in Folders$id){
   
   # Day 1
   synid <- filesAndFolders$id[grep("ay1", filesAndFolders$name)]
-  proj.syn <- synGet(synid)
-  
+
   #### Uncomment this before updating for real
-  # synSetAnnotations(proj.syn, annotations = pebbleannot)
+  # synSetAnnotations(synid, annotations = pebbleannot)
   ####
   
   # Day 4
   synid <- filesAndFolders$id[grep("ay4", filesAndFolders$name)]
-  proj.syn <- synGet(synid)
-  
+
   #### Uncomment this before updating for real
-  # synSetAnnotations(proj.syn, annotations = pebbleannot)
+  # synSetAnnotations(synid, annotations = pebbleannot)
   ####  
   
   # Day 2
   synid <- filesAndFolders$id[grep("ay2", filesAndFolders$name)]
-  proj.syn <- synGet(synid)
-  
+
   #### Uncomment this before updating for real
-  # synSetAnnotations(proj.syn, annotations = pebbleannotpassive)
+  # synSetAnnotations(synid, annotations = pebbleannotpassive)
   ####
   
   # Day 3
   synid <- filesAndFolders$id[grep("ay3", filesAndFolders$name)]
-  proj.syn <- synGet(synid)
-  
+
   #### Uncomment this before updating for real
-  # synSetAnnotations(proj.syn, annotations = pebbleannotpassive)
+  # synSetAnnotations(synid, annotations = pebbleannotpassive)
   ####
 }
 
@@ -474,34 +465,30 @@ for(fold in Folders$id){
   
   # Day 1
   synid <- filesAndFolders$id[grep("ay1", filesAndFolders$name)]
-  proj.syn <- synGet(synid)
-  
+
   #### Uncomment this before updating for real
-  # synSetAnnotations(proj.syn, annotations = phoneannot)
+  # synSetAnnotations(synid, annotations = phoneannot)
   ####
   
   # Day 4
   synid <- filesAndFolders$id[grep("ay4", filesAndFolders$name)]
-  proj.syn <- synGet(synid)
-  
+
   #### Uncomment this before updating for real
-  # synSetAnnotations(proj.syn, annotations = phoneannot)
+  # synSetAnnotations(synid, annotations = phoneannot)
   ####  
   
   # Day 2
   synid <- filesAndFolders$id[grep("ay2", filesAndFolders$name)]
-  proj.syn <- synGet(synid)
-  
+
   #### Uncomment this before updating for real
-  # synSetAnnotations(proj.syn, annotations = phoneannotpassive)
+  # synSetAnnotations(synid, annotations = phoneannotpassive)
   ####
   
   # Day 3
   synid <- filesAndFolders$id[grep("ay3", filesAndFolders$name)]
-  proj.syn <- synGet(synid)
-  
+
   #### Uncomment this before updating for real
-  # synSetAnnotations(proj.syn, annotations = phoneannotpassive)
+  # synSetAnnotations(synid, annotations = phoneannotpassive)
   ####
 }
 
@@ -539,34 +526,30 @@ for(fold in Folders$id){
   
   # Day 1
   synid <- filesAndFolders$id[grep("ay1", filesAndFolders$name)]
-  proj.syn <- synGet(synid)
-  
+
   #### Uncomment this before updating for real
-  # synSetAnnotations(proj.syn, annotations = shimmerbackannot)
+  # synSetAnnotations(synid, annotations = shimmerbackannot)
   ####
   
   # Day 4
   synid <- filesAndFolders$id[grep("ay4", filesAndFolders$name)]
-  proj.syn <- synGet(synid)
-  
+
   #### Uncomment this before updating for real
-  # synSetAnnotations(proj.syn, annotations = shimmerbackannot)
+  # synSetAnnotations(synid, annotations = shimmerbackannot)
   ####  
   
   # Day 2
   synid <- filesAndFolders$id[grep("ay2", filesAndFolders$name)]
-  proj.syn <- synGet(synid)
-  
+
   #### Uncomment this before updating for real
-  # synSetAnnotations(proj.syn, annotations = shimmerbackannotpassive)
+  # synSetAnnotations(synid, annotations = shimmerbackannotpassive)
   ####
   
   # Day 3
   synid <- filesAndFolders$id[grep("ay3", filesAndFolders$name)]
-  proj.syn <- synGet(synid)
-  
+
   #### Uncomment this before updating for real
-  # synSetAnnotations(proj.syn, annotations = shimmerbackannotpassive)
+  # synSetAnnotations(synid, annotations = shimmerbackannotpassive)
   ####
 }
 
@@ -604,10 +587,9 @@ for(fold in Folders$id){
   filesAndFolders <-data.frame(do.call('rbind', lapply(as.list(filesAndFolders), unlist)), stringsAsFactors = F) 
   
   for(synid in filesAndFolders$id){
-    proj.syn <- synGet(synid)
-    
+
     #### Uncomment this before updating for real
-    # synSetAnnotations(proj.syn, annotations = shimmerarmannot)
+    # synSetAnnotations(synid, annotations = shimmerarmannot)
     ####
     
   }
@@ -622,10 +604,9 @@ for(fold in Folders$id){
   filesAndFolders <-data.frame(do.call('rbind', lapply(as.list(filesAndFolders), unlist)), stringsAsFactors = F) 
   
   for(synid in filesAndFolders$id){
-    proj.syn <- synGet(synid)
-    
+
     #### Uncomment this before updating for real
-    # synSetAnnotations(proj.syn, annotations = shimmerarmannot)
+    # synSetAnnotations(synid, annotations = shimmerarmannot)
     ####
     
   }
@@ -663,10 +644,9 @@ for(fold in Folders$id){
   filesAndFolders <-data.frame(do.call('rbind', lapply(as.list(filesAndFolders), unlist)), stringsAsFactors = F) 
   
   for(synid in filesAndFolders$id){
-    proj.syn <- synGet(synid)
-    
+
     #### Uncomment this before updating for real
-    # synSetAnnotations(proj.syn, annotations = shimmerlegannot)
+    # synSetAnnotations(synid, annotations = shimmerlegannot)
     ####
     
   }
@@ -681,10 +661,9 @@ for(fold in Folders$id){
   filesAndFolders <-data.frame(do.call('rbind', lapply(as.list(filesAndFolders), unlist)), stringsAsFactors = F) 
   
   for(synid in filesAndFolders$id){
-    proj.syn <- synGet(synid)
-    
+
     #### Uncomment this before updating for real
-    # synSetAnnotations(proj.syn, annotations = shimmerlegannot)
+    # synSetAnnotations(synid, annotations = shimmerlegannot)
     ####
     
   }
@@ -706,10 +685,9 @@ for(fold in Folders$id){
   filesAndFolders <-data.frame(do.call('rbind', lapply(as.list(filesAndFolders), unlist)), stringsAsFactors = F) 
   
   for(synid in filesAndFolders$id){
-    proj.syn <- synGet(synid)
-    
+
     #### Uncomment this before updating for real
-    # synSetAnnotations(proj.syn, annotations = dummyannot)
+    # synSetAnnotations(synid, annotations = dummyannot)
     ####
     
   }
