@@ -266,17 +266,8 @@ projects.annotations <- list(
 ##############
 # Update Annotations in Synapse
 ##############  
-# Download digital health view table
-digital.health.view.id <- 'syn21585666'
-digital.health.view.syn <- synTableQuery(paste('select * from', digital.health.view.id))
-digital.health.view <- digital.health.view.syn$asDataFrame()
-
-# Get list of projects from table
-projects.list <- digital.health.view$projectId %>% 
-  unique()
-
 # Update annotations
-for(proj.id in projects.list){
+for(proj.id in names(projects.annotations)){
   proj.syn <- synGet(proj.id)
   
   #### Uncomment this before updating for real

@@ -42,7 +42,8 @@ tables.list = list(
                        dataSubtype='metadata',
                        metadataType=c('individual', 'sensor'), 
                        dhPortalIndex = 'TRUE',
-                       dataDescriptionLocation = 'syn20681023/wiki/594683'),
+                       dataDescriptionLocation = 'syn20681023/wiki/594683',
+                       dataAccessInstructions = 'syn20681023/wiki/594679'),
   
   ## Metadata of patient onboarding dictionary
   'syn20681895' = list(consortium = 'mHealth',
@@ -50,7 +51,8 @@ tables.list = list(
                        dataType=c('clinical', 'surveyData'),
                        dataSubtype='metadata',
                        metadataType='data dictionary',
-                       dhPortalIndex = 'TRUE'),
+                       dhPortalIndex = 'TRUE',
+                       dataAccessInstructions = 'syn20681023/wiki/594679'),
   
   
   ## UPDRS Response
@@ -63,7 +65,8 @@ tables.list = list(
                        dataType=c('clinical'),
                        dataSubtype=c('raw'),
                        dhPortalIndex = 'TRUE',
-                       dataDescriptionLocation = 'syn20681023/wiki/594683'),
+                       dataDescriptionLocation = 'syn20681023/wiki/594683',
+                       dataAccessInstructions = 'syn20681023/wiki/594679'),
   
   ## Sensor Data- Part I
   'syn20681931' = list(consortium = 'mHealth',
@@ -87,7 +90,8 @@ tables.list = list(
                        dataSubtype=c('raw', 'metadata'),
                        metadataType='sensor',
                        dhPortalIndex = 'TRUE',
-                       dataDescriptionLocation = 'syn20681023/wiki/594685'),
+                       dataDescriptionLocation = 'syn20681023/wiki/594685',
+                       dataAccessInstructions = 'syn20681023/wiki/594679'),
   
   ## Sensor Data- Part II
   'syn20681932' = list(consortium = 'mHealth',
@@ -114,7 +118,8 @@ tables.list = list(
                        dataSubtype=c('raw', 'metadata'),
                        metadataType='sensor',
                        dhPortalIndex = 'TRUE',
-                       dataDescriptionLocation = 'syn20681023/wiki/594685'),
+                       dataDescriptionLocation = 'syn20681023/wiki/594685',
+                       dataAccessInstructions = 'syn20681023/wiki/594679'),
   
   ## Task Scores- Part I
   'syn20681937' = list(consortium = 'mHealth',
@@ -135,7 +140,8 @@ tables.list = list(
                        dataSubtype=c('raw', 'metadata'),
                        metadataType=c('experiment', 'assessment'), 
                        dhPortalIndex = 'TRUE',
-                       dataDescriptionLocation = 'syn20681023/wiki/594685'),
+                       dataDescriptionLocation = 'syn20681023/wiki/594685',
+                       dataAccessInstructions = 'syn20681023/wiki/594679'),
   
   ## Task Scores- Part II
   'syn20681938' = list(consortium = 'mHealth',
@@ -156,7 +162,8 @@ tables.list = list(
                        dataSubtype=c('raw', 'metadata'),
                        metadataType=c('experiment', 'assessment'), 
                        dhPortalIndex = 'TRUE',
-                       dataDescriptionLocation = 'syn20681023/wiki/594685'),
+                       dataDescriptionLocation = 'syn20681023/wiki/594685',
+                       dataAccessInstructions = 'syn20681023/wiki/594679'),
   
   
   ## Home Tasks
@@ -173,7 +180,8 @@ tables.list = list(
                         dataSubtype=c('raw', 'metadata'),
                         metadataType = c('experiment', 'assessment'), 
                         dhPortalIndex = 'TRUE',
-                        dataDescriptionLocation = 'syn20681023/wiki/594685'),
+                        dataDescriptionLocation = 'syn20681023/wiki/594685',
+                        dataAccessInstructions = 'syn20681023/wiki/594679'),
   
   ## Metadata of Laboratory Visits
   'syn20681892' = list(consortium = 'mHealth',
@@ -186,7 +194,8 @@ tables.list = list(
                        dataSubtype='metadata',
                        metadataType='experiment', 
                        dhPortalIndex = 'TRUE',
-                       dataDescriptionLocation = 'syn20681023/wiki/594685'),
+                       dataDescriptionLocation = 'syn20681023/wiki/594685',
+                       dataAccessInstructions = 'syn20681023/wiki/594679'),
   
   ## Metadata of Laboratory Visits Dictionary
   'syn20681893'  = list(consortium = 'mHealth',
@@ -194,7 +203,8 @@ tables.list = list(
                         dataType=c('clinical'),
                         dataSubtype='metadata',
                         metadataType='data dictionary',
-                        dhPortalIndex = 'TRUE'),
+                        dhPortalIndex = 'TRUE',
+                        dataAccessInstructions = 'syn20681023/wiki/594679'),
   
   
   ## Task code dictionary
@@ -203,7 +213,8 @@ tables.list = list(
                        dataType=c('clinical'),
                        dataSubtype='metadata',
                        metadataType='data dictionary',
-                       dhPortalIndex = 'TRUE'),
+                       dhPortalIndex = 'TRUE',
+                       dataAccessInstructions = 'syn20681023/wiki/594679'),
   
   ## Subject Diary
   'syn20681934' =  list(consortium = 'mHealth',
@@ -216,7 +227,8 @@ tables.list = list(
                         dataType=c('surveyData'),
                         dataSubtype=c('raw'),
                         dhPortalIndex = 'TRUE', 
-                        dataDescriptionLocation = 'syn20681023/wiki/594684'),
+                        dataDescriptionLocation = 'syn20681023/wiki/594684',
+                        dataAccessInstructions = 'syn20681023/wiki/594679'),
   
   ## Subject Diary Data Dictionary
   'syn20681935' = list(consortium = 'mHealth',
@@ -224,7 +236,8 @@ tables.list = list(
                        dataType=c('surveyData'),
                        dataSubtype='metadata',
                        metadataType='data dictionary',
-                       dhPortalIndex = 'TRUE'),
+                       dhPortalIndex = 'TRUE',
+                       dataAccessInstructions = 'syn20681023/wiki/594679'),
   
   
   ## Medication Diary
@@ -237,7 +250,8 @@ tables.list = list(
                         dataType=c('surveyData'),
                         dataSubtype=c('raw'),
                         dhPortalIndex = 'TRUE', 
-                        dataDescriptionLocation = 'syn20681023/wiki/594684'),
+                        dataDescriptionLocation = 'syn20681023/wiki/594684',
+                        dataAccessInstructions = 'syn20681023/wiki/594679'),
   
   ## Sleep Diary
   'syn20681933' =  list(consortium = 'mHealth',
@@ -249,7 +263,8 @@ tables.list = list(
                         dataType=c('surveyData'),
                         dataSubtype=c('raw'),
                         dhPortalIndex = 'TRUE', 
-                        dataDescriptionLocation = 'syn20681023/wiki/594684'),
+                        dataDescriptionLocation = 'syn20681023/wiki/594684',
+                        dataAccessInstructions = 'syn20681023/wiki/594679'),
   
   ## Feedback Survey
   'syn20681033' =  list(consortium = 'mHealth',
@@ -261,7 +276,8 @@ tables.list = list(
                         dataType=c('surveyData'),
                         dataSubtype=c('raw'),
                         dhPortalIndex = 'TRUE',
-                        dataDescriptionLocation = 'syn20681023/wiki/594684'),
+                        dataDescriptionLocation = 'syn20681023/wiki/594684',
+                        dataAccessInstructions = 'syn20681023/wiki/594679'),
   
   ## Feedback Survey Data Dictionary
   'syn20681034' = list(consortium = 'mHealth',
@@ -269,7 +285,8 @@ tables.list = list(
                        dataType=c('surveyData'),
                        dataSubtype='metadata',
                        metadataType='data dictionary',
-                       dhPortalIndex = 'TRUE')
+                       dhPortalIndex = 'TRUE',
+                       dataAccessInstructions = 'syn20681023/wiki/594679')
   
 )
 
