@@ -267,7 +267,8 @@ projects.annotations <- list(
 # Update Annotations in Synapse
 ##############  
 # Update annotations
-for(proj.id in names(projects.annotations)){
+projects.list <- names(projects.annotations) 
+for(proj.id in projects.list){
   proj.syn <- synGet(proj.id)
   
   #### Uncomment this before updating for real
