@@ -56,6 +56,7 @@ projects.annotations <- list(
                       dhPortalIndex = 'FALSE', # Change after filling annotations
                       studyDescriptionLocation = 'syn4993293', 
                       studyDataDescriptionLocation = 'syn4993293/wiki/247861',
+                      studyDescription = '',
                       dataAccessInstructions = 'syn4993293/wiki/247860'),
   
   ## MoleMapper Public Researcher Portal (check anno - Dan)
@@ -79,6 +80,7 @@ projects.annotations <- list(
                       dhPortalIndex = 'FALSE', # Change after filling annotations
                       studyDescriptionLocation = 'syn5576734', 
                       studyDataDescriptionLocation = 'syn5576734/wiki/406009',
+                      studyDescription = '',
                       dataAccessInstructions = 'syn5576734/wiki/391119'),
   
   ## Asthma Health Public Researcher Portal (check anno - Larsson)
@@ -102,6 +104,7 @@ projects.annotations <- list(
                       dhPortalIndex = 'FALSE', # Change after filling annotations
                       studyDescriptionLocation = 'syn8361748', 
                       studyDataDescriptionLocation = 'syn8361748/wiki/415365',
+                      studyDescription = '',
                       dataAccessInstructions = 'syn8361748/wiki/415364'),
   
   ## elevateMS (check anno - Abhi)
@@ -125,6 +128,7 @@ projects.annotations <- list(
                       dhPortalIndex = 'FALSE', # Change after filling annotations
                       studyDescriptionLocation = 'syn21140362', 
                       studyDataDescriptionLocation = 'syn21140362/wiki/602267',
+                      studyDescription = '',
                       dataAccessInstructions = 'syn21140362/wiki/602266'),
   
   ## Parkinsons Disease Digital Biomarker DREAM Challenge (check anno - Solly)
@@ -149,6 +153,7 @@ projects.annotations <- list(
                       dhPortalIndex = 'FALSE', # Change after filling annotations
                       studyDescriptionLocation = 'syn8717496', 
                       studyDataDescriptionLocation = '',
+                      studyDescription = '',
                       dataAccessInstructions = ''),
   
   ## CRF Module (check anno - Dan/Megha)
@@ -172,6 +177,7 @@ projects.annotations <- list(
                        dhPortalIndex = 'FALSE', # Change after filling annotations
                        studyDescriptionLocation = '', 
                        studyDataDescriptionLocation = '',
+                       studyDescription = '',
                        dataAccessInstructions = ''),
   
   ## MyHeart Counts Public Researcher Portal (check anno - Larsson)
@@ -195,6 +201,7 @@ projects.annotations <- list(
                        dhPortalIndex = 'FALSE', # Change after filling annotations
                        studyDescriptionLocation = 'syn11269541', 
                        studyDataDescriptionLocation = 'syn11269541/wiki/485635',
+                       studyDescription = '',
                        dataAccessInstructions = 'syn11269541/wiki/485634'),
   
   ## PKU Study Project (check anno - Dan/Megha)
@@ -225,6 +232,7 @@ projects.annotations <- list(
                        dhPortalIndex = 'FALSE', # Change after filling annotations
                        studyDescriptionLocation = '', # syn ID of the public facing project
                        studyDataDescriptionLocation = '',
+                       studyDescription = '',
                        dataAccessInstructions = ''),
 
   ## MJFF Levodopa Response Study (check anno - solly)
@@ -260,6 +268,7 @@ projects.annotations <- list(
                        dhPortalIndex = 'TRUE',
                        studyDescriptionLocation = 'syn20681023',
                        studyDataDescriptionLocation = 'syn20681023/wiki/594680',
+                       studyDescription = 'The Levodopa Response Study was supported by the Michael J. Fox Foundation to collect wearable sensor data from individuals with Parkinson’s Disease (PD). The purpose of the study was to understand the feasibility of at-home monitoring of PD symptoms and motor fluctuations. Subjects were recruited from two clinical sites, and were monitored both in-clinic, while performing a battery of standard activities, and at home while performing their daily activities.',
                        dataAccessInstructions = 'syn20681023/wiki/594679')
 )
   
