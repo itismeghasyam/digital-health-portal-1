@@ -32,7 +32,8 @@ tools.list = list(
                        softwareName = 'mhealthtools',
                        url = 'https://github.com/Sage-Bionetworks/mhealthtools',
                        softwareAuthor = c('Phil Snyder', 'Meghasyam Tummalacherla', 'Thanneer Perumal', 'Abhishek Pratap', 'Elias Chaibub Neto'),
-                       softwareType = 'packageLibrary',
+                       softwareType = 'Software package',
+                       featured = 'TRUE',
                        softwareLanguage = 'R',
                        softwareRepository = 'GitHub',
                        inputDataType = c('accelerometer', 'gyroscope', 'camera', 'touchscreen'),
@@ -47,7 +48,7 @@ tools.list = list(
 ##############  
 # Update annotations
 toolname.list <- names(tools.list) 
-for(toolname in tools.list){
+for(toolname in names(tools.list)){
   
   tool_entity = File(path=tools.list[[toolname]]$url, name=tools.list[[toolname]]$softwareName, parent=pid, synapseStore=F)
   tool_entity = synStore(tool_entity, forceVersion=F)
@@ -56,8 +57,8 @@ for(toolname in tools.list){
    synSetAnnotations(tool_entity$properties$id, annotations = tools.list[[toolname]])
   ####
   
-  print(proj.id)
-  print(projects.annotations[[proj.id]])
+  print(toolname)
+  print(tools.list[[toolname]])
 }
 
 
