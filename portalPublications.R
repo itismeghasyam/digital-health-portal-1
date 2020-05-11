@@ -322,10 +322,10 @@ publications.list <- list(
   
   # 12
   "Neto_PacBio_2016" = list(
-    Author = c('ELIAS CHAIBUB NETO', 'BRIAN M. BOT', 'THANNEER PERUMAL',
-               'LARSSON OMBERG', 'JUSTIN GUINNEY', 'MIKE KELLEN',
-               'ARNO KLEIN', 'STEPHEN H. FRIEND', 'ANDREW D. TRISTER'),
-    Title = 'PERSONALIZED HYPOTHESIS TESTS FOR DETECTING MEDICATION RESPONSE IN PARKINSON DISEASE PATIENTS USING iPHONE SENSOR DATA.',
+    Author = c('Elias Chaibub Neto', 'Brian M Bot', 'Thanneer M Perumal',
+               'Larsson Omberg', 'Justin Guinney', 'Mike Kellen',
+               'Arno Klien', 'Stephen H Friend', 'Andrew D Trister'),
+    Title = 'Personalized Hypothesis Tests For Detecting Medication Response In Parkinson Disease Patients Using iPhone Sensor Data',
     Journal = 'The Pacific Symposium on Biocomputing (PSB) 2016',
     PMID = '26776193',
     ISBN = '978-981-4749-40-4',
