@@ -30,7 +30,7 @@ synLogin()
 tables.annotations = list(
   # Walking Activity
   'syn5511449' = list(consortium = 'mHealth',
-                      study = ' mPower mobile Parkinson Disease study',
+                      study = 'mPower mobile Parkinson Disease study',
                       numberParticipants= '', 
                       dataCollectionMethod= c(''),
                       deviceType = c(''),
@@ -49,7 +49,7 @@ tables.annotations = list(
   
   # Voice Activity
   'syn5511444' = list(consortium = 'mHealth',
-                      study = ' mPower mobile Parkinson Disease study',
+                      study = 'mPower mobile Parkinson Disease study',
                       numberParticipants= '', 
                       dataCollectionMethod= c(''),
                       deviceType = c(''),
@@ -68,7 +68,7 @@ tables.annotations = list(
   
   # Tapping Activity
   'syn5511439' = list(consortium = 'mHealth',
-                      study = ' mPower mobile Parkinson Disease study',
+                      study = 'mPower mobile Parkinson Disease study',
                       numberParticipants= '', 
                       dataCollectionMethod= c(''),
                       deviceType = c(''),
@@ -87,7 +87,7 @@ tables.annotations = list(
   
   # Memory Activity
   'syn5511434' = list(consortium = 'mHealth',
-                      study = ' mPower mobile Parkinson Disease study',
+                      study = 'mPower mobile Parkinson Disease study',
                       numberParticipants= '', 
                       dataCollectionMethod= c(''),
                       deviceType = c(''),
@@ -106,7 +106,7 @@ tables.annotations = list(
   
   # PDQ8 Survey
   'syn5511433' = list(consortium = 'mHealth',
-                      study = ' mPower mobile Parkinson Disease study',
+                      study = 'mPower mobile Parkinson Disease study',
                       numberParticipants= '', 
                       dataCollectionMethod= c(''),
                       deviceType = c(''),
@@ -125,7 +125,7 @@ tables.annotations = list(
   
   # MDS-UPDRS Survey
   'syn5511432' = list(consortium = 'mHealth',
-                      study = ' mPower mobile Parkinson Disease study',
+                      study = 'mPower mobile Parkinson Disease study',
                       numberParticipants= '', 
                       dataCollectionMethod= c(''),
                       deviceType = c(''),
@@ -144,7 +144,7 @@ tables.annotations = list(
   
   # Demographics Survey
   'syn5511429' = list(consortium = 'mHealth',
-                      study = ' mPower mobile Parkinson Disease study',
+                      study = 'mPower mobile Parkinson Disease study',
                       numberParticipants= '', 
                       dataCollectionMethod= c(''),
                       deviceType = c(''),
