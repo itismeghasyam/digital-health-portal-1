@@ -7,6 +7,7 @@
 # Using https://docs.google.com/document/d/1UAR0cD7TbDV_tmYnPjRUHUQFnW5q39swOIRcc2cmqJE/edit as list of publications
 # Using https://sagebionetworks.jira.com/wiki/spaces/PS/pages/801538114/Publications+Schema as publication Schema Skeleton
 # Using https://docs.google.com/document/d/19VZ0dWVzFBnWj11xSU0seiFU0pFpVkRK/edit as list of annotations
+# Use vancouver style format for authors - last name and initials
 ##############
 # Notes, Ideas, To-Dos
 ##############
@@ -37,10 +38,10 @@ publications.list <- list(
   #### mPower 1.0
   # 1
   "Bot_NatSciData_2016" = list(
-    Author = c('Brian M. Bot', 'Christine Suver', 'Elias Chaibub Neto',
-               'Michael Kellen', 'Arno Klein', 'Christopher Bare', 'Megan Doerr',
-               'Abhishek Pratap', 'John Wilbanks', 'E. Ray Dorsey', 'Stephen H. Friend',
-               'Andrew D. Trister'),
+    Author = c('Bot BM', 'Suver C', 'Neto EC',
+               'Kellen M', 'Klein A', 'Bare C', 'Doerr M',
+               'Pratap A', 'Wilbanks J', 'Dorsey ER', 'Friend SH',
+               'Trister AD'),
     Title = 'The mPower study, Parkinson disease mobile data collected using ResearchKit',
     Journal = 'Scientific Data',
     PMID = '26938265',
@@ -64,10 +65,10 @@ publications.list <- list(
   
   # 2
   "Neto_npjDigiMed_2019" = list(
-    Author = c('Elias Chaibub Neto', 'Abhishek Pratap', 'Thanneer M. Perumal',
-               'Meghasyam Tummalacherla', 'Phil Snyder', 'Brian M. Bot',
-               'Andrew D. Trister', 'Stephen H. Friend', 'Lara Mangravite',
-               'Larsson Omberg'),
+    Author = c('Neto EC', 'Pratap A', 'Perumal TM',
+               'Tummalacherla M', 'Snyder P', 'Bot BM',
+               'Trister AD', 'Friend SH', 'Mangravite L',
+               'Omberg L'),
     Title = 'Detecting the impact of subject characteristics on machine learning-based diagnostic applications',
     Journal = 'npj Digital Medicine',
     PMID = '31633058',
@@ -91,8 +92,8 @@ publications.list <- list(
   
   # 3
   "Neto_arXiv_2019" = list(
-    Author = c('Elias Chaibub Neto','Meghasyam Tummalacherla',
-               'Lara Mangravite', 'Larsson Omberg'),
+    Author = c('Neto EC','Tummalacherla M',
+               'Mangravite L', 'Omberg L'),
     Title = 'Causality-based tests to detect the influence of confounders on mobile health diagnostic applications: a comparison with restricted permutations',
     Journal = 'arXiv',
     PMID = '-',
@@ -116,9 +117,9 @@ publications.list <- list(
   
   # 4
   "Perumal_Ubicomp_2018" = list(
-    Author = c('Thanneer M. Perumal', 'Meghasyam Tummalacherla',
-               'Phil Snyder','Elias Chaibub Neto', 'E. Ray Dorsey',
-               'Lara Mangravite','Larsson Omberg'),
+    Author = c('Perumal TM', 'Tummalacherla M',
+               'Snyder P','Neto EC', 'Dorsey ER',
+               'Mangravite L','Omberg L'),
     Title = 'Remote Assessment, in Real-World Setting, of Tremor Severity in Parkinson\'s Disease Patients Using Smartphone Inertial Sensors',
     Journal = 'UbiComp \'18: The 2018 ACM International Joint Conference on Pervasive and Ubiquitous Computing',
     PMID = '-',
@@ -145,8 +146,8 @@ publications.list <- list(
   
   # 5
   "Doerr_JMIRmHealth_2017" = list(
-    Author = c('Megan Doerr', 'Amy Maguire Truong','Brian M Bot',
-               'John Wilbanks', 'Christine Suver','Lara M Mangravite'),
+    Author = c('Doerr M', 'Truong AM','Bot BM',
+               'Wilbanks J', 'Suver C','Mangravite LM'),
     Title = 'Formative Evaluation of Participant Experience With Mobile eConsent in the App-Mediated Parkinson mPower Study: A Mixed Methods Study',
     Journal = 'JMIR mHealth and uHealth',
     PMID = '28209557',
@@ -170,7 +171,7 @@ publications.list <- list(
   
   # 6
   "Wilbanks_NatBioTech_2016" = list(
-    Author = c('John Wilbanks', 'Stephen H Friend'),
+    Author = c('Wilbanks J', 'Friend SH'),
     Title = 'First, design for data sharing',
     Journal = 'Nature Biotechnology',
     PMID = '26939011',
@@ -194,7 +195,7 @@ publications.list <- list(
   
   # 7
   "Trister_npjParkinsons_2016" = list(
-    Author = c('Andrew D Trister', 'E Ray Dorsey', 'Stephen H Friend'),
+    Author = c('Trister AD', 'Dorsey ER', 'Friend SH'),
     Title = 'Smartphones as new tools in the management and understanding of Parkinson’s disease',
     Journal = 'npj Parkinson\'s Disease',
     PMID = '28725694',
@@ -218,8 +219,8 @@ publications.list <- list(
   
   # 8
   "Neto_arXiv_2017_Jun" = list(
-    Author = c('Elias Chaibub Neto', 'Thanneer M Perumal',
-               'Abhishek Pratap', 'Brian M Bot', 'Lara Mangravite', 'Larsson Omberg'),
+    Author = c('Neto EC', 'Perumal TM',
+               'Pratap A', 'Bot BM', 'Mangravite L', 'Omberg L'),
     Title = 'On the analysis of personalized medication response and classification of case vs control patients in mobile health studies: the mPower case study',
     Journal = 'arXiv',
     PMID = '-',
@@ -243,10 +244,10 @@ publications.list <- list(
   
   # 9
   "Neto_arXiv_2017_Dec" = list(
-    Author = c('Elias Chaibub Neto', 'Abhishek Pratap',
-               'Thanneer M Perumal', 'Meghasyam Tummalacherla',
-               'Brian M Bot', 'Andrew D Trister', 'Stephen H Friend',
-               'Lara Mangravite', 'Larsson Omberg'),
+    Author = c('Neto EC', 'Pratap A',
+               'Perumal TM', 'Tummalacherla M',
+               'Bot BM', 'Trister AD', 'Friend SH',
+               'Mangravite L', 'Omberg L'),
     Title = 'Learning Disease vs Participant Signatures: a permutation test approach to detect identity confounding in machine learning diagnostic applications',
     Journal = 'arXiv',
     PMID = '-',
@@ -270,9 +271,9 @@ publications.list <- list(
   
   # 10
   "Neto_arXiv_2018" = list(
-    Author = c('Elias Chaibub Neto', 'Abhishek Pratap',
-               'Thanneer M Perumal', 'Meghasyam Tummalacherla', 'Brian M Bot',
-               'Lara Mangravite', 'Larsson Omberg'),
+    Author = c('Neto EC', 'Pratap A',
+               'Perumal TM', 'Tummalacherla M', 'Bot BM',
+               'Mangravite L', 'Omberg L'),
     Title = 'Using permutations to assess confounding in machine learning applications for digital health',
     Journal = 'arXiv',
     PMID = '-',
@@ -296,9 +297,9 @@ publications.list <- list(
   
   # 11
   "Neto_KDD_2019" = list(
-    Author = c('Elias Chaibub Neto', 'Abhishek Pratap',
-               'Thanneer M Perumal', 'Meghasyam Tummalacherla',
-               'Brian M Bot', 'Lara Mangravite', 'Larsson Omberg'),
+    Author = c('Neto EC', 'Pratap A',
+               'Perumal TM', 'Tummalacherla M',
+               'Bot BM', 'Mangravite L', 'Omberg L'),
     Title = 'A Permutation Approach to Assess Confounding in Machine Learning Applications for Digital Health',
     Journal = 'KDD \'19: Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining',
     PMID = '-',
@@ -322,9 +323,9 @@ publications.list <- list(
   
   # 12
   "Neto_PacBio_2016" = list(
-    Author = c('Elias Chaibub Neto', 'Brian M Bot', 'Thanneer M Perumal',
-               'Larsson Omberg', 'Justin Guinney', 'Mike Kellen',
-               'Arno Klien', 'Stephen H Friend', 'Andrew D Trister'),
+    Author = c('Neto EC', 'Bot BM', 'Perumal TM',
+               'Omberg L', 'Guinney J', 'Kellen M',
+               'Klien A', 'Friend SH', 'Trister AD'),
     Title = 'Personalized Hypothesis Tests For Detecting Medication Response In Parkinson Disease Patients Using iPhone Sensor Data',
     Journal = 'The Pacific Symposium on Biocomputing (PSB) 2016',
     PMID = '26776193',
