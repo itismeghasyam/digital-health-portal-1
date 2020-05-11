@@ -1,6 +1,6 @@
 ########################################################################
 # Digital Health Portal
-# Purpose: To Annotate the Digital Health Projects
+# Purpose: To Annotate the Digital Health Studies
 # Author: Meghasyam Tummalacherla
 # email: meghasyam@sagebase.org
 ########################################################################
@@ -10,11 +10,12 @@
 ##############
 ### Note:
 ## To successfully run this code, you need write permissions to all the following
-# mhealth projects
+# mhealth studies
 ## Not considering gravity as a sensor, as it is a derived measures
-## All projects have a template annotation list assigned. Any annotation classes 
+## All studies have a template annotation list assigned. Any annotation classes 
 # from that list can be edited/removed. Any new annotation class will be added
-# to the overall template of all relevant projects (project vs study eg., PDDB)
+# to the overall template of all relevant studies. Projects have a slightly different
+# template, which is detailed in projectProjectLevelAnnoations.R
 
 ### To-Dos(continous update):
 ## Keep the Excel sheet of all metadata possibilities for each metadata type
@@ -131,30 +132,7 @@ projects.annotations <- list(
                       studyDescription = '',
                       dataAccessInstructions = 'syn21140362/wiki/602266'),
   
-  ## Parkinsons Disease Digital Biomarker DREAM Challenge (check anno - Solly)
-  ## This will be a Project, rather than a study on the portal
-  'syn8717496' = list(consortium = 'mHealth',
-                      study = 'Parkinsons Disease Digital Biomarker DREAM Challenge',
-                      numberParticipants= '', 
-                      dataCollectionMethod= c(''),
-                      deviceType = c(''),
-                      sensorType = c(''),
-                      devicePlatform = c(''), 
-                      deviceLocation = c(''),
-                      diagnosis=  c(''), 
-                      reportedOutcome =c(''),
-                      digitalAssessmentCategory= c(''),
-                      digitalAssessmentDetails = c(''),
-                      sensorDataType = '',
-                      investigator= c(''),
-                      resourceType = '',
-                      intervention = '',
-                      keywords = c(''),
-                      dhPortalIndex = 'FALSE', # Change after filling annotations
-                      studyDescriptionLocation = 'syn8717496', 
-                      studyDataDescriptionLocation = '',
-                      studyDescription = '',
-                      dataAccessInstructions = ''),
+
   
   ## CRF Module (check anno - Dan/Megha)
   'syn10837149' = list(consortium = 'mHealth',
@@ -274,7 +252,7 @@ projects.annotations <- list(
                        dhPortalIndex = 'TRUE',
                        studyDescriptionLocation = 'syn20681023',
                        studyDataDescriptionLocation = 'syn20681023/wiki/594680',
-                       studyDescription = 'The Levodopa Response Study was supported by the Michael J. Fox Foundation to collect wearable sensor data from individuals with Parkinson’s Disease (PD). The purpose of the study was to understand the feasibility of at-home monitoring of PD symptoms and motor fluctuations. Subjects were recruited from two clinical sites, and were monitored both in-clinic, while performing a battery of standard activities, and at home while performing their daily activities.',
+                       studyDescription = 'The purpose of the study was to understand the feasibility of at-home monitoring of PD symptoms and motor fluctuations, and subjects were monitored both in-clinic, while performing a battery of standard activities, and at home while performing their daily activities.',
                        dataAccessInstructions = 'syn20681023/wiki/594679')
 )
   
