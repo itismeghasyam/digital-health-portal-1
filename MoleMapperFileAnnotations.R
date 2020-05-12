@@ -42,7 +42,7 @@ tables.annotations = list(
                       dataType=c('sensor'),
                       dataSubtype=c('raw'),
                       dhPortalIndex = 'TRUE',
-                      dataDescriptionLocation = '',
+                      dataDescriptionLocation = 'syn5576734/wiki/406009',
                       dataAccessInstructions = 'syn5576734/wiki/391119'),
   
   ## Mole Measurements
@@ -61,7 +61,7 @@ tables.annotations = list(
                       dataSubtype=c('raw', 'metadata'),
                       metadataType='',
                       dhPortalIndex = 'TRUE',
-                      dataDescriptionLocation = '',
+                      dataDescriptionLocation = 'syn5576734/wiki/406009',
                       dataAccessInstructions = 'syn5576734/wiki/391119'),
   
   ## Mole Removal indicator
@@ -80,7 +80,7 @@ tables.annotations = list(
                       dataSubtype=c('raw', 'metadata'),
                       metadataType='',
                       dhPortalIndex = 'TRUE',
-                      dataDescriptionLocation = '',
+                      dataDescriptionLocation = 'syn5576734/wiki/406009',
                       dataAccessInstructions = 'syn5576734/wiki/391119'),
   
   ## Followup Survey
@@ -93,7 +93,7 @@ tables.annotations = list(
                       dataType=c('surveyData'),
                       dataSubtype=c('raw'),
                       dhPortalIndex = 'TRUE',
-                      dataDescriptionLocation = '',
+                      dataDescriptionLocation = 'syn5576734/wiki/406009',
                       dataAccessInstructions = 'syn5576734/wiki/391119'),
   
   ## Baseline Demographics Survey
@@ -106,7 +106,7 @@ tables.annotations = list(
                      dataType=c('surveyData'),
                      dataSubtype=c('raw'),
                      dhPortalIndex = 'TRUE',
-                     dataDescriptionLocation = '',
+                     dataDescriptionLocation = 'syn5576734/wiki/406009',
                      dataAccessInstructions = 'syn5576734/wiki/391119')
   
 )
