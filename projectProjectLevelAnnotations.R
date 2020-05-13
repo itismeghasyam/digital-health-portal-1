@@ -60,6 +60,28 @@ projects.annotations <- list(
                     dataUsed = c('syn20681023', 'syn4993293'),
                     studyDescription = "The Parkinson’s Disease Digital Biomarker DREAM Challenge was a first of it's kind challenge, designed to benchmark methods for the processing of sensor data for development of digital signatures reflective of Parkinson's Disease.",
                     dataAccessInstructions = '',
+                    isDHProject='TRUE'),
+
+## Participant Retention in Digital Health Studies
+'syn20715364' = list(consortium = 'mHealth',
+                    study = 'Participant Retention in Digital Health Studies',
+                    dataCollectionMethod= c('active', 'passive', 'patient reported outcome'),
+                    deviceType = c('handheld'),
+                    sensorType = '',
+                    devicePlatform = c('iOS', 'Android'), 
+                    deviceLocation = '',
+                    diagnosis=  c('depression', 'endometriosis', 'multiple sclerosis', "Parkinson's disease", 'sleep related disorder', "control"), 
+                    reportedOutcome ='',
+                    digitalAssessmentCategory= c('participant engagement'),
+                    digitalAssessmentDetails = c(''),
+                    investigator= 'Sage Bionetworks',
+                    resourceType = c('analysis'),
+                    keywords = c('participant engagement', 'remote studies'),
+                    dhPortalIndex = 'TRUE', # Change after filling annotations
+                    studyDescriptionLocation = 'syn21518193', 
+                    dataUsed = c('syn4993293', 'syn8361748', 'syn21140362', 'syn11269541', 'syn10848316', 'syn18492837', '[Phendo](http://citizenendo.org/phendo/)', '[START](https://www.goodrx.com/)'),
+                    studyDescription = "Analysis of participant engagement from 8 remote, app-based studies including more than 100,000 participants.",
+                    dataAccessInstructions = 'syn20715364/wiki/596144',
                     isDHProject='TRUE')
 )
 
@@ -72,11 +94,11 @@ projects.annotations <- list(
 
 for(projects in names(projects.annotations)){
   
-  #### Uncomment this before updating for real
-  synSetAnnotations(projects, annotations = projects.annotations[[projects]])
-  ####
-  
-  print(projects)
-  print(projects.annotations[[projects]])
+    #### Uncomment this before updating for real
+    synSetAnnotations(projects, annotations = projects.annotations[[projects]])
+    ####
+    
+    print(projects)
+    print(projects.annotations[[projects]])
 }
 
