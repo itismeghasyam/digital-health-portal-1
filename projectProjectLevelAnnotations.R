@@ -43,7 +43,7 @@ projects.annotations <- list(
                     sensorType = c('accelerometer', 'gyroscope'),
                     devicePlatform = c('GENEActiv', 'Pebble OS', 'iOS'), 
                     deviceLocation = c('wrist', 'pocket'),
-                    diagnosis=  c("Parkinson's Disease", "Control"), 
+                    diagnosis=  c("Parkinson's Disease", "control"), 
                     reportedOutcome =c('MDS-UPDRS', 'tremor', 'dyskinesia', 'bradykinesia',
                                       'medication report'),
                     digitalAssessmentCategory= c('resting tremor', 'action tremor', 'gait'),
@@ -79,7 +79,8 @@ projects.annotations <- list(
                     keywords = c('participant engagement', 'remote studies'),
                     dhPortalIndex = 'TRUE', # Change after filling annotations
                     studyDescriptionLocation = 'syn21518193', 
-                    dataUsed = c('syn4993293', 'syn8361748', 'syn21140362', 'syn11269541', 'syn10848316', 'syn18492837', '[Phendo](http://citizenendo.org/phendo/)', '[START](https://www.goodrx.com/)'),
+                    dataUsed = c('syn4993293', 'syn8361748', 'syn21140362', 'syn11269541', 'syn10848316', 'syn18492837'), 
+                    externalDataUsed = c('[Phendo](http://citizenendo.org/phendo/)', '[START](https://www.goodrx.com/)'),
                     studyDescription = "Analysis of participant engagement from 8 remote, app-based studies including more than 100,000 participants.",
                     dataAccessInstructions = 'syn20715364/wiki/596144',
                     isDHProject='TRUE')

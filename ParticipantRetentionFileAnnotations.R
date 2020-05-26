@@ -30,7 +30,7 @@ synLogin()
 file.annotations = list(
   ## Brighten Engagement
   'syn20929414' = list(consortium = 'mHealth',
-                       study = 'Participant Retention in Digital Health Studies',
+                       project = 'Participant Retention in Digital Health Studies',
                        numberParticipants= 876, 
                        dataCollectionMethod= c('patient reported outcome', 'active', 'passive'),
                        diagnosis= 'depression', 
@@ -45,7 +45,7 @@ file.annotations = list(
   
   ## Brighten Metadata
   'syn20929425' = list(consortium = 'mHealth',
-                       study = 'Participant Retention in Digital Health Studies',
+                       project = 'Participant Retention in Digital Health Studies',
                        numberParticipants= 876, 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis= 'depression', 
@@ -60,7 +60,7 @@ file.annotations = list(
   
   ## ElevateMS engagement data
   'syn20929415' = list(consortium = 'mHealth',
-                       study = 'Participant Retention in Digital Health Studies',
+                       project = 'Participant Retention in Digital Health Studies',
                        numberParticipants= 605, 
                        dataCollectionMethod= c('patient reported outcome', 'active', 'passive'),
                        diagnosis= c('multiple sclerosis', 'control'),
@@ -75,7 +75,7 @@ file.annotations = list(
   
   ## ElevateMS Metadata
   'syn20929426' = list(consortium = 'mHealth',
-                       study = 'Participant Retention in Digital Health Studies',
+                       project = 'Participant Retention in Digital Health Studies',
                        numberParticipants= 605, 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis= c('multiple sclerosis', 'control'),
@@ -90,7 +90,7 @@ file.annotations = list(
   
   ## Phendo engagement data
   'syn20929423' = list(consortium = 'mHealth',
-                       study = 'Participant Retention in Digital Health Studies',
+                       project = 'Participant Retention in Digital Health Studies',
                        numberParticipants= 7802, 
                        dataCollectionMethod= c('patient reported outcome', 'active', 'passive'),
                        diagnosis= 'endometriosis', 
@@ -105,7 +105,7 @@ file.annotations = list(
   
   ## Phendo Metadata
   'syn20929437' = list(consortium = 'mHealth',
-                       study = 'Participant Retention in Digital Health Studies',
+                       project = 'Participant Retention in Digital Health Studies',
                        numberParticipants= 7802, 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis= 'endometriosis', 
@@ -120,7 +120,7 @@ file.annotations = list(
  
   ## SleepHealth engagement data
   'syn20929424' = list(consortium = 'mHealth',
-                       study = 'Participant Retention in Digital Health Studies',
+                       project = 'Participant Retention in Digital Health Studies',
                        numberParticipants= 12914, 
                        dataCollectionMethod= c('patient reported outcome', 'active', 'passive'),
                        diagnosis= c('sleep related disorder', 'control'), 
@@ -135,7 +135,7 @@ file.annotations = list(
   
   ## SleepHealth Metadata
   'syn20929441' = list(consortium = 'mHealth',
-                       study = 'Participant Retention in Digital Health Studies',
+                       project = 'Participant Retention in Digital Health Studies',
                        numberParticipants= 12914, 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis= c('sleep related disorder', 'control'), 
@@ -150,7 +150,7 @@ file.annotations = list(
   
   ## START engagement data
   'syn20929421' = list(consortium = 'mHealth',
-                       study = 'Participant Retention in Digital Health Studies',
+                       project = 'Participant Retention in Digital Health Studies',
                        numberParticipants= 42704, 
                        dataCollectionMethod= c('patient reported outcome', 'active', 'passive'),
                        diagnosis= 'depression', 
@@ -165,7 +165,7 @@ file.annotations = list(
   
   ## START Metadata
   'syn20929455' = list(consortium = 'mHealth',
-                       study = 'Participant Retention in Digital Health Studies',
+                       project = 'Participant Retention in Digital Health Studies',
                        numberParticipants= 42704, 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis= 'depression', 
@@ -179,7 +179,7 @@ file.annotations = list(
   
   ## mPower engagement data
   'syn20929422' = list(consortium = 'mHealth',
-                       study = 'Participant Retention in Digital Health Studies',
+                       project = 'Participant Retention in Digital Health Studies',
                        numberParticipants= 12236, 
                        dataCollectionMethod= c('patient reported outcome', 'active', 'passive'),
                        diagnosis= c("Parkinson's disease", "control"),
@@ -194,7 +194,7 @@ file.annotations = list(
   
   ## mPower Metadata
   'syn20929429' = list(consortium = 'mHealth',
-                       study = 'Participant Retention in Digital Health Studies',
+                       project = 'Participant Retention in Digital Health Studies',
                        numberParticipants= 12236, 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis= c("Parkinson's disease", "control"),
