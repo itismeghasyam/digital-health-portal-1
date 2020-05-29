@@ -125,7 +125,7 @@ projects.annotations <- list(
                                        'NeuroQOL-LowerExtremity', 'NeuroQOL-UpperExtremity'),
                       digitalAssessmentCategory= c('postural tremor', 'gait', 
                                                    'cognition', 'quality of life'),
-                      digitalAssessmentDetails = c('finger-to-nose', 'walking(flat)',
+                      digitalAssessmentDetails = c('finger-to-nose', 'walking (flat)',
                                                    'standing',
                                                    'visual/digit symbol substitution task(vsst/dsst)'),
                       sensorDataType = c('raw', 'derived'),
@@ -260,7 +260,35 @@ projects.annotations <- list(
                        studyDescriptionLocation = 'syn20681023',
                        studyDataDescriptionLocation = 'syn20681023/wiki/594680',
                        studyDescription = 'The purpose of the study was to understand the feasibility of at-home monitoring of PD symptoms and motor fluctuations, and subjects were monitored both in-clinic, while performing a battery of standard activities, and at home while performing their daily activities.',
-                       dataAccessInstructions = 'syn20681023/wiki/594679')
+                       dataAccessInstructions = 'syn20681023/wiki/594679'),
+  
+  ## BRIGHTEN Study
+  'syn10848316' = list(consortium = 'mHealth',
+                      study = 'Brighten: Bridging Research Innovations for Greater Health in Technology, Emotion, and Neuroscience',
+                      numberParticipants= '', 
+                      dataCollectionMethod= c('passive', 'patient reported outcome',
+                                              'clinical assessment'),
+                      deviceType = c('handheld'),
+                      sensorType = c('touchscreen'),
+                      devicePlatform = c('iOS', 'android'), 
+                      deviceLocation = c('hand'),
+                      diagnosis=  c('Control'), 
+                      reportedOutcome =c('PHQ-9', 'PHQ-2', 'SDS', 'GAD-7',
+                                         'Sleep report', 'AUDIT-C', 'phone usage',
+                                         'physical activity'),
+                      digitalAssessmentCategory= c('cognition', 'sleep', 'mood',
+                                                   'mobility', 'mental health'),
+                      digitalAssessmentDetails = c(''),
+                      sensorDataType = 'raw',
+                      investigator= c('UW', 'UCSF'),
+                      resourceType = c('curatedData'),
+                      intervention = '',
+                      keywords = c(''),
+                      dhPortalIndex = 'FALSE', # Change after filling annotations
+                      studyDescriptionLocation = 'syn10848316', 
+                      studyDataDescriptionLocation = 'syn10848316/wiki/548728',
+                      studyDescription = '',
+                      dataAccessInstructions = 'syn10848316/wiki/551287')
 )
   
 ##############
