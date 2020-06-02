@@ -22,6 +22,11 @@ library(tidyverse)
 library(synapser)
 synLogin()
 
+study = 'Brigten study'
+projectlink = paste("[", study, "](/Explore/Studies/DetailsPage?study=",
+                    URLencode(study,  reserved = FALSE, repeated = FALSE), 
+                    ")", sep = "")
+
 ##############
 # List of tables and related annotations
 ##############
@@ -29,7 +34,8 @@ tables.annotations = list(
   
   # AUDIT-C
   'syn17021280' = list(consortium = 'mHealth',
-                       study = 'Brigten study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('controls'), 
@@ -43,7 +49,8 @@ tables.annotations = list(
   
   # GAD-7
   'syn17022655' = list(consortium = 'mHealth',
-                       study = 'Brigten study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('controls'), 
@@ -58,7 +65,8 @@ tables.annotations = list(
   
   # PHQ-2
   'syn17020855' = list(consortium = 'mHealth',
-                       study = 'Brigten study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('controls'), 
@@ -72,7 +80,8 @@ tables.annotations = list(
   
   # PHQ-9
   'syn18405275' = list(consortium = 'mHealth',
-                       study = 'Brigten study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('controls'), 
@@ -86,7 +95,8 @@ tables.annotations = list(
   
   # SDS
   'syn17022658' = list(consortium = 'mHealth',
-                       study = 'Brigten study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('controls'), 
@@ -100,7 +110,8 @@ tables.annotations = list(
   
   # Application Satisfaction
   'syn17025202' = list(consortium = 'mHealth',
-                       study = 'Brigten study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('controls'), 
@@ -114,7 +125,8 @@ tables.annotations = list(
   
   # Baseline Demographics
   'syn17023349' = list(consortium = 'mHealth',
-                       study = 'Brigten study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('controls'), 
@@ -128,7 +140,8 @@ tables.annotations = list(
   
   # Health Applications
   'syn17022426' = list(consortium = 'mHealth',
-                       study = 'Brigten study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('controls'), 
@@ -142,7 +155,8 @@ tables.annotations = list(
   
   # Mental Health Screening
   'syn17023316' = list(consortium = 'mHealth',
-                       study = 'Brigten study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('controls'), 
@@ -156,7 +170,8 @@ tables.annotations = list(
   
   # Mental Health Services
   'syn17022660' = list(consortium = 'mHealth',
-                       study = 'Brigten study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('controls'), 
@@ -170,7 +185,8 @@ tables.annotations = list(
   
   # Mood assessment
   'syn17023313' = list(consortium = 'mHealth',
-                       study = 'Brigten study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('controls'), 
@@ -184,7 +200,8 @@ tables.annotations = list(
   
   # Sleep Quality
   'syn17022659' = list(consortium = 'mHealth',
-                       study = 'Brigten study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('controls'), 
@@ -198,7 +215,8 @@ tables.annotations = list(
 
   # Other Mobile Apps Used
   'syn17025058' = list(consortium = 'mHealth',
-                       study = 'Brigten study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('controls'), 
@@ -212,7 +230,8 @@ tables.annotations = list(
   
   # Passive Features Brighten v1
   'syn17025500' = list(consortium = 'mHealth',
-                       study = 'Brigten study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('controls'), 
@@ -226,7 +245,8 @@ tables.annotations = list(
   
   # Passive Weather Features Brighten v2
   'syn17061284' = list(consortium = 'mHealth',
-                       study = 'Brigten study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('controls'), 
@@ -240,7 +260,8 @@ tables.annotations = list(
   
   # Passive Mobility Features Brighten v2
   'syn17114662' = list(consortium = 'mHealth',
-                       study = 'Brigten study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('controls'), 
@@ -254,7 +275,8 @@ tables.annotations = list(
   
   # Passive Cluster Entries Brighten v2
   'syn17116695' = list(consortium = 'mHealth',
-                       study = 'Brigten study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('controls'), 
@@ -268,7 +290,8 @@ tables.annotations = list(
   
   # Passive Phone Communication Features Brighten v2
   'syn17060502' = list(consortium = 'mHealth',
-                       study = 'Brigten study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('controls'), 

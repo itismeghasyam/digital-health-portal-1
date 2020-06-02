@@ -22,6 +22,11 @@ library(tidyverse)
 library(synapser)
 synLogin()
 
+study = 'Mole Mapper study'
+projectlink = paste("[", study, "](/Explore/Studies/DetailsPage?study=",
+                    URLencode(study,  reserved = FALSE, repeated = FALSE), 
+                    ")", sep = "")
+
 ##############
 # List of tables and related annotations
 ##############
@@ -29,7 +34,8 @@ tables.annotations = list(
   
   ## Mole images
   'syn6829811' = list(consortium = 'mHealth',
-                      study = 'Mole Mapper study',
+                      study = study,
+                      studyOrProject = projectlink,
                       numberParticipants= '', 
                       dataCollectionMethod= c('active'),
                       deviceType = c('handheld'),
@@ -47,7 +53,8 @@ tables.annotations = list(
   
   ## Mole Measurements
   'syn6829810' = list(consortium = 'mHealth',
-                      study = 'Mole Mapper study',
+                      study = study,
+                      studyOrProject = projectlink,
                       numberParticipants= '', 
                       dataCollectionMethod= c('patient reported outcome'),
                       deviceType = c('handheld'),
@@ -65,7 +72,8 @@ tables.annotations = list(
   
   ## Mole Removal indicator
   'syn6829809' = list(consortium = 'mHealth',
-                      study = 'Mole Mapper study',
+                      study = study,
+                      studyOrProject = projectlink,
                       numberParticipants= '', 
                       dataCollectionMethod= c('patient reported outcome'),
                       diagnosis=  c('melanoma', 'controls'), 
@@ -78,7 +86,8 @@ tables.annotations = list(
   
   ## Followup Survey
   'syn6829808' = list(consortium = 'mHealth',
-                      study = 'Mole Mapper study',
+                      study = study,
+                      studyOrProject = projectlink,
                       numberParticipants= '', 
                       dataCollectionMethod= c('patient reported outcome'),
                       diagnosis=  c('melanoma', 'controls'),
@@ -91,7 +100,8 @@ tables.annotations = list(
   
   ## Baseline Demographics Survey
   'syn682907' = list(consortium = 'mHealth',
-                     study = 'Mole Mapper study',
+                     study = study,
+                     studyOrProject = projectlink,
                      numberParticipants= '', 
                      dataCollectionMethod= c('patient reported outcome'),
                      diagnosis=  c('melanoma', 'controls'), 

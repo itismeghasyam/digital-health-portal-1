@@ -24,13 +24,19 @@ library(tidyverse)
 library(synapser)
 synLogin()
 
+study = 'mPower mobile Parkinson Disease study'
+projectlink = paste("[", study, "](/Explore/Studies/DetailsPage?study=",
+                    URLencode(study,  reserved = FALSE, repeated = FALSE), 
+                    ")", sep = "")
+
 ##############
 # List of tables and related annotations
 ##############
 tables.annotations = list(
   # Walking Activity
   'syn5511449' = list(consortium = 'mHealth',
-                      study = 'mPower mobile Parkinson Disease study',
+                      study = study,
+                      studyOrProject = projectlink,
                       numberParticipants= '', 
                       dataCollectionMethod= c('active'),
                       deviceType = c('handheld'),
@@ -50,7 +56,8 @@ tables.annotations = list(
   
   # Voice Activity
   'syn5511444' = list(consortium = 'mHealth',
-                      study = 'mPower mobile Parkinson Disease study',
+                      study = study,
+                      studyOrProject = projectlink,
                       numberParticipants= '', 
                       dataCollectionMethod= c('active'),
                       deviceType = c('handheld'),
@@ -70,7 +77,8 @@ tables.annotations = list(
   
   # Tapping Activity
   'syn5511439' = list(consortium = 'mHealth',
-                      study = 'mPower mobile Parkinson Disease study',
+                      study = study,
+                      studyOrProject = projectlink,
                       numberParticipants= '', 
                       dataCollectionMethod= c('active'),
                       deviceType = c('handheld'),
@@ -90,7 +98,8 @@ tables.annotations = list(
   
   # Memory Activity
   'syn5511434' = list(consortium = 'mHealth',
-                      study = 'mPower mobile Parkinson Disease study',
+                      study = study,
+                      studyOrProject = projectlink,
                       numberParticipants= '', 
                       dataCollectionMethod=c('patient reported outcome'),
                       reportedOutcome = '',
@@ -104,7 +113,8 @@ tables.annotations = list(
   
   # PDQ8 Survey
   'syn5511433' = list(consortium = 'mHealth',
-                      study = 'mPower mobile Parkinson Disease study',
+                      study = study,
+                      studyOrProject = projectlink,
                       numberParticipants= '', 
                       dataCollectionMethod= c('patient reported outcome', 'clinical assessment'),
                       diagnosis= c("Parkinson's Disease", 'Control'), 
@@ -118,7 +128,8 @@ tables.annotations = list(
   
   # MDS-UPDRS Survey
   'syn5511432' = list(consortium = 'mHealth',
-                      study = 'mPower mobile Parkinson Disease study',
+                      study = study,
+                      studyOrProject = projectlink,
                       numberParticipants= '', 
                       dataCollectionMethod= c('patient reported outcome', 'clinical assessment'),
                       diagnosis= c("Parkinson's Disease", 'Control'), 
@@ -132,7 +143,8 @@ tables.annotations = list(
   
   # Demographics Survey
   'syn5511429' = list(consortium = 'mHealth',
-                      study = 'mPower mobile Parkinson Disease study',
+                      study = study,
+                      studyOrProject = projectlink,
                       numberParticipants= '', 
                       dataCollectionMethod= c('patient reported outcome'),
                       diagnosis= c("Parkinson's Disease", 'Control'), 

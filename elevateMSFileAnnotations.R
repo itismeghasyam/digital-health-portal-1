@@ -22,13 +22,19 @@ library(tidyverse)
 library(synapser)
 synLogin()
 
+study = 'ElevateMS Study'
+projectlink = paste("[", study, "](/Explore/Studies/DetailsPage?study=",
+                    URLencode(study,  reserved = FALSE, repeated = FALSE), 
+                    ")", sep = "")
+
 ##############
 # List of tables and related annotations
 ##############
 tables.annotations = list(
   # Voice-based Digital Symbol Substitution Test
   'syn22007628' = list(consortium = 'mHealth',
-                       study = 'ElevateMS Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('active'),
                        deviceType = c('handheld'),
@@ -47,7 +53,8 @@ tables.annotations = list(
   
   # Triggers Survey
   'syn21962836' = list(consortium = 'mHealth',
-                       study = 'ElevateMS Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis= c('Multiple Sclerosis', 'Control'), 
@@ -61,7 +68,8 @@ tables.annotations = list(
   
   # Symptoms Survey
   'syn21962623' = list(consortium = 'mHealth',
-                       study = 'ElevateMS Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis= c('Multiple Sclerosis', 'Control'), 
@@ -75,7 +83,8 @@ tables.annotations = list(
   
   # Truncated MSIS-29
   'syn21962591' = list(consortium = 'mHealth',
-                       study = 'ElevateMS Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis= c('Multiple Sclerosis', 'Control'), 
@@ -89,7 +98,8 @@ tables.annotations = list(
   
   # Tapping
   'syn21931781' = list(consortium = 'mHealth',
-                       study = 'ElevateMS Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('active'),
                        deviceType = c('handheld'),
@@ -109,7 +119,8 @@ tables.annotations = list(
   
   # Walking
   'syn21930947' = list(consortium = 'mHealth',
-                       study = 'ElevateMS Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('active'),
                        deviceType = c('handheld'),
@@ -129,7 +140,8 @@ tables.annotations = list(
   
   # Passive Pedometer Data
   'syn21930705' = list(consortium = 'mHealth',
-                       study = 'ElevateMS Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('passive'),
                        deviceType = c('handheld'),
@@ -149,7 +161,8 @@ tables.annotations = list(
   
   # Tremor 
   'syn21930567' = list(consortium = 'mHealth',
-                       study = 'ElevateMS Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('active'),
                        deviceType = c('handheld'),
@@ -169,7 +182,8 @@ tables.annotations = list(
   
   # Baseline Characteristics
   'syn21930532' = list(consortium = 'mHealth',
-                       study = 'ElevateMS Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c(''),
                        deviceType = c(''),
@@ -188,7 +202,8 @@ tables.annotations = list(
   
   # NeuroQoL-Lower Extremity
   'syn21930530' = list(consortium = 'mHealth',
-                       study = 'ElevateMS Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis= c('Multiple Sclerosis', 'Control'), 
@@ -202,7 +217,8 @@ tables.annotations = list(
   
   # NeuroQoL-Upper Extremity
   'syn21930529' = list(consortium = 'mHealth',
-                       study = 'ElevateMS Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis= c('Multiple Sclerosis', 'Control'), 
@@ -216,7 +232,8 @@ tables.annotations = list(
 
   # NeuroQoL-Cognition
   'syn21930522' = list(consortium = 'mHealth',
-                       study = 'ElevateMS Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis= c('Multiple Sclerosis', 'Control'), 
@@ -230,7 +247,8 @@ tables.annotations = list(
   
   # Weather
   'syn21930519' = list(consortium = 'mHealth',
-                       study = 'ElevateMS Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis= c('Multiple Sclerosis', 'Control'), 
@@ -244,7 +262,8 @@ tables.annotations = list(
   
   # WPAI
   'syn21930484' = list(consortium = 'mHealth',
-                       study = 'ElevateMS Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis= c('Multiple Sclerosis', 'Control'), 
@@ -258,7 +277,8 @@ tables.annotations = list(
   
   # Medication Survey
   'syn21930482' = list(consortium = 'mHealth',
-                       study = 'ElevateMS Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis= c('Multiple Sclerosis', 'Control'), 
@@ -272,7 +292,8 @@ tables.annotations = list(
   
   # Relapses Survey
   'syn21930477' = list(consortium = 'mHealth',
-                       study = 'ElevateMS Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis= c('Multiple Sclerosis', 'Control'), 
@@ -286,7 +307,8 @@ tables.annotations = list(
   
   # Daily Check-In
   'syn21930474' = list(consortium = 'mHealth',
-                       study = 'ElevateMS Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis= c('Multiple Sclerosis', 'Control'), 

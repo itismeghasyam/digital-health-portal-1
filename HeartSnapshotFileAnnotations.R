@@ -22,6 +22,11 @@ library(tidyverse)
 library(synapser)
 synLogin()
 
+study = 'Heart Snapshot Study'
+projectlink = paste("[", study, "](/Explore/Studies/DetailsPage?study=",
+                    URLencode(study,  reserved = FALSE, repeated = FALSE), 
+                    ")", sep = "")
+
 ##############
 # List of tables and related annotations
 ##############
@@ -29,7 +34,8 @@ tables.annotations = list(
   
   ## spectrocolorimetry.tsv
   'syn21525189' = list(consortium = 'mHealth',
-                       study = 'Heart Snapshot Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('active'), # clinician reported outcome? RA is recording
                        deviceType = c('handheld'),
@@ -48,7 +54,8 @@ tables.annotations = list(
   
   ## CRF_HR_validation_questions
   'syn17009128' = list(consortium = 'mHealth',
-                       study = 'Heart Snapshot Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('active'),
                        deviceType = c('pulse oximeter'),
@@ -67,7 +74,8 @@ tables.annotations = list(
   
   ## Heart Rate Measurement
   'syn17007713' = list(consortium = 'mHealth',
-                       study = 'Heart Snapshot Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('active'),
                        deviceType = c('handheld'),
@@ -86,7 +94,8 @@ tables.annotations = list(
   
   ## DailyActivitiesSummary.activities
   'syn11801478' = list(consortium = 'mHealth',
-                       study = 'Heart Snapshot Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('passive'),
                        deviceType = c('wearable'),
@@ -103,7 +112,8 @@ tables.annotations = list(
   
   ## HeartRate.activities.heart
   'syn11673534' = list(consortium = 'mHealth',
-                       study = 'Heart Snapshot Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('passive'),
                        deviceType = c('wearable'),
@@ -121,7 +131,8 @@ tables.annotations = list(
   
   ## HeartRate.activities.heart-intraday
   'syn11673533' = list(consortium = 'mHealth',
-                       study = 'Heart Snapshot Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('passive'),
                        deviceType = c('wearable'),
@@ -139,7 +150,8 @@ tables.annotations = list(
   
   ## DailyActivitiesSummary.summary
   'syn11672591' = list(consortium = 'mHealth',
-                       study = 'Heart Snapshot Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('passive'),
                        deviceType = c('wearable'),
@@ -157,7 +169,8 @@ tables.annotations = list(
   
   ## Cardio 12MT-v5
   'syn11665074' = list(consortium = 'mHealth',
-                       study = 'Heart Snapshot Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('active'),
                        deviceType = c('handheld'),
@@ -176,7 +189,8 @@ tables.annotations = list(
   
   ## Cardio Stress Test
   'syn11580624' = list(consortium = 'mHealth',
-                       study = 'Heart Snapshot Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('active'),
                        deviceType = c('handheld'),
@@ -195,35 +209,38 @@ tables.annotations = list(
   
   ## Background Survey
   'syn11460545' = list(consortium = 'mHealth',
-            study = 'Heart Snapshot Study',
-            numberParticipants= '', 
-            dataCollectionMethod= c('patient reported outcome'),
-            diagnosis= c('Control'), 
-            reportedOutcome = '',
-            dataType=c('surveyData'),
-            dataSubtype=c('metadata'),
-            metadataType= c('individual'),
-            dhPortalIndex = 'TRUE',
-            dataDescriptionLocation = '',
-            dataAccessInstructions = ''),
+                       study = study,
+                       studyOrProject = projectlink,
+                       numberParticipants= '', 
+                       dataCollectionMethod= c('patient reported outcome'),
+                       diagnosis= c('Control'), 
+                       reportedOutcome = '',
+                       dataType=c('surveyData'),
+                       dataSubtype=c('metadata'),
+                       metadataType= c('individual'),
+                       dhPortalIndex = 'TRUE',
+                       dataDescriptionLocation = '',
+                       dataAccessInstructions = ''),
   
   ## Demographics
   'syn11450273' = list(consortium = 'mHealth',
-            study = 'Heart Snapshot Study',
-            numberParticipants= '', 
-            dataCollectionMethod= c('patient reported outcome'),
-            diagnosis= c('Control'), 
-            reportedOutcome = '',
-            dataType=c('surveyData'),
-            dataSubtype=c('metadata'),
-            metadataType= c('individual'),
-            dhPortalIndex = 'TRUE',
-            dataDescriptionLocation = '',
-            dataAccessInstructions = ''),
+                       study = study,
+                       studyOrProject = projectlink,
+                       numberParticipants= '', 
+                       dataCollectionMethod= c('patient reported outcome'),
+                       diagnosis= c('Control'), 
+                       reportedOutcome = '',
+                       dataType=c('surveyData'),
+                       dataSubtype=c('metadata'),
+                       metadataType= c('individual'),
+                       dhPortalIndex = 'TRUE',
+                       dataDescriptionLocation = '',
+                       dataAccessInstructions = ''),
   
   ## Burden Scale - won't be release outside
   'syn11450272' = list(consortium = 'mHealth',
-                       study = 'Heart Snapshot Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis= c('Control'), 
@@ -237,26 +254,28 @@ tables.annotations = list(
   
   ## Cardio Stair Step - update
   'syn11432994' = list(consortium = 'mHealth',
-            study = 'Heart Snapshot Study',
-            numberParticipants= '', 
-            dataCollectionMethod= c('active'),
-            deviceType = c('handheld'),
-            sensorType = c('camera'),
-            devicePlatform = c('iOS', 'android'), 
-            deviceLocation = c('finger'),
-            diagnosis= c('Control'), 
-            digitalAssessmentCategory= c('cardio respiratory fitness'),
-            digitalAssessmentDetails = c('tecumseh test'),
-            dataType=c('sensor'),
-            dataSubtype=c('raw', 'processed', 'metadata'),
-            metadataType= c('assessment'), 
-            dhPortalIndex = 'TRUE',
-            dataDescriptionLocation = '',
-            dataAccessInstructions = ''),
+                       study = study,
+                       studyOrProject = projectlink,
+                       numberParticipants= '', 
+                       dataCollectionMethod= c('active'),
+                       deviceType = c('handheld'),
+                       sensorType = c('camera'),
+                       devicePlatform = c('iOS', 'android'), 
+                       deviceLocation = c('finger'),
+                       diagnosis= c('Control'), 
+                       digitalAssessmentCategory= c('cardio respiratory fitness'),
+                       digitalAssessmentDetails = c('tecumseh test'),
+                       dataType=c('sensor'),
+                       dataSubtype=c('raw', 'processed', 'metadata'),
+                       metadataType= c('assessment'), 
+                       dhPortalIndex = 'TRUE',
+                       dataDescriptionLocation = '',
+                       dataAccessInstructions = ''),
   
   ## Usability Scale - won't be released outside
   'syn11388841' = list(consortium = 'mHealth',
-                       study = 'Heart Snapshot Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= '', 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis= c('Control'), 
