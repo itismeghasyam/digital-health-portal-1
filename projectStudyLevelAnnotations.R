@@ -38,7 +38,7 @@ projects.annotations <- list(
   
   ## mPower 1.0 (check anno - Larsson)
   'syn4993293' = list(consortium = 'mHealth',
-                      study = 'mPower mobile Parkinson Disease study',
+                      study = 'mPower Mobile Parkinson Disease Study',
                       numberParticipants= '', 
                       dataCollectionMethod= c(''),
                       deviceType = c(''),
@@ -143,7 +143,7 @@ projects.annotations <- list(
   
   ## CRF Module (check anno - Dan/Megha)
   'syn10837149' = list(consortium = 'mHealth',
-                       study = 'Heart Snapshot',
+                       study = 'Heart Snapshot Study',
                        numberParticipants= '', 
                        dataCollectionMethod= c('active', 'passive', 'patient reported outcome',
                                                'clinical assessment'),
@@ -264,7 +264,7 @@ projects.annotations <- list(
   
   ## BRIGHTEN Study
   'syn10848316' = list(consortium = 'mHealth',
-                      study = 'Brighten: Bridging Research Innovations for Greater Health in Technology, Emotion, and Neuroscience',
+                      study = 'Brighten Study',
                       numberParticipants= '', 
                       dataCollectionMethod= c('passive', 'patient reported outcome',
                                               'clinical assessment'),

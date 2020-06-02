@@ -24,7 +24,7 @@ library(tidyverse)
 library(synapser)
 synLogin()
 
-study = 'mPower mobile Parkinson Disease study'
+study = 'mPower Mobile Parkinson Disease Study'
 projectlink = paste("[", study, "](/Explore/Studies/DetailsPage?study=",
                     URLencode(study,  reserved = FALSE, repeated = FALSE), 
                     ")", sep = "")

@@ -22,7 +22,7 @@ library(tidyverse)
 library(synapser)
 synLogin()
 
-study = 'Mole Mapper study'
+study = 'Mole Mapper Study'
 projectlink = paste("[", study, "](/Explore/Studies/DetailsPage?study=",
                     URLencode(study,  reserved = FALSE, repeated = FALSE), 
                     ")", sep = "")
