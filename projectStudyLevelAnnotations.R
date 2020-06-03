@@ -138,7 +138,7 @@ projects.annotations <- list(
                       resourceType = c('curatedData'),
                       intervention = '',
                       keywords = c('neurodegenerative disorders'),
-                      dhPortalIndex = 'TRUE', # Change after filling annotations
+                      dhPortalIndex = 'FALSE', # Change after filling annotations
                       studyDescriptionLocation = 'syn21140362', 
                       studyDataDescriptionLocation = 'syn21140362/wiki/602267',
                       studyDescription = '',
@@ -289,7 +289,7 @@ projects.annotations <- list(
                       resourceType = c('curatedData'),
                       intervention = '',
                       keywords = c(''),
-                      dhPortalIndex = 'TRUE', # Change after filling annotations
+                      dhPortalIndex = 'FALSE', # Change after filling annotations
                       studyDescriptionLocation = 'syn10848316', 
                       studyDataDescriptionLocation = 'syn10848316/wiki/548728',
                       studyDescription = '',
