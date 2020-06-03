@@ -52,7 +52,7 @@ tables.annotations = list(
                        dataAccessInstructions = 'syn21140362/wiki/602266'),
   
   # Triggers Survey
-  'syn21962836' = list(consortium = 'mHealth',
+  'syn22007590' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= '', 
@@ -67,7 +67,7 @@ tables.annotations = list(
                        dataAccessInstructions = 'syn21140362/wiki/602266'),
   
   # Symptoms Survey
-  'syn21962623' = list(consortium = 'mHealth',
+  'syn22006791' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= '', 
@@ -82,7 +82,7 @@ tables.annotations = list(
                        dataAccessInstructions = 'syn21140362/wiki/602266'),
   
   # Truncated MSIS-29
-  'syn21962591' = list(consortium = 'mHealth',
+  'syn22007602' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= '', 
@@ -97,7 +97,7 @@ tables.annotations = list(
                        dataAccessInstructions = 'syn21140362/wiki/602266'),
   
   # Tapping
-  'syn21931781' = list(consortium = 'mHealth',
+  'syn22006967' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= '', 
@@ -118,7 +118,7 @@ tables.annotations = list(
                        dataAccessInstructions = 'syn21140362/wiki/602266'),
   
   # Walking
-  'syn21930947' = list(consortium = 'mHealth',
+  'syn22007736' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= '', 
@@ -139,7 +139,7 @@ tables.annotations = list(
                        dataAccessInstructions = 'syn21140362/wiki/602266'),
   
   # Passive Pedometer Data
-  'syn21930705' = list(consortium = 'mHealth',
+  'syn22006457' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= '', 
@@ -160,7 +160,7 @@ tables.annotations = list(
                        dataAccessInstructions = 'syn21140362/wiki/602266'),
   
   # Tremor 
-  'syn21930567' = list(consortium = 'mHealth',
+  'syn22007482' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= '', 
@@ -181,7 +181,7 @@ tables.annotations = list(
                        dataAccessInstructions = 'syn21140362/wiki/602266'),
   
   # Baseline Characteristics
-  'syn21930532' = list(consortium = 'mHealth',
+  'syn22006146' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= '', 
@@ -201,7 +201,7 @@ tables.annotations = list(
                        dataAccessInstructions = 'syn21140362/wiki/602266'),
   
   # NeuroQoL-Lower Extremity
-  'syn21930530' = list(consortium = 'mHealth',
+  'syn22006206' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= '', 
@@ -216,7 +216,7 @@ tables.annotations = list(
                        dataAccessInstructions = 'syn21140362/wiki/602266'),
   
   # NeuroQoL-Upper Extremity
-  'syn21930529' = list(consortium = 'mHealth',
+  'syn22006217' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= '', 
@@ -231,7 +231,7 @@ tables.annotations = list(
                        dataAccessInstructions = 'syn21140362/wiki/602266'),
 
   # NeuroQoL-Cognition
-  'syn21930522' = list(consortium = 'mHealth',
+  'syn22006201' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= '', 
@@ -245,8 +245,8 @@ tables.annotations = list(
                        dataDescriptionLocation = 'syn21140362/wiki/602287',
                        dataAccessInstructions = 'syn21140362/wiki/602266'),
   
-  # Weather
-  'syn21930519' = list(consortium = 'mHealth',
+  # Passive Weather Data
+  'syn22007631' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= '', 
@@ -261,7 +261,7 @@ tables.annotations = list(
                        dataAccessInstructions = 'syn21140362/wiki/602266'),
   
   # WPAI
-  'syn21930484' = list(consortium = 'mHealth',
+  'syn22007636' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= '', 
@@ -276,7 +276,7 @@ tables.annotations = list(
                        dataAccessInstructions = 'syn21140362/wiki/602266'),
   
   # Medication Survey
-  'syn21930482' = list(consortium = 'mHealth',
+  'syn22006180' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= '', 
@@ -291,7 +291,7 @@ tables.annotations = list(
                        dataAccessInstructions = 'syn21140362/wiki/602266'),
   
   # Relapses Survey
-  'syn21930477' = list(consortium = 'mHealth',
+  'syn22006741' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= '', 
@@ -306,7 +306,7 @@ tables.annotations = list(
                        dataAccessInstructions = 'syn21140362/wiki/602266'),
   
   # Daily Check-In
-  'syn21930474' = list(consortium = 'mHealth',
+  'syn22006159' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= '', 
@@ -329,7 +329,7 @@ projects.list =  names(tables.annotations)
 for(proj.id in projects.list){
 
   #### Uncomment this before updating for real
-  # synSetAnnotations(proj.id, annotations = tables.annotations[[proj.id]])
+  synSetAnnotations(proj.id, annotations = tables.annotations[[proj.id]])
   ####
   
   print(proj.id)
