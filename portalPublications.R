@@ -684,7 +684,7 @@ publications.list <- list(
     url = 'https://doi.org/10.21105/joss.02106',
     Abstract = '',
     Consortium = 'mHealth',
-    Study = 'mhealthtools',
+    Tools = 'mhealthtools',
     Diagnosis = '',
     digitalAssessmentCategory = '',
     sensorType = c('accelerometer', 'gyroscope', 'camera', 'touchscreen'),
