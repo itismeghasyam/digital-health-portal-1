@@ -69,7 +69,8 @@ publications.list <- list(
     sensorType = c('accelerometer', 'gyroscope', 'magnetometer',
                    'touchscreen', 'microphone'),
     synID = 'syn4993293',
-    Featured = 'TRUE'
+    Featured = 'TRUE',
+    publicationType = 'study'
   ),
   
   # 2
@@ -95,7 +96,8 @@ publications.list <- list(
     sensorType = c('accelerometer', 'gyroscope', 'magnetometer',
                    'touchscreen', 'microphone'),
     synID = 'syn4993293',
-    Featured = 'TRUE'
+    Featured = 'TRUE',
+    publicationType = 'study'
   ),
   
   # 3
@@ -119,7 +121,8 @@ publications.list <- list(
     sensorType = c('accelerometer', 'gyroscope', 'magnetometer',
                    'touchscreen', 'microphone'),
     synID = 'syn4993293',
-    Featured = 'TRUE'
+    Featured = 'TRUE',
+    publicationType = 'study'
   ),
   
   # 4
@@ -144,7 +147,8 @@ publications.list <- list(
     sensorType = c('accelerometer', 'gyroscope', 'magnetometer',
                    'touchscreen', 'microphone'),
     synID = 'syn4993293',
-    Featured = 'TRUE'
+    Featured = 'TRUE',
+    publicationType = 'study'
   ),
   
   # 5
@@ -168,7 +172,8 @@ publications.list <- list(
     sensorType = c('accelerometer', 'gyroscope', 'magnetometer',
                    'touchscreen', 'microphone'),
     synID = 'syn4993293',
-    Featured = 'TRUE'),
+    Featured = 'TRUE',
+    publicationType = 'study'),
   
   # 6
   "Wilbanks_NatBioTech_2016" = list(
@@ -190,7 +195,8 @@ publications.list <- list(
     sensorType = c('accelerometer', 'gyroscope', 'magnetometer',
                    'touchscreen', 'microphone'),
     synID = 'syn4993293',
-    Featured = 'TRUE'
+    Featured = 'TRUE',
+    publicationType = 'study'
   ),
   
   # 7
@@ -213,7 +219,8 @@ publications.list <- list(
     sensorType = c('accelerometer', 'gyroscope', 'magnetometer',
                    'touchscreen', 'microphone'),
     synID = 'syn4993293',
-    Featured = 'TRUE'
+    Featured = 'TRUE',
+    publicationType = 'study'
   ),
   
   # 8
@@ -237,7 +244,8 @@ publications.list <- list(
     sensorType = c('accelerometer', 'gyroscope', 'magnetometer',
                    'touchscreen', 'microphone'),
     synID = 'syn4993293',
-    Featured = 'TRUE'
+    Featured = 'TRUE',
+    publicationType = 'study'
   ),
   
   # 9
@@ -263,7 +271,8 @@ publications.list <- list(
     sensorType = c('accelerometer', 'gyroscope', 'magnetometer',
                    'touchscreen', 'microphone'),
     synID = 'syn4993293',
-    Featured = 'TRUE'
+    Featured = 'TRUE',
+    publicationType = 'study'
   ),
   
   # 10
@@ -288,7 +297,8 @@ publications.list <- list(
     sensorType = c('accelerometer', 'gyroscope', 'magnetometer',
                    'touchscreen', 'microphone'),
     synID = 'syn4993293',
-    Featured = 'TRUE'
+    Featured = 'TRUE',
+    publicationType = 'study'
   ),
   
   # 11
@@ -313,7 +323,8 @@ publications.list <- list(
     sensorType = c('accelerometer', 'gyroscope', 'magnetometer',
                    'touchscreen', 'microphone'),
     synID = 'syn4993293',
-    Featured = 'TRUE'
+    Featured = 'TRUE',
+    publicationType = 'study'
   ),
   
   # 12
@@ -338,7 +349,8 @@ publications.list <- list(
     sensorType = c('accelerometer', 'gyroscope', 'magnetometer',
                    'touchscreen', 'microphone'),
     synID = 'syn4993293',
-    Featured = 'TRUE'
+    Featured = 'TRUE',
+    publicationType = 'study'
   ),
   
   #### Asthma Mobile Health Study
@@ -361,7 +373,8 @@ publications.list <- list(
     digitalAssessmentCategory = c(''),
     sensorType = c(''),
     synID = 'syn8361748',
-    Featured = 'TRUE'
+    Featured = 'TRUE',
+    publicationType = 'study'
   ),
   
   # 2
@@ -383,7 +396,8 @@ publications.list <- list(
     digitalAssessmentCategory = c(''),
     sensorType = c(''),
     synID = 'syn8361748',
-    Featured = 'TRUE'
+    Featured = 'TRUE',
+    publicationType = 'study'
   ),
   
   #### Mole Mapper Study
@@ -406,7 +420,8 @@ publications.list <- list(
     digitalAssessmentCategory = c('dermatologic phenotype'),
     sensorType = c('touchscreen', 'camera'),
     synID = 'syn5576734',
-    Featured = 'TRUE'
+    Featured = 'TRUE',
+    publicationType = 'study'
   ),
   
   # 2
@@ -427,7 +442,8 @@ publications.list <- list(
     digitalAssessmentCategory = c('dermatologic phenotype'),
     sensorType = c('touchscreen', 'camera'),
     synID = 'syn5576734',
-    Featured = 'TRUE'
+    Featured = 'TRUE',
+    publicationType = 'study'
   ),
   
   #### My Heart Counts
@@ -450,7 +466,8 @@ publications.list <- list(
     digitalAssessmentCategory = c(''),
     sensorType = c(''),
     synID = 'syn11269541',
-    Featured = 'TRUE'
+    Featured = 'TRUE',
+    publicationType = 'study'
   ),
   
   # 2
@@ -473,7 +490,8 @@ publications.list <- list(
     digitalAssessmentCategory = c(''),
     sensorType = c(''),
     synID = 'syn11269541',
-    Featured = 'TRUE'
+    Featured = 'TRUE',
+    publicationType = 'study'
   ),
   
   #### Brighten Study
@@ -496,7 +514,8 @@ publications.list <- list(
                                   'mobility', 'mental health'),
     sensorType = c('touchscreen'),
     synID = 'syn10848316',
-    Featured = 'TRUE'
+    Featured = 'TRUE',
+    publicationType = 'study'
   ),
   
   # 2
@@ -518,7 +537,8 @@ publications.list <- list(
                                   'mobility', 'mental health'),
     sensorType = c('touchscreen'),
     synID = 'syn10848316',
-    Featured = 'TRUE'
+    Featured = 'TRUE',
+    publicationType = 'study'
   ),
   
   # 3
@@ -540,7 +560,8 @@ publications.list <- list(
                                   'mobility', 'mental health'),
     sensorType = c('touchscreen'),
     synID = 'syn10848316',
-    Featured = 'TRUE'
+    Featured = 'TRUE',
+    publicationType = 'study'
   ),
   
   # 4
@@ -562,7 +583,8 @@ publications.list <- list(
                                   'mobility', 'mental health'),
     sensorType = c('touchscreen'),
     synID = 'syn10848316',
-    Featured = 'TRUE'
+    Featured = 'TRUE',
+    publicationType = 'study'
   ),
   
   # 5
@@ -584,7 +606,8 @@ publications.list <- list(
                                   'mobility', 'mental health'),
     sensorType = c('touchscreen'),
     synID = 'syn10848316',
-    Featured = 'TRUE'
+    Featured = 'TRUE',
+    publicationType = 'study'
   ),
   
   #### Participant Retention Study
@@ -608,7 +631,8 @@ publications.list <- list(
     digitalAssessmentCategory = c('participant engagement'),
     sensorType = c(''),
     synID = 'syn20715364',
-    Featured = 'TRUE'
+    Featured = 'TRUE',
+    publicationType = 'project'
   ),
   
   #### Parkinsons Disease Digital Biomarker DREAM Challenge 
@@ -643,7 +667,8 @@ publications.list <- list(
     digitalAssessmentCategory = c('resting tremor', 'action tremor', 'gait'),
     sensorType = c('accelerometer', 'gyroscope'),
     synID = 'syn8717496',
-    Featured = 'TRUE'
+    Featured = 'TRUE',
+    publicationType = 'project'
   ),
   
   #### mHealthtools 
@@ -664,7 +689,8 @@ publications.list <- list(
     digitalAssessmentCategory = '',
     sensorType = c('accelerometer', 'gyroscope', 'camera', 'touchscreen'),
     synID = '',
-    Featured = 'TRUE'
+    Featured = 'TRUE',
+    publicationType = 'tool'
   )
   
 )
