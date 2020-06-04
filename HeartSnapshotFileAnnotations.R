@@ -32,8 +32,8 @@ projectlink = paste("[", study, "](/Explore/Studies/DetailsPage?study=",
 ##############
 tables.annotations = list(
   
-  ## spectrocolorimetry.tsv
-  'syn21525189' = list(consortium = 'mHealth',
+  ## spectrocolorimetry
+  'syn22123894' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= '', 
@@ -52,8 +52,8 @@ tables.annotations = list(
                        dataDescriptionLocation = '',
                        dataAccessInstructions = ''),
   
-  ## CRF_HR_validation_questions
-  'syn17009128' = list(consortium = 'mHealth',
+  ## CRF_HR_validation
+  'syn22123905' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= '', 
@@ -73,7 +73,7 @@ tables.annotations = list(
                        dataAccessInstructions = ''),
   
   ## Heart Rate Measurement
-  'syn17007713' = list(consortium = 'mHealth',
+  'syn22124385' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= '', 
@@ -93,7 +93,7 @@ tables.annotations = list(
                        dataAccessInstructions = ''),
   
   ## DailyActivitiesSummary.activities
-  'syn11801478' = list(consortium = 'mHealth',
+  'syn22119579' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= '', 
@@ -111,7 +111,7 @@ tables.annotations = list(
                        dataAccessInstructions = ''),
   
   ## HeartRate.activities.heart
-  'syn11673534' = list(consortium = 'mHealth',
+  'syn22119590' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= '', 
@@ -130,7 +130,7 @@ tables.annotations = list(
                        dataAccessInstructions = ''),
   
   ## HeartRate.activities.heart-intraday
-  'syn11673533' = list(consortium = 'mHealth',
+  'syn22123686' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= '', 
@@ -149,7 +149,7 @@ tables.annotations = list(
                        dataAccessInstructions = ''),
   
   ## DailyActivitiesSummary.summary
-  'syn11672591' = list(consortium = 'mHealth',
+  'syn22119575' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= '', 
@@ -167,8 +167,8 @@ tables.annotations = list(
                        dataDescriptionLocation = '',
                        dataAccessInstructions = ''),
   
-  ## Cardio 12MT-v5
-  'syn11665074' = list(consortium = 'mHealth',
+  ## Cardio 12MT
+  'syn22119312' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= '', 
@@ -188,7 +188,7 @@ tables.annotations = list(
                        dataAccessInstructions = ''),
   
   ## Cardio Stress Test
-  'syn11580624' = list(consortium = 'mHealth',
+  'syn22119505' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= '', 
@@ -208,7 +208,7 @@ tables.annotations = list(
                        dataAccessInstructions = ''),
   
   ## Background Survey
-  'syn11460545' = list(consortium = 'mHealth',
+  'syn22125202' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= '', 
@@ -222,38 +222,8 @@ tables.annotations = list(
                        dataDescriptionLocation = '',
                        dataAccessInstructions = ''),
   
-  ## Demographics
-  'syn11450273' = list(consortium = 'mHealth',
-                       study = study,
-                       studyOrProject = projectlink,
-                       numberParticipants= '', 
-                       dataCollectionMethod= c('patient reported outcome'),
-                       diagnosis= c('control'), 
-                       reportedOutcome = '',
-                       dataType=c('surveyData'),
-                       dataSubtype=c('metadata'),
-                       metadataType= c('individual'),
-                       dhPortalIndex = 'TRUE',
-                       dataDescriptionLocation = '',
-                       dataAccessInstructions = ''),
-  
-  ## Burden Scale - won't be release outside
-  'syn11450272' = list(consortium = 'mHealth',
-                       study = study,
-                       studyOrProject = projectlink,
-                       numberParticipants= '', 
-                       dataCollectionMethod= c('patient reported outcome'),
-                       diagnosis= c('control'), 
-                       reportedOutcome = '',
-                       dataType=c('surveyData'),
-                       dataSubtype=c('raw', 'metadata'),
-                       metadataType= c('individual', 'assessment'),
-                       dhPortalIndex = 'TRUE',
-                       dataDescriptionLocation = '',
-                       dataAccessInstructions = ''),
-  
-  ## Cardio Stair Step - update
-  'syn11432994' = list(consortium = 'mHealth',
+  ## Cardio Stair Step
+  'syn22119475' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= '', 
@@ -268,21 +238,6 @@ tables.annotations = list(
                        dataType=c('sensor'),
                        dataSubtype=c('raw', 'processed', 'metadata'),
                        metadataType= c('assessment'), 
-                       dhPortalIndex = 'TRUE',
-                       dataDescriptionLocation = '',
-                       dataAccessInstructions = ''),
-  
-  ## Usability Scale - won't be released outside
-  'syn11388841' = list(consortium = 'mHealth',
-                       study = study,
-                       studyOrProject = projectlink,
-                       numberParticipants= '', 
-                       dataCollectionMethod= c('patient reported outcome'),
-                       diagnosis= c('control'), 
-                       reportedOutcome = '',
-                       dataType=c('surveyData'),
-                       dataSubtype=c('raw', 'metadata'),
-                       metadataType= c('individual', 'assessment'),
                        dhPortalIndex = 'TRUE',
                        dataDescriptionLocation = '',
                        dataAccessInstructions = '')

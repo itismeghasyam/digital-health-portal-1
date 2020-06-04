@@ -146,8 +146,8 @@ projects.annotations <- list(
   
 
   
-  ## CRF Module (check anno - Dan/Megha)
-  'syn10837149' = list(consortium = 'mHealth',
+  ## Heart Snapshot (checked anno - Dan/Megha/Solly)
+  'syn22107959' = list(consortium = 'mHealth',
                        study = 'Heart Snapshot Study',
                        numberParticipants= '', 
                        dataCollectionMethod= c('active', 'passive', 'patient reported outcome',
