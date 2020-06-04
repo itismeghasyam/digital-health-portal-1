@@ -38,6 +38,8 @@ pid <- 'syn22014192'
 # My Heart Counts
 # Brighten Study
 # Participant Retention Study
+# PDDB
+# mhealthtools
 
 
 # Project Synapse ID vs publications
@@ -607,9 +609,63 @@ publications.list <- list(
     sensorType = c(''),
     synID = 'syn20715364',
     Featured = 'TRUE'
+  ),
+  
+  #### Parkinsons Disease Digital Biomarker DREAM Challenge 
+  # 1
+  "Sieberts_bioarXiv_2020" = list(
+    Author = c('Sieberts SK', 'Schaff J', 'Duda M',
+               'Pataki BÁ', 'Sun M', 'Snyder P',
+               'Daneault JF', 'Parisi F', 'Costante G',
+               'Rubin U', 'Banda P', 'Chae Y',
+               'Neto EC', 'Dorsey ER', 'Aydın Z',
+               'Chen A', 'Elo LL', 'Espino C',
+               'Glaab E', 'Goan E', 'Golabchi FN',
+               'Gormez Y', 'Jaakkola MK', 'Jonnagaddala J',
+               'Klen R', 'Li D', 'McDaniel C',
+               'Perrin D', 'Perumal TM', 'Rad NM',
+               'Rainaldi E', 'Sapienza S', 'Schwab P',
+               'Shokhirev N', 'Venalainen MS', 'Vergara-Diaz G',
+               'Zhang Y', 'Wang Y', 'Guan Y',
+               'Brunner D', 'Bonato P', 'Mangravite LM',
+               'Omberg L'),
+    Title = 'Crowdsourcing digital health measures to predict Parkinson’s disease severity: the Parkinson’s Disease Digital Biomarker DREAM Challenge',
+    Journal = 'bioarXiv',
+    PMID = '',
+    ISSN = '',
+    Year = as.integer(2020),
+    doi = '10.1101/2020.01.13.904722',
+    url = 'https://doi.org/10.1101/2020.01.13.904722',
+    Abstract = 'Mobile health, the collection of data using wearables and sensors, is a rapidly growing field in health research with many applications. Deriving validated measures of disease and severity that can be used clinically or as outcome measures in clinical trials, referred to as digital biomarkers, has proven difficult. In part due to the complicated analytical approaches necessary to develop these metrics. Here we describe the use of crowdsourcing to specifically evaluate and benchmark features derived from accelerometer and gyroscope data in two different datasets to predict the presence of Parkinson’s Disease (PD) and severity of three PD symptoms: tremor, dyskinesia and bradykinesia. Forty teams from around the world submitted features, and achieved drastically improved predictive performance for PD status (best AUROC=0.87), as well as tremor (best AUPR=0.75), dyskinesia (best AUPR=0.48) and bradykinesia (best AUPR=0.95) severity.',
+    Consortium = 'mHealth',
+    Study = 'Parkinsons Disease Digital Biomarker (PDDB) DREAM Challenge',
+    Diagnosis = c("Parkinson's Disease", "control"),
+    digitalAssessmentCategory = c('resting tremor', 'action tremor', 'gait'),
+    sensorType = c('accelerometer', 'gyroscope'),
+    synID = 'syn8717496',
+    Featured = 'TRUE'
+  ),
+  
+  #### mHealthtools 
+  # 1
+  "Snyder_JOSS_2020" = list(
+    Author = c('Snyder P', 'Tummalacherla M', 'Perumal T', 'Omberg L'),
+    Title = 'mhealthtools: A Modular R Package for Extracting Features from Mobile and Wearable Sensor Data',
+    Journal = 'Journal of Open Source Software',
+    PMID = '',
+    ISSN = '2475-9066',
+    Year = as.integer(2020),
+    doi = '10.21105/joss.02106',
+    url = 'https://doi.org/10.21105/joss.02106',
+    Abstract = '',
+    Consortium = 'mHealth',
+    Study = 'mhealthtools',
+    Diagnosis = '',
+    digitalAssessmentCategory = '',
+    sensorType = c('accelerometer', 'gyroscope', 'camera', 'touchscreen'),
+    synID = '',
+    Featured = 'TRUE'
   )
-  
-  
   
 )
 ##############
