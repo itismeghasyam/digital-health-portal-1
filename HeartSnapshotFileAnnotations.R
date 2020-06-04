@@ -48,7 +48,7 @@ tables.annotations = list(
                                                     'finger skin color'),
                        dataType= c('sensor', 'surveyData'),
                        dataSubtype= c('raw'),
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = '',
                        dataAccessInstructions = ''),
   
@@ -68,7 +68,7 @@ tables.annotations = list(
                        dataType=c('surveyData'),
                        dataSubtype=c('raw', 'metadata'),
                        metadataType= c('individual'),
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = '',
                        dataAccessInstructions = ''),
   
@@ -88,7 +88,7 @@ tables.annotations = list(
                        dataType=c('sensor'),
                        dataSubtype=c('processed', 'metadata'),
                        metadataType= c('assessment'),
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = '',
                        dataAccessInstructions = ''),
   
@@ -106,7 +106,7 @@ tables.annotations = list(
                        dataType= c('sensor', 'surveyData'),
                        dataSubtype=c('processed', 'metadata'),
                        metadataType= c('assessment'),
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = '',
                        dataAccessInstructions = ''),
   
@@ -125,7 +125,7 @@ tables.annotations = list(
                        digitalAssessmentDetails = c('heart rate'),
                        dataType=c('sensor'),
                        dataSubtype=c('processed'),
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = '',
                        dataAccessInstructions = ''),
   
@@ -144,7 +144,7 @@ tables.annotations = list(
                        digitalAssessmentDetails = c('heart rate'),
                        dataType=c('sensor'),
                        dataSubtype=c('processed'),
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = '',
                        dataAccessInstructions = ''),
   
@@ -163,7 +163,7 @@ tables.annotations = list(
                        digitalAssessmentDetails = c('daily physical activity'),
                        dataType=c('sensor'),
                        dataSubtype=c('processed'),
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = '',
                        dataAccessInstructions = ''),
   
@@ -183,7 +183,7 @@ tables.annotations = list(
                        dataType=c('sensor'),
                        dataSubtype=c('raw', 'processed', 'metadata'),
                        metadataType = c('assessment'), 
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = '',
                        dataAccessInstructions = ''),
   
@@ -203,7 +203,7 @@ tables.annotations = list(
                        dataType=c('sensor'),
                        dataSubtype=c('raw', 'processed', 'metadata'),
                        metadataType= c('assessment'), 
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = '',
                        dataAccessInstructions = ''),
   
@@ -218,7 +218,7 @@ tables.annotations = list(
                        dataType=c('surveyData'),
                        dataSubtype=c('metadata'),
                        metadataType= c('individual'),
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = '',
                        dataAccessInstructions = ''),
   
@@ -238,7 +238,7 @@ tables.annotations = list(
                        dataType=c('sensor'),
                        dataSubtype=c('raw', 'processed', 'metadata'),
                        metadataType= c('assessment'), 
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = '',
                        dataAccessInstructions = '')
   
