@@ -30,6 +30,33 @@ library(synapser)
 library(githubr)
 synLogin()
 
+
+mjffurl=paste('[MJFF Levodopa Response Study](/Explore/Studies/DetailsPage?study=',
+          URLencode('MJFF Levodopa Response Study',  reserved = FALSE, repeated = FALSE),
+          ')', sep="")
+mpowerurl=paste('[mPower Mobile Parkinson Disease Study](/Explore/Studies/DetailsPage?study=',
+            URLencode('mPower Mobile Parkinson Disease Study', reserved = FALSE, repeated = FALSE),
+            ')', sep = "")
+
+mpowerurlshort=paste('[mPower](/Explore/Studies/DetailsPage?study=',
+                URLencode('mPower', reserved = FALSE, repeated = FALSE),
+                ')', sep = "")
+asthmaurl=paste('[Asthma Mobile Health Study](/Explore/Studies/DetailsPage?study=',
+                URLencode('Asthma Mobile Health Study', reserved = FALSE, repeated = FALSE),
+                ')', sep = "")
+myhearturl=paste('[MyHeart Counts](/Explore/Studies/DetailsPage?study=',
+             URLencode('MyHeart Counts', reserved = FALSE, repeated = FALSE),
+             ')', sep = "")
+brightenurl=paste('[Brighten](/Explore/Studies/DetailsPage?study=',
+             URLencode('Brighten', reserved = FALSE, repeated = FALSE),
+             ')', sep = "")
+sleepurl=paste('[SleepHealth](/Explore/Studies/DetailsPage?study=',
+             URLencode('SleepHealth', reserved = FALSE, repeated = FALSE),
+             ')', sep = "")
+
+
+
+
 ##############
 # List of projects and related annotations
 ##############
@@ -43,7 +70,7 @@ projects.annotations <- list(
                     sensorType = c('accelerometer', 'gyroscope'),
                     devicePlatform = c('GENEActiv', 'Pebble OS', 'iOS'), 
                     deviceLocation = c('wrist', 'pocket'),
-                    diagnosis=  c("Parkinson's Disease", "Control"), 
+                    diagnosis=  c("Parkinson's Disease", "control"), 
                     reportedOutcome =c('MDS-UPDRS', 'tremor', 'dyskinesia', 'bradykinesia',
                                       'medication report'),
                     digitalAssessmentCategory= c('resting tremor', 'action tremor', 'gait'),
@@ -57,9 +84,38 @@ projects.annotations <- list(
                     keywords = c('neurodegeneration', 'neurology', "Parkinson's", 'DREAM Challenge'),
                     dhPortalIndex = 'TRUE', # Change after filling annotations
                     studyDescriptionLocation = 'syn22017473', 
-                    dataUsed = c('syn20681023', 'syn4993293'),
+#                    dataUsed = c('syn20681023', 'syn4993293'),
+                    #MJFF l-dopa & mPower
+                    dataUsed = c(mjffurl, mpowerurl),
                     studyDescription = "The Parkinson’s Disease Digital Biomarker DREAM Challenge was a first of it's kind challenge, designed to benchmark methods for the processing of sensor data for development of digital signatures reflective of Parkinson's Disease.",
                     dataAccessInstructions = '',
+                    isDHProject='TRUE'),
+
+## Participant Retention in Digital Health Studies
+'syn20715364' = list(consortium = 'mHealth',
+                    study = 'Participant Retention in Digital Health Studies',
+                    dataCollectionMethod= c('active', 'passive', 'patient reported outcome'),
+                    deviceType = c('handheld'),
+                    sensorType = '',
+                    devicePlatform = c('iOS', 'Android'), 
+                    deviceLocation = '',
+                    diagnosis=  c('depression', 'endometriosis', 'multiple sclerosis', "Parkinson's disease", 'sleep related disorder', "control"), 
+                    reportedOutcome ='',
+                    digitalAssessmentCategory= c('participant engagement'),
+                    digitalAssessmentDetails = c(''),
+                    investigator= 'Sage Bionetworks',
+                    resourceType = c('analysis'),
+                    keywords = c('participant engagement', 'remote studies'),
+                    dhPortalIndex = 'TRUE', # Change after filling annotations
+                    studyDescriptionLocation = 'syn21518193', 
+                    #dataUsed = c('syn4993293', 'syn8361748', 'syn21140362', 'syn11269541', 'syn10848316', 'syn18492837'), 
+                    # syn21140362 = unknown
+                    dataUsed = c(mpowerurlshort, asthmaurl, myhearturl, brightenurl, sleepurl,
+                                 '[Phendo](http://citizenendo.org/phendo/)', '[START](https://www.goodrx.com/)'
+                    ),
+#                    externalDataUsed = c('[Phendo](http://citizenendo.org/phendo/)', '[START](https://www.goodrx.com/)'),
+                    studyDescription = "Analysis of participant engagement from 8 remote, app-based studies including more than 100,000 participants.",
+                    dataAccessInstructions = 'syn20715364/wiki/596144',
                     isDHProject='TRUE')
 )
 
@@ -72,11 +128,11 @@ projects.annotations <- list(
 
 for(projects in names(projects.annotations)){
   
-  #### Uncomment this before updating for real
-  synSetAnnotations(projects, annotations = projects.annotations[[projects]])
-  ####
-  
-  print(projects)
-  print(projects.annotations[[projects]])
+    #### Uncomment this before updating for real
+    synSetAnnotations(projects, annotations = projects.annotations[[projects]])
+    ####
+    
+    print(projects)
+    print(projects.annotations[[projects]])
 }
 
