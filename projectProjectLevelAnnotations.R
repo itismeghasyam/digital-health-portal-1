@@ -44,6 +44,9 @@ mpowerurlshort=paste('[mPower](/Explore/Studies/DetailsPage?study=',
 asthmaurl=paste('[Asthma Mobile Health Study](/Explore/Studies/DetailsPage?study=',
                 URLencode('Asthma Mobile Health Study', reserved = FALSE, repeated = FALSE),
                 ')', sep = "")
+elevatemsurl=paste('[elevateMS](/Explore/Studies/DetailsPage?study=',
+                URLencode('ElevateMS', reserved = FALSE, repeated = FALSE),
+                ')', sep = "")
 myhearturl=paste('[MyHeart Counts](/Explore/Studies/DetailsPage?study=',
              URLencode('MyHeart Counts', reserved = FALSE, repeated = FALSE),
              ')', sep = "")
@@ -107,10 +110,10 @@ projects.annotations <- list(
                     resourceType = c('analysis'),
                     keywords = c('participant engagement', 'remote studies'),
                     dhPortalIndex = 'TRUE', # Change after filling annotations
-                    studyDescriptionLocation = 'syn21518193', 
+                    studyDescriptionLocation = 'syn22123360', 
                     #dataUsed = c('syn4993293', 'syn8361748', 'syn21140362', 'syn11269541', 'syn10848316', 'syn18492837'), 
                     # syn21140362 = unknown
-                    dataUsed = c(mpowerurlshort, asthmaurl, myhearturl, brightenurl, sleepurl,
+                    dataUsed = c(mpowerurlshort, asthmaurl, elevatemsurl, myhearturl, brightenurl, sleepurl,
                                  '[Phendo](http://citizenendo.org/phendo/)', '[START](https://www.goodrx.com/)'
                     ),
 #                    externalDataUsed = c('[Phendo](http://citizenendo.org/phendo/)', '[START](https://www.goodrx.com/)'),
