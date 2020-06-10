@@ -62,7 +62,7 @@ projects.annotations <- list(
                       dhPortalIndex = 'TRUE', # Change after filling annotations
                       studyDescriptionLocation = 'syn4993293', 
                       studyDataDescriptionLocation = 'syn4993293/wiki/247861',
-                      studyDescription = '',
+                      studyDescription = 'mPower is a large, longitudinal study which piloted new approaches to monitoring key indicators of Parkinson Disease progression and diagnosis incorporating traditional behavioral symptom measurements along with novel metrics gleaned from sensor-rich mobile devices.',
                       dataAccessInstructions = 'syn4993293/wiki/247860'),
   
   ## MoleMapper Public Researcher Portal (check anno - Dan)
@@ -86,7 +86,7 @@ projects.annotations <- list(
                       dhPortalIndex = 'TRUE', # Change after filling annotations
                       studyDescriptionLocation = 'syn5576734', 
                       studyDataDescriptionLocation = 'syn5576734/wiki/406009',
-                      studyDescription = '',
+                      studyDescription = 'MoleMapper is an iPhone based study to track and document mole abnormalities that may signal a progression towards melanoma.',
                       dataAccessInstructions = 'syn5576734/wiki/391119'),
   
   ## Asthma Health Public Researcher Portal (check anno - Larsson)
@@ -110,7 +110,7 @@ projects.annotations <- list(
                       dhPortalIndex = 'FALSE', # Change after filling annotations
                       studyDescriptionLocation = 'syn8361748', 
                       studyDataDescriptionLocation = 'syn8361748/wiki/415365',
-                      studyDescription = '',
+                      studyDescription = 'The Asthma Health Study was an iPhone-based observational study to understand symptom triggers through the collection of symptom and medication surveys, along with passive geolocation, weather, and air quality monitoring.',
                       dataAccessInstructions = 'syn8361748/wiki/415364'),
   
   ## elevateMS (check anno - Abhi)
@@ -141,7 +141,7 @@ projects.annotations <- list(
                       dhPortalIndex = 'FALSE', # Change after filling annotations
                       studyDescriptionLocation = 'syn21140362', 
                       studyDataDescriptionLocation = 'syn21140362/wiki/602267',
-                      studyDescription = '',
+                      studyDescription = 'elevateMS was a smartphone-based study designed to monitor and understand the variations in symptoms and triggers in Multiple Sclerosis (MS), through surveys, passive data collection, and physical and cognitive assessments.',
                       dataAccessInstructions = 'syn21140362/wiki/602266'),
   
 
@@ -196,7 +196,7 @@ projects.annotations <- list(
                        dhPortalIndex = 'FALSE', # Change after filling annotations
                        studyDescriptionLocation = 'syn11269541', 
                        studyDataDescriptionLocation = 'syn11269541/wiki/485635',
-                       studyDescription = '',
+                       studyDescription = 'The MyHeart Counts Cardiovascular Health Study is a smartphone-based study of cardiovascular health, consisting of records of daily physical activity, health questionnaires, and 6-minute walk fitness tests.',
                        dataAccessInstructions = 'syn11269541/wiki/485634'),
   
   ## PKU Study Project (check anno - Dan/Megha)
@@ -292,7 +292,7 @@ projects.annotations <- list(
                       dhPortalIndex = 'FALSE', # Change after filling annotations
                       studyDescriptionLocation = 'syn10848316', 
                       studyDataDescriptionLocation = 'syn10848316/wiki/548728',
-                      studyDescription = '',
+                      studyDescription = 'The Brighten studies(V1 and V2), funded by the National Institute for Mental Health, were designed to tests a new and possibly easier way for individuals to track & manage their depression symptoms.',
                       dataAccessInstructions = 'syn10848316/wiki/551287')
 )
   
