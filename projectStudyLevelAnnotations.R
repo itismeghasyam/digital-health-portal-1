@@ -55,7 +55,7 @@ projects.annotations <- list(
                                                    'talking into the microphone',
                                                    'tap the screen'),
                       sensorDataType = 'raw',
-                      investigator= c('Sage Bionetworkss'),
+                      investigator= c('Sage Bionetworks'),
                       resourceType = 'curatedData',
                       intervention = '',
                       keywords = c(''),
