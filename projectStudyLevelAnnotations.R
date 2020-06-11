@@ -194,7 +194,7 @@ projects.annotations <- list(
                                           "blood pressure", "fasting glucose",
                                           "cholesterol", "diabetes", "hypertension"),
                        digitalAssessmentCategory= c('cardiovascular'),
-                       digitalAssessmentDetails = c('6-min walk test', 'health questionnaire'),
+                       digitalAssessmentDetails = c('6-min walk test'),
                        sensorDataType = c('raw', 'processed'),
                        investigator= c('Stanford Medicine'), # or the PI name - Michael V. McConnell?
                        resourceType = 'experimentalData',

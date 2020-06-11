@@ -32,27 +32,26 @@ pid <- 'syn22014192'
 # List of projects and related publications
 ##############
 ## Projects covered (with their studyOrProject URLs)
+## Studies
 mjffurl=paste('[MJFF Levodopa Response Study](/Explore/Studies/DetailsPage?study=',
               URLencode('MJFF Levodopa Response Study',  reserved = FALSE, repeated = FALSE),
               ')', sep="")
+
 mpowerurl=paste('[mPower Mobile Parkinson Disease Study](/Explore/Studies/DetailsPage?study=',
                 URLencode('mPower Mobile Parkinson Disease Study', reserved = FALSE, repeated = FALSE),
                 ')', sep = "")
 
-mpowerurlshort=paste('[mPower](/Explore/Studies/DetailsPage?study=',
-                     URLencode('mPower', reserved = FALSE, repeated = FALSE),
-                     ')', sep = "")
 asthmaurl=paste('[Asthma Mobile Health Study](/Explore/Studies/DetailsPage?study=',
                 URLencode('Asthma Mobile Health Study', reserved = FALSE, repeated = FALSE),
                 ')', sep = "")
-elevatemsurl=paste('[elevateMS](/Explore/Studies/DetailsPage?study=',
-                   URLencode('ElevateMS', reserved = FALSE, repeated = FALSE),
+elevatemsurl=paste('[elevateMS Study](/Explore/Studies/DetailsPage?study=',
+                   URLencode('elevateMS Study', reserved = FALSE, repeated = FALSE),
                    ')', sep = "")
-myhearturl=paste('[MyHeart Counts](/Explore/Studies/DetailsPage?study=',
-                 URLencode('MyHeart Counts', reserved = FALSE, repeated = FALSE),
+myhearturl=paste('[MyHeart Counts Cardiovascular Health Study](/Explore/Studies/DetailsPage?study=',
+                 URLencode('MyHeart Counts Cardiovascular Health Study', reserved = FALSE, repeated = FALSE),
                  ')', sep = "")
-brightenurl=paste('[Brighten](/Explore/Studies/DetailsPage?study=',
-                  URLencode('Brighten', reserved = FALSE, repeated = FALSE),
+brightenurl=paste('[Brighten Study](/Explore/Studies/DetailsPage?study=',
+                  URLencode('Brighten Study', reserved = FALSE, repeated = FALSE),
                   ')', sep = "")
 sleepurl=paste('[SleepHealth](/Explore/Studies/DetailsPage?study=',
                URLencode('SleepHealth', reserved = FALSE, repeated = FALSE),
@@ -62,18 +61,20 @@ molemapperurl = paste('[Mole Mapper Study](/Explore/Studies/DetailsPage?study=',
                       URLencode('Mole Mapper Study', reserved = FALSE, repeated = FALSE),
                       ')', sep = "")
 
-participantretentionurl = paste('[Participant Retention in Digital Health Studies](/Explore/Studies/DetailsPage?study=',
+heartsnapshoturl = paste('[Heart Snapshot Study](/Explore/Studies/DetailsPage?study=',
+                         URLencode('Heart Snapshot Study', reserved = FALSE, repeated = FALSE),
+                         ')', sep = "")
+
+## Projects
+participantretentionurl = paste('[Participant Retention in Digital Health Studies](/Explore/Studies/DetailsPage?project=',
                                      URLencode('Participant Retention in Digital Health Studies', reserved = FALSE, repeated = FALSE),
                                      ')', sep = "")
 
-participantretentionurlshort = paste('[Participant Retention](/Explore/Studies/DetailsPage?study=',
-                                URLencode('Participant Retention', reserved = FALSE, repeated = FALSE),
-                                ')', sep = "")
-
-pddbdreamurl = paste('[PDDB](/Explore/Studies/DetailsPage?study=',
-                     URLencode('PDDB', reserved = FALSE, repeated = FALSE),
+pddbdreamurl = paste('[Parkinsons Disease Digital Biomarker (PDDB) DREAM Challenge](/Explore/Studies/DetailsPage?project=',
+                     URLencode('Parkinsons Disease Digital Biomarker (PDDB) DREAM Challenge', reserved = FALSE, repeated = FALSE),
                      ')', sep = "")
 
+## Tools
 # mhealthtoolsurl = paste('[mhealthtools](/Explore/Studies/DetailsPage?study=',
 #                         URLencode('mhealthtools', reserved = FALSE, repeated = FALSE),
 #                         ')', sep = "")
