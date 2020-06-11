@@ -66,19 +66,13 @@ heartsnapshoturl = paste('[Heart Snapshot Study](/Explore/Studies/DetailsPage?st
                          ')', sep = "")
 
 ## Projects
-participantretentionurl = paste('[Participant Retention in Digital Health Studies](/Explore/Studies/DetailsPage?project=',
+participantretentionurl = paste('[Participant Retention in Digital Health Studies](/Explore/Projects/DetailsPage?study=',
                                      URLencode('Participant Retention in Digital Health Studies', reserved = FALSE, repeated = FALSE),
                                      ')', sep = "")
 
-pddbdreamurl = paste('[Parkinsons Disease Digital Biomarker (PDDB) DREAM Challenge](/Explore/Studies/DetailsPage?project=',
+pddbdreamurl = paste('[Parkinsons Disease Digital Biomarker (PDDB) DREAM Challenge](/Explore/Projects/DetailsPage?study=',
                      URLencode('Parkinsons Disease Digital Biomarker (PDDB) DREAM Challenge', reserved = FALSE, repeated = FALSE),
                      ')', sep = "")
-
-## Tools
-# mhealthtoolsurl = paste('[mhealthtools](/Explore/Studies/DetailsPage?study=',
-#                         URLencode('mhealthtools', reserved = FALSE, repeated = FALSE),
-#                         ')', sep = "")
-
 
 # Project Synapse ID vs publications
 publications.list <- list(
