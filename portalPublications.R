@@ -31,16 +31,48 @@ pid <- 'syn22014192'
 ##############
 # List of projects and related publications
 ##############
-## Projects covered (inOrder)
-# mPower 1.0
-# Asthma Health
-# Mole Mapper Study
-# My Heart Counts
-# Brighten Study
-# Participant Retention Study
-# PDDB
-# mhealthtools
+## Projects covered (with their studyOrProject URLs)
+## Studies
+mjffurl=paste('[MJFF Levodopa Response Study](/Explore/Studies/DetailsPage?study=',
+              URLencode('MJFF Levodopa Response Study',  reserved = FALSE, repeated = FALSE),
+              ')', sep="")
 
+mpowerurl=paste('[mPower Mobile Parkinson Disease Study](/Explore/Studies/DetailsPage?study=',
+                URLencode('mPower Mobile Parkinson Disease Study', reserved = FALSE, repeated = FALSE),
+                ')', sep = "")
+
+asthmaurl=paste('[Asthma Mobile Health Study](/Explore/Studies/DetailsPage?study=',
+                URLencode('Asthma Mobile Health Study', reserved = FALSE, repeated = FALSE),
+                ')', sep = "")
+elevatemsurl=paste('[elevateMS Study](/Explore/Studies/DetailsPage?study=',
+                   URLencode('elevateMS Study', reserved = FALSE, repeated = FALSE),
+                   ')', sep = "")
+myhearturl=paste('[MyHeart Counts Cardiovascular Health Study](/Explore/Studies/DetailsPage?study=',
+                 URLencode('MyHeart Counts Cardiovascular Health Study', reserved = FALSE, repeated = FALSE),
+                 ')', sep = "")
+brightenurl=paste('[Brighten Study](/Explore/Studies/DetailsPage?study=',
+                  URLencode('Brighten Study', reserved = FALSE, repeated = FALSE),
+                  ')', sep = "")
+sleepurl=paste('[SleepHealth](/Explore/Studies/DetailsPage?study=',
+               URLencode('SleepHealth', reserved = FALSE, repeated = FALSE),
+               ')', sep = "")
+
+molemapperurl = paste('[Mole Mapper Study](/Explore/Studies/DetailsPage?study=',
+                      URLencode('Mole Mapper Study', reserved = FALSE, repeated = FALSE),
+                      ')', sep = "")
+
+heartsnapshoturl = paste('[Heart Snapshot Study](/Explore/Studies/DetailsPage?study=',
+                         URLencode('Heart Snapshot Study', reserved = FALSE, repeated = FALSE),
+                         ')', sep = "")
+
+## Projects
+participantretentionurl = paste('[Participant Retention in Digital Health Studies](/Explore/Projects/DetailsPage?study=',
+                                     URLencode('Participant Retention in Digital Health Studies', reserved = FALSE, repeated = FALSE),
+                                     ')', sep = "")
+
+pddbdreamurl = paste('[Parkinsons Disease Digital Biomarker (PDDB) DREAM Challenge](/Explore/Projects/DetailsPage?study=',
+                     URLencode('Parkinsons Disease Digital Biomarker (PDDB) DREAM Challenge', reserved = FALSE, repeated = FALSE),
+                     ')', sep = "")
 
 # Project Synapse ID vs publications
 publications.list <- list(
@@ -70,6 +102,7 @@ publications.list <- list(
                    'touchscreen', 'microphone'),
     synID = 'syn4993293',
     Featured = 'TRUE',
+    studyOrProject = mpowerurl,
     publicationType = 'study'
   ),
   
@@ -97,6 +130,7 @@ publications.list <- list(
                    'touchscreen', 'microphone'),
     synID = 'syn4993293',
     Featured = 'TRUE',
+    studyOrProject = mpowerurl,
     publicationType = 'study'
   ),
   
@@ -122,6 +156,7 @@ publications.list <- list(
                    'touchscreen', 'microphone'),
     synID = 'syn4993293',
     Featured = 'TRUE',
+    studyOrProject = mpowerurl,
     publicationType = 'study'
   ),
   
@@ -148,6 +183,7 @@ publications.list <- list(
                    'touchscreen', 'microphone'),
     synID = 'syn4993293',
     Featured = 'TRUE',
+    studyOrProject = mpowerurl,
     publicationType = 'study'
   ),
   
@@ -173,6 +209,7 @@ publications.list <- list(
                    'touchscreen', 'microphone'),
     synID = 'syn4993293',
     Featured = 'TRUE',
+    studyOrProject = mpowerurl,
     publicationType = 'study'),
   
   # 6
@@ -196,6 +233,7 @@ publications.list <- list(
                    'touchscreen', 'microphone'),
     synID = 'syn4993293',
     Featured = 'TRUE',
+    studyOrProject = mpowerurl,
     publicationType = 'study'
   ),
   
@@ -220,6 +258,7 @@ publications.list <- list(
                    'touchscreen', 'microphone'),
     synID = 'syn4993293',
     Featured = 'TRUE',
+    studyOrProject = mpowerurl,
     publicationType = 'study'
   ),
   
@@ -245,6 +284,7 @@ publications.list <- list(
                    'touchscreen', 'microphone'),
     synID = 'syn4993293',
     Featured = 'TRUE',
+    studyOrProject = mpowerurl,
     publicationType = 'study'
   ),
   
@@ -272,6 +312,7 @@ publications.list <- list(
                    'touchscreen', 'microphone'),
     synID = 'syn4993293',
     Featured = 'TRUE',
+    studyOrProject = mpowerurl,
     publicationType = 'study'
   ),
   
@@ -298,6 +339,7 @@ publications.list <- list(
                    'touchscreen', 'microphone'),
     synID = 'syn4993293',
     Featured = 'TRUE',
+    studyOrProject = mpowerurl,
     publicationType = 'study'
   ),
   
@@ -324,6 +366,7 @@ publications.list <- list(
                    'touchscreen', 'microphone'),
     synID = 'syn4993293',
     Featured = 'TRUE',
+    studyOrProject = mpowerurl,
     publicationType = 'study'
   ),
   
@@ -350,6 +393,7 @@ publications.list <- list(
                    'touchscreen', 'microphone'),
     synID = 'syn4993293',
     Featured = 'TRUE',
+    studyOrProject = mpowerurl,
     publicationType = 'study'
   ),
   
@@ -374,6 +418,7 @@ publications.list <- list(
     sensorType = c(''),
     synID = 'syn8361748',
     Featured = 'TRUE',
+    studyOrProject = asthmaurl,
     publicationType = 'study'
   ),
   
@@ -397,6 +442,7 @@ publications.list <- list(
     sensorType = c(''),
     synID = 'syn8361748',
     Featured = 'TRUE',
+    studyOrProject = asthmaurl,
     publicationType = 'study'
   ),
   
@@ -421,6 +467,7 @@ publications.list <- list(
     sensorType = c('touchscreen', 'camera'),
     synID = 'syn5576734',
     Featured = 'TRUE',
+    studyOrProject = molemapperurl,
     publicationType = 'study'
   ),
   
@@ -443,6 +490,7 @@ publications.list <- list(
     sensorType = c('touchscreen', 'camera'),
     synID = 'syn5576734',
     Featured = 'TRUE',
+    studyOrProject = molemapperurl,
     publicationType = 'study'
   ),
   
@@ -467,6 +515,7 @@ publications.list <- list(
     sensorType = c(''),
     synID = 'syn11269541',
     Featured = 'TRUE',
+    studyOrProject = myhearturl,
     publicationType = 'study'
   ),
   
@@ -491,6 +540,7 @@ publications.list <- list(
     sensorType = c(''),
     synID = 'syn11269541',
     Featured = 'TRUE',
+    studyOrProject = myhearturl,
     publicationType = 'study'
   ),
   
@@ -515,6 +565,7 @@ publications.list <- list(
     sensorType = c('touchscreen'),
     synID = 'syn10848316',
     Featured = 'TRUE',
+    studyOrProject = brightenurl,
     publicationType = 'study'
   ),
   
@@ -538,6 +589,7 @@ publications.list <- list(
     sensorType = c('touchscreen'),
     synID = 'syn10848316',
     Featured = 'TRUE',
+    studyOrProject = brightenurl,
     publicationType = 'study'
   ),
   
@@ -561,6 +613,7 @@ publications.list <- list(
     sensorType = c('touchscreen'),
     synID = 'syn10848316',
     Featured = 'TRUE',
+    studyOrProject = brightenurl,
     publicationType = 'study'
   ),
   
@@ -584,6 +637,7 @@ publications.list <- list(
     sensorType = c('touchscreen'),
     synID = 'syn10848316',
     Featured = 'TRUE',
+    studyOrProject = brightenurl,
     publicationType = 'study'
   ),
   
@@ -607,6 +661,7 @@ publications.list <- list(
     sensorType = c('touchscreen'),
     synID = 'syn10848316',
     Featured = 'TRUE',
+    studyOrProject = brightenurl,
     publicationType = 'study'
   ),
   
@@ -632,6 +687,7 @@ publications.list <- list(
     sensorType = c(''),
     synID = 'syn20715364',
     Featured = 'TRUE',
+    studyOrProject = participantretentionurlshort,
     publicationType = 'project'
   ),
   
@@ -668,6 +724,7 @@ publications.list <- list(
     sensorType = c('accelerometer', 'gyroscope'),
     synID = 'syn8717496',
     Featured = 'TRUE',
+    studyOrProject = pddbdreamurl,
     publicationType = 'project'
   ),
   
@@ -684,12 +741,12 @@ publications.list <- list(
     url = 'https://doi.org/10.21105/joss.02106',
     Abstract = '',
     Consortium = 'mHealth',
-    Study = 'mhealthtools',
+    Tools = 'mhealthtools',
     Diagnosis = '',
     digitalAssessmentCategory = '',
     sensorType = c('accelerometer', 'gyroscope', 'camera', 'touchscreen'),
     synID = '',
-    Featured = 'TRUE',
+    Featured = 'TRUE', 
     publicationType = 'tool'
   )
   
