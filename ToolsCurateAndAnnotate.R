@@ -40,7 +40,8 @@ tools.list = list(
                        outputDataType = c('sensor features', 'heart rate', 'activity features'),
                        summary = 'An R package for extracting features from mobile and wearable sensor data',
                        digitalAssessmentCategory = c('resting tremor', 'postural tremor', 'active tremor', 'gait', 'heart rate'),
-                       dhPortalIndex = 'TRUE')
+                       dhPortalIndex = 'TRUE',
+                       suggestedStudies =c('syn4993293', 'syn9746170'))
 )
                        
 ##############

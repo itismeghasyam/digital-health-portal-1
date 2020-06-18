@@ -26,13 +26,20 @@
 library(synapser)
 synLogin()
 
+study = 'MJFF Levodopa Response Study'
+projectlink = paste("[", study, "](/Explore/Studies/DetailsPage?study=",
+                    URLencode(study,  reserved = FALSE, repeated = FALSE), 
+                    ")", sep = "")
+
+
 ##############
 # List of tables and related annotations
 ##############
 tables.annotations = list(
   ## Metadata of patient onboarding
   'syn20681894' = list(consortium = 'mHealth',
-                       study = 'MJFF Levodopa Response Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= 29, 
                        dataCollectionMethod= c('patient reported outcome', 'clinical assessment'),
                        diagnosis= "Parkinson's Disease", 
@@ -47,7 +54,8 @@ tables.annotations = list(
   
   ## Metadata of patient onboarding dictionary
   'syn20681895' = list(consortium = 'mHealth',
-                       study = 'MJFF Levodopa Response Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        dataType=c('clinical', 'surveyData'),
                        dataSubtype='metadata',
                        metadataType='data dictionary',
@@ -57,7 +65,8 @@ tables.annotations = list(
   
   ## UPDRS Response
   'syn20681939' = list(consortium = 'mHealth',
-                       study = 'MJFF Levodopa Response Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= 17, 
                        dataCollectionMethod= c('clinical assessment'),
                        diagnosis= "Parkinson's Disease", 
@@ -70,7 +79,8 @@ tables.annotations = list(
   
   ## Sensor Data- Part I
   'syn20681931' = list(consortium = 'mHealth',
-                       study = 'MJFF Levodopa Response Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= 29, 
                        dataCollectionMethod= c('active', 'passive'),
                        deviceType = c('handheld', 'wearable'),
@@ -95,7 +105,8 @@ tables.annotations = list(
   
   ## Sensor Data- Part II
   'syn20681932' = list(consortium = 'mHealth',
-                       study = 'MJFF Levodopa Response Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= 17, 
                        dataCollectionMethod= c('active', 'passive'),
                        deviceType = c('wearable'),
@@ -123,7 +134,8 @@ tables.annotations = list(
   
   ## Task Scores- Part I
   'syn20681937' = list(consortium = 'mHealth',
-                       study = 'MJFF Levodopa Response Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= 29, 
                        dataCollectionMethod= c('clinical assessment'),
                        diagnosis= "Parkinson's Disease", 
@@ -145,7 +157,8 @@ tables.annotations = list(
   
   ## Task Scores- Part II
   'syn20681938' = list(consortium = 'mHealth',
-                       study = 'MJFF Levodopa Response Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= 17, 
                        dataCollectionMethod= c('clinical assessment'),
                        diagnosis= "Parkinson's Disease", 
@@ -168,7 +181,8 @@ tables.annotations = list(
   
   ## Home Tasks
   'syn20681035'  = list(consortium = 'mHealth',
-                        study = 'MJFF Levodopa Response Study',
+                        study = study,
+                        studyOrProject = projectlink,
                         numberParticipants= 17, 
                         dataCollectionMethod= c('active'),
                         diagnosis= "Parkinson's Disease", 
@@ -185,7 +199,8 @@ tables.annotations = list(
   
   ## Metadata of Laboratory Visits
   'syn20681892' = list(consortium = 'mHealth',
-                       study = 'MJFF Levodopa Response Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        numberParticipants= 29, 
                        dataCollectionMethod= c('patient reported outcome', 'clinical assessment'),
                        diagnosis= "Parkinson's Disease", 
@@ -199,7 +214,8 @@ tables.annotations = list(
   
   ## Metadata of Laboratory Visits Dictionary
   'syn20681893'  = list(consortium = 'mHealth',
-                        study = 'MJFF Levodopa Response Study',
+                        study = study,
+                        studyOrProject = projectlink,
                         dataType=c('clinical'),
                         dataSubtype='metadata',
                         metadataType='data dictionary',
@@ -209,7 +225,8 @@ tables.annotations = list(
   
   ## Task code dictionary
   'syn20681936' = list(consortium = 'mHealth',
-                       study = 'MJFF Levodopa Response Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        dataType=c('clinical'),
                        dataSubtype='metadata',
                        metadataType='data dictionary',
@@ -218,7 +235,8 @@ tables.annotations = list(
   
   ## Subject Diary
   'syn20681934' =  list(consortium = 'mHealth',
-                        study = 'MJFF Levodopa Response Study',
+                        study = study,
+                        studyOrProject = projectlink,
                         numberParticipants= 17, 
                         dataCollectionMethod= c('patient reported outcome'),
                         diagnosis= "Parkinson's Disease", 
@@ -232,7 +250,8 @@ tables.annotations = list(
   
   ## Subject Diary Data Dictionary
   'syn20681935' = list(consortium = 'mHealth',
-                       study = 'MJFF Levodopa Response Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        dataType=c('surveyData'),
                        dataSubtype='metadata',
                        metadataType='data dictionary',
@@ -242,7 +261,8 @@ tables.annotations = list(
   
   ## Medication Diary
   'syn20681891' =  list(consortium = 'mHealth',
-                        study = 'MJFF Levodopa Response Study',
+                        study = study,
+                        studyOrProject = projectlink,
                         numberParticipants= 27, 
                         dataCollectionMethod= c('patient reported outcome'),
                         diagnosis= "Parkinson's Disease", 
@@ -255,7 +275,8 @@ tables.annotations = list(
   
   ## Sleep Diary
   'syn20681933' =  list(consortium = 'mHealth',
-                        study = 'MJFF Levodopa Response Study',
+                        study = study,
+                        studyOrProject = projectlink,
                         numberParticipants= 27, 
                         dataCollectionMethod= c('patient reported outcome'),
                         diagnosis= "Parkinson's Disease", 
@@ -268,7 +289,8 @@ tables.annotations = list(
   
   ## Feedback Survey
   'syn20681033' =  list(consortium = 'mHealth',
-                        study = 'MJFF Levodopa Response Study',
+                        study = study,
+                        studyOrProject = projectlink,
                         numberParticipants= 27, 
                         dataCollectionMethod= c('patient reported outcome'),
                         diagnosis= "Parkinson's Disease", 
@@ -281,7 +303,8 @@ tables.annotations = list(
   
   ## Feedback Survey Data Dictionary
   'syn20681034' = list(consortium = 'mHealth',
-                       study = 'MJFF Levodopa Response Study',
+                       study = study,
+                       studyOrProject = projectlink,
                        dataType=c('surveyData'),
                        dataSubtype='metadata',
                        metadataType='data dictionary',
@@ -296,7 +319,7 @@ tables.annotations = list(
 for(proj.id in names(tables.annotations)){
 
   #### Uncomment this before updating for real
-  # synSetAnnotations(proj.id, annotations = tables.annotations[[proj.id]])
+   synSetAnnotations(proj.id, annotations = tables.annotations[[proj.id]])
   ####
   
   print(proj.id)
@@ -313,7 +336,7 @@ for(proj.id in names(tables.annotations)){
 # GENEActiv folder syn20681037
 
 geneactiveannot <- list(consortium = 'mHealth',
-                        study = 'MJFF Levodopa Response Study',
+                        study = study,
                         dataCollectionMethod = c('active', 'passive'),
                         deviceType = 'wearable',
                         sensorType = 'accelerometer', 
@@ -374,7 +397,7 @@ for(fold in Folders$id){
 # Pebble folder syn20681180
 
 pebbleannot <- list(consortium = 'mHealth',
-                    study = 'MJFF Levodopa Response Study',
+                    study = study,
                     dataCollectionMethod = c('active', 'passive'),
                     deviceType = 'wearable',
                     sensorType = 'accelerometer',
@@ -435,7 +458,7 @@ for(fold in Folders$id){
 # Phone folder syn20681318
 
 phoneannot <- list(consortium = 'mHealth',
-                   study = 'MJFF Levodopa Response Study',
+                   study = study,
                    dataCollectionMethod = c('active', 'passive'),
                    deviceType = 'handheld',
                    sensorType = 'accelerometer',
@@ -496,7 +519,7 @@ for(fold in Folders$id){
 # Shimmer back folder syn20681458
 
 shimmerbackannot <- list(consortium = 'mHealth',
-                         study = 'MJFF Levodopa Response Study',
+                         study = study,
                          dataCollectionMethod = c('active', 'passive'),
                          deviceType = 'wearable',
                          sensorType = 'accelerometer',
@@ -558,7 +581,7 @@ for(fold in Folders$id){
 # Shimmer forearm folder syn20681630 & syn20681805
 
 shimmerarmannot <- list(consortium = 'mHealth',
-                        study = 'MJFF Levodopa Response Study',
+                        study = study,
                         dataCollectionMethod = c('active', 'passive'),
                         deviceType = 'wearable',
                         sensorType = 'accelerometer',
@@ -616,7 +639,7 @@ for(fold in Folders$id){
 # Shimmer shank folder syn20681544 & syn20681717
 
 shimmerlegannot <- list(consortium = 'mHealth',
-                        study = 'MJFF Levodopa Response Study',
+                        study = study,
                         dataCollectionMethod = c('active', 'passive'),
                         deviceType = 'wearable',
                         sensorType = 'accelerometer',
