@@ -110,7 +110,7 @@ projects.annotations <- list(
                       resourceType = 'experimentalData',
                       intervention = '',
                       keywords = c('asthma', 'lung disease'),
-                      dhPortalIndex = 'FALSE', # Change after filling annotations
+                      dhPortalIndex = 'TRUE', 
                       studyDescriptionLocation = 'syn8361748', 
                       studyDataDescriptionLocation = 'syn8361748/wiki/415365',
                       studyDescription = 'The Asthma Health Study was an iPhone-based observational study to understand symptom triggers through the collection of symptom and medication surveys, along with passive geolocation, weather, and air quality monitoring.',
@@ -202,7 +202,7 @@ projects.annotations <- list(
                        resourceType = 'experimentalData',
                        intervention = '',
                        keywords = c(''),
-                       dhPortalIndex = 'FALSE', # Change after filling annotations
+                       dhPortalIndex = 'TRUE', # Change after filling annotations
                        studyDescriptionLocation = 'syn11269541', 
                        studyDataDescriptionLocation = 'syn11269541/wiki/485635',
                        studyDescription = 'The MyHeart Counts Cardiovascular Health Study is a smartphone-based study of cardiovascular health, consisting of records of daily physical activity, health questionnaires, and 6-minute walk fitness tests.',
