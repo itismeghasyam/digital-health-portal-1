@@ -39,7 +39,7 @@ projects.annotations <- list(
   ## mPower 1.0 (check anno - Larsson)
   'syn4993293' = list(consortium = 'mHealth',
                       study = 'mPower Mobile Parkinson Disease Study',
-                      numberParticipants= '', 
+                      numberParticipants= 9520, # number who opted to share broadly 
                       dataCollectionMethod= c('active', 'patient reported outcome',
                                               'clinical assessment'),
                       deviceType = c('handheld'),
@@ -69,7 +69,7 @@ projects.annotations <- list(
   ## MoleMapper Public Researcher Portal (check anno - Dan)
   'syn5576734' = list(consortium = 'mHealth',
                       study = 'Mole Mapper Study',
-                      numberParticipants= '', 
+                      numberParticipants= 1920, 
                       dataCollectionMethod= c('active', 'patient reported outcome'),
                       deviceType = c('handheld'),
                       sensorType = c('touchscreen', 'camera'),
@@ -90,10 +90,10 @@ projects.annotations <- list(
                       studyDescription = 'MoleMapper is an iPhone based study to track and document mole abnormalities that may signal a progression towards melanoma.',
                       dataAccessInstructions = 'syn5576734/wiki/391119'),
   
-  ## Asthma Health Public Researcher Portal (check anno - Larsson)
+  ## Asthma Health Public Researcher Portal
   'syn8361748' = list(consortium = 'mHealth',
                       study = 'Asthma Mobile Health Study',
-                      numberParticipants= '', 
+                      numberParticipants= 7593, 
                       dataCollectionMethod= c('active', 'patient reported outcome'),
                       deviceType = c('handheld'),
                       sensorType = c('touchscreen'),
@@ -119,7 +119,7 @@ projects.annotations <- list(
   ## elevateMS (check anno - Abhi)
   'syn21140362' = list(consortium = 'mHealth',
                       study = 'elevateMS Study',
-                      numberParticipants= '', 
+                      numberParticipants= 524, 
                       dataCollectionMethod= c('active', 'passive'),
                       deviceType = c('handheld'),
                       sensorType = c('accelerometer', 'gyroscope',
@@ -152,7 +152,7 @@ projects.annotations <- list(
   ## Heart Snapshot (checked anno - Dan/Megha/Solly)
   'syn22107959' = list(consortium = 'mHealth',
                        study = 'Heart Snapshot Study',
-                       numberParticipants= '', 
+                       numberParticipants= 124, 
                        dataCollectionMethod= c('active', 'passive', 'patient reported outcome',
                                                'clinical assessment'),
                        deviceType = c('handheld', 'wearable'),
@@ -181,7 +181,7 @@ projects.annotations <- list(
   ## MyHeart Counts Public Researcher Portal (check anno - Larsson)
   'syn11269541' = list(consortium = 'mHealth',
                        study = 'MyHeart Counts Cardiovascular Health Study',
-                       numberParticipants= '', 
+                       numberParticipants= 40017, 
                        dataCollectionMethod= c('active' , 'passive', 'patient reported outcome'),
                        deviceType = c('handheld', 'wearable'),
                        sensorType = c('accelerometer', 'gyroscope',
@@ -279,7 +279,7 @@ projects.annotations <- list(
   ## BRIGHTEN Study
   'syn10848316' = list(consortium = 'mHealth',
                       study = 'Brighten Study',
-                      numberParticipants= '', 
+                      numberParticipants= 2194, 
                       dataCollectionMethod= c('passive', 'patient reported outcome',
                                               'clinical assessment'),
                       deviceType = c('handheld'),
