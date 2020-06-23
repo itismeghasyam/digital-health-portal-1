@@ -687,7 +687,7 @@ publications.list <- list(
     sensorType = c(''),
     synID = 'syn20715364',
     Featured = 'TRUE',
-    studyOrProject = participantretentionurlshort,
+    studyOrProject = participantretentionurl,
     publicationType = 'project'
   ),
   
