@@ -108,7 +108,7 @@ tables.annotations = list(
   'syn8466435' = list(consortium = 'mHealth',
                       study = study,
                       studyOrProject = projectlink,
-                      numberParticipants= 7593, 
+                      numberParticipants= 2593, 
                       dataCollectionMethod= c('patient reported outcome'),
                       diagnosis= c('asthma'), 
                       reportedOutcome = c('demographics survey'),
