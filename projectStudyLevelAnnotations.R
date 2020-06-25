@@ -93,7 +93,7 @@ projects.annotations <- list(
   ## Asthma Health Public Researcher Portal
   'syn8361748' = list(consortium = 'mHealth',
                       study = 'Asthma Mobile Health Study',
-                      numberParticipants= 7593, 
+                      numberParticipants= 5875, 
                       dataCollectionMethod= c('active', 'patient reported outcome'),
                       deviceType = c('handheld'),
                       sensorType = c('touchscreen'),
@@ -116,10 +116,10 @@ projects.annotations <- list(
                       studyDescription = 'The Asthma Health Study was an iPhone-based observational study to understand symptom triggers through the collection of symptom and medication surveys, along with passive geolocation, weather, and air quality monitoring.',
                       dataAccessInstructions = 'syn8361748/wiki/415364'),
   
-  ## elevateMS (check anno - Abhi)
+  ## elevateMS
   'syn21140362' = list(consortium = 'mHealth',
                       study = 'elevateMS Study',
-                      numberParticipants= 524, 
+                      numberParticipants= 540, 
                       dataCollectionMethod= c('active', 'passive'),
                       deviceType = c('handheld'),
                       sensorType = c('accelerometer', 'gyroscope',
@@ -141,7 +141,7 @@ projects.annotations <- list(
                       resourceType = c('curatedData'),
                       intervention = '',
                       keywords = c('neurodegenerative disorders'),
-                      dhPortalIndex = 'FALSE', # Change after filling annotations
+                      dhPortalIndex = 'TRUE', # Change after filling annotations
                       studyDescriptionLocation = 'syn21140362', 
                       studyDataDescriptionLocation = 'syn21140362/wiki/602267',
                       studyDescription = 'elevateMS was a smartphone-based study designed to monitor and understand the variations in symptoms and triggers in Multiple Sclerosis (MS), through surveys, passive data collection, and physical and cognitive assessments.',
@@ -181,7 +181,7 @@ projects.annotations <- list(
   ## MyHeart Counts Public Researcher Portal (check anno - Larsson)
   'syn11269541' = list(consortium = 'mHealth',
                        study = 'MyHeart Counts Cardiovascular Health Study',
-                       numberParticipants= 40017, 
+                       numberParticipants= 26902, 
                        dataCollectionMethod= c('active' , 'passive', 'patient reported outcome'),
                        deviceType = c('handheld', 'wearable'),
                        sensorType = c('accelerometer', 'gyroscope',
@@ -208,37 +208,37 @@ projects.annotations <- list(
                        studyDescription = 'The MyHeart Counts Cardiovascular Health Study is a smartphone-based study of cardiovascular health, consisting of records of daily physical activity, health questionnaires, and 6-minute walk fitness tests.',
                        dataAccessInstructions = 'syn11269541/wiki/485634'),
   
-  ## PKU Study Project (check anno - Dan/Megha)
-  # SKIP FOR NOW- get back later
-  'syn20486872' = list(consortium = 'mHealth',
-                       study = 'BioMarin PKU Study',
-                       numberParticipants= 18, # recruitment ongoing 
-                       dataCollectionMethod= c('active', 'passive', 'patient reported outcome',
-                                               'clinical assessment'),
-                       deviceType = c('handheld', 'wearable'),
-                       sensorType = c('accelerometer', 'gyroscope', 'magnetometer',
-                                      'fitbit'),
-                       devicePlatform = c('iOS'), 
-                       deviceLocation = c('hand', 'wrist', 'pocket'),
-                       diagnosis=  c('phenylketonuria', 'control'), 
-                       reportedOutcome =c('tremor'),
-                       digitalAssessmentCategory= c('Resting tremor', 'kinetic tremor',
-                                                    'cognition',  'sleep', 'heart rate'),
-                       digitalAssessmentDetails = c('tapping', 'hand-in-lap', 'finger-to-nose',
-                                                    'alternating hand movements', 'drawing',
-                                                    'typing', 'opening a water bottle and pouring', 
-                                                    'arranging paper','assembling nuts and bolts',
-                                                    'folding towels'),
-                       sensorDataType = 'raw',
-                       investigator= c('BioMarin', 'Sage Bionetworks'),
-                       resourceType = 'curatedData',
-                       intervention = '',
-                       keywords = c('Phenylketonuria', 'PKU', 'rare disease'),
-                       dhPortalIndex = 'FALSE', # Change after filling annotations
-                       studyDescriptionLocation = '', # syn ID of the public facing project
-                       studyDataDescriptionLocation = '',
-                       studyDescription = '',
-                       dataAccessInstructions = ''),
+  # ## PKU Study Project (check anno - Dan/Megha)
+  # # SKIP FOR NOW- get back later
+  # 'syn20486872' = list(consortium = 'mHealth',
+  #                      study = 'BioMarin PKU Study',
+  #                      numberParticipants= 18, # recruitment ongoing 
+  #                      dataCollectionMethod= c('active', 'passive', 'patient reported outcome',
+  #                                              'clinical assessment'),
+  #                      deviceType = c('handheld', 'wearable'),
+  #                      sensorType = c('accelerometer', 'gyroscope', 'magnetometer',
+  #                                     'fitbit'),
+  #                      devicePlatform = c('iOS'), 
+  #                      deviceLocation = c('hand', 'wrist', 'pocket'),
+  #                      diagnosis=  c('phenylketonuria', 'control'), 
+  #                      reportedOutcome =c('tremor'),
+  #                      digitalAssessmentCategory= c('Resting tremor', 'kinetic tremor',
+  #                                                   'cognition',  'sleep', 'heart rate'),
+  #                      digitalAssessmentDetails = c('tapping', 'hand-in-lap', 'finger-to-nose',
+  #                                                   'alternating hand movements', 'drawing',
+  #                                                   'typing', 'opening a water bottle and pouring', 
+  #                                                   'arranging paper','assembling nuts and bolts',
+  #                                                   'folding towels'),
+  #                      sensorDataType = 'raw',
+  #                      investigator= c('BioMarin', 'Sage Bionetworks'),
+  #                      resourceType = 'curatedData',
+  #                      intervention = '',
+  #                      keywords = c('Phenylketonuria', 'PKU', 'rare disease'),
+  #                      dhPortalIndex = 'FALSE', # Change after filling annotations
+  #                      studyDescriptionLocation = '', # syn ID of the public facing project
+  #                      studyDataDescriptionLocation = '',
+  #                      studyDescription = '',
+  #                      dataAccessInstructions = ''),
 
   ## MJFF Levodopa Response Study (check anno - solly)
   'syn20681023' = list(consortium = 'mHealth',
@@ -279,7 +279,7 @@ projects.annotations <- list(
   ## BRIGHTEN Study
   'syn10848316' = list(consortium = 'mHealth',
                       study = 'Brighten Study',
-                      numberParticipants= 2194, 
+                      numberParticipants= 2258, 
                       dataCollectionMethod= c('passive', 'patient reported outcome',
                                               'clinical assessment'),
                       deviceType = c('handheld'),
