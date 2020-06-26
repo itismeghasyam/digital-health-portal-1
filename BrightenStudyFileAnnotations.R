@@ -36,14 +36,14 @@ tables.annotations = list(
   'syn17021280' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
-                       numberParticipants= '', 
+                       numberParticipants= 832, 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('control'), 
                        reportedOutcome =c('AUDIT-C'),
                        dataType=c('surveyData'),
                        dataSubtype=c('raw', 'metadata'),# metadata?
                        metadataType = c(''), # assessment?
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = 'syn10848316/wiki/548736',
                        dataAccessInstructions = 'syn10848316/wiki/551287'),
   
@@ -51,14 +51,14 @@ tables.annotations = list(
   'syn17022655' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
-                       numberParticipants= '', 
+                       numberParticipants= 819, 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('control'), 
                        reportedOutcome =c('GAD-7'),
                        dataType=c('surveyData'),
                        dataSubtype=c('raw', 'metadata'),# metadata?
                        metadataType = c(''), # assessment?
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = 'syn10848316/wiki/548743',
                        dataAccessInstructions = 'syn10848316/wiki/551287'),
   
@@ -67,14 +67,14 @@ tables.annotations = list(
   'syn17020855' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
-                       numberParticipants= '', 
+                       numberParticipants= 1073, 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('control'), 
                        reportedOutcome =c('PHQ-2'),
                        dataType=c('surveyData'),
                        dataSubtype=c('raw', 'metadata'),# metadata?
                        metadataType = c(''), # assessment?
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = 'syn10848316/wiki/548732',
                        dataAccessInstructions = 'syn10848316/wiki/551287'),
   
@@ -82,14 +82,14 @@ tables.annotations = list(
   'syn18405275' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
-                       numberParticipants= '', 
+                       numberParticipants= 934, 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('control'), 
                        reportedOutcome =c('PHQ-9'),
                        dataType=c('surveyData'),
                        dataSubtype=c('raw', 'metadata'),# metadata?
                        metadataType = c(''), # assessment?
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = 'syn10848316/wiki/548733',
                        dataAccessInstructions = 'syn10848316/wiki/551287'),
   
@@ -97,14 +97,14 @@ tables.annotations = list(
   'syn17022658' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
-                       numberParticipants= '', 
+                       numberParticipants= 1016, 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('control'), 
                        reportedOutcome =c('SDS'),
                        dataType=c('surveyData'),
                        dataSubtype=c('raw', 'metadata'),# metadata?
                        metadataType = c(''), # assessment?
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = 'syn10848316/wiki/548734',
                        dataAccessInstructions = 'syn10848316/wiki/551287'),
   
@@ -112,14 +112,14 @@ tables.annotations = list(
   'syn17025202' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
-                       numberParticipants= '', 
+                       numberParticipants= 514, 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('control'), 
                        reportedOutcome =c(''),
                        dataType=c('surveyData'),
                        dataSubtype=c('raw', 'metadata'),# metadata?
                        metadataType = c(''), # assessment?
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = 'syn10848316/wiki/548738',
                        dataAccessInstructions = 'syn10848316/wiki/551287'),
   
@@ -127,14 +127,14 @@ tables.annotations = list(
   'syn17023349' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
-                       numberParticipants= '', 
+                       numberParticipants= 2194, 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('control'), 
                        reportedOutcome =c('demographics survey'),
                        dataType=c('surveyData'), #clincal data? i.e medical history?
                        dataSubtype=c('metadata'), 
                        metadataType = c('individual'), 
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = 'syn10848316/wiki/548729',
                        dataAccessInstructions = 'syn10848316/wiki/551287'),
   
@@ -142,14 +142,14 @@ tables.annotations = list(
   'syn17022426' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
-                       numberParticipants= '', 
+                       numberParticipants= 818, 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('control'), 
                        reportedOutcome =c(''),
                        dataType=c('surveyData'),
                        dataSubtype=c('raw', 'metadata'),# metadata?
                        metadataType = c(''), # assessment?
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = 'syn10848316/wiki/548740',
                        dataAccessInstructions = 'syn10848316/wiki/551287'),
   
@@ -157,14 +157,14 @@ tables.annotations = list(
   'syn17023316' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
-                       numberParticipants= '', 
+                       numberParticipants= 818, 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('control'), 
                        reportedOutcome =c(''),
                        dataType=c('surveyData'),
                        dataSubtype=c('raw', 'metadata'),# metadata?
                        metadataType = c(''), # assessment?
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = 'syn10848316/wiki/548739',
                        dataAccessInstructions = 'syn10848316/wiki/551287'),
   
@@ -172,14 +172,14 @@ tables.annotations = list(
   'syn17022660' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
-                       numberParticipants= '', 
+                       numberParticipants= 947, 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('control'), 
                        reportedOutcome =c(''),
                        dataType=c('surveyData'),
                        dataSubtype=c('raw', 'metadata'),# metadata?
                        metadataType = c(''), # assessment?
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = 'syn10848316/wiki/548731',
                        dataAccessInstructions = 'syn10848316/wiki/551287'),
   
@@ -187,14 +187,14 @@ tables.annotations = list(
   'syn17023313' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
-                       numberParticipants= '', 
+                       numberParticipants= 915, 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('control'), 
                        reportedOutcome =c('mood'),
                        dataType=c('surveyData'),
                        dataSubtype=c('raw', 'metadata'),# metadata?
                        metadataType = c(''), # assessment?
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = 'syn10848316/wiki/548741',
                        dataAccessInstructions = 'syn10848316/wiki/551287'),
   
@@ -202,14 +202,14 @@ tables.annotations = list(
   'syn17022659' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
-                       numberParticipants= '', 
+                       numberParticipants= 948, 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('control'), 
                        reportedOutcome =c('sleep report'),
                        dataType=c('surveyData'),
                        dataSubtype=c('raw', 'metadata'),# metadata?
                        metadataType = c(''), # assessment?
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = 'syn10848316/wiki/548735',
                        dataAccessInstructions = 'syn10848316/wiki/551287'),
 
@@ -217,14 +217,14 @@ tables.annotations = list(
   'syn17025058' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
-                       numberParticipants= '', 
+                       numberParticipants= 734, 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('control'), 
                        reportedOutcome =c(''),
                        dataType=c('surveyData'),
                        dataSubtype=c('raw', 'metadata'),# metadata?
                        metadataType = c(''), # assessment?
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = 'syn10848316/wiki/548737',
                        dataAccessInstructions = 'syn10848316/wiki/551287'),
   
@@ -232,14 +232,14 @@ tables.annotations = list(
   'syn17025500' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
-                       numberParticipants= '', 
+                       numberParticipants= 561, 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('control'), 
                        reportedOutcome =c(''),
                        dataType=c('surveyData'),
                        dataSubtype=c('raw', 'metadata'),# metadata?
                        metadataType = c(''), # assessment?
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = 'syn10848316/wiki/587779',
                        dataAccessInstructions = 'syn10848316/wiki/551287'),
   
@@ -247,14 +247,14 @@ tables.annotations = list(
   'syn17061284' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
-                       numberParticipants= '', 
+                       numberParticipants= 342, 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('control'), 
                        reportedOutcome =c(''),
                        dataType=c('surveyData'),
                        dataSubtype=c('raw', 'metadata'),# metadata?
                        metadataType = c(''), # assessment?
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = 'syn10848316/wiki/587778',
                        dataAccessInstructions = 'syn10848316/wiki/551287'),
   
@@ -262,14 +262,14 @@ tables.annotations = list(
   'syn17114662' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
-                       numberParticipants= '', 
+                       numberParticipants= 334, 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('control'), 
                        reportedOutcome =c(''),
                        dataType=c('surveyData'),
                        dataSubtype=c('raw', 'metadata'),# metadata?
                        metadataType = c(''), # assessment?
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = 'syn10848316/wiki/587778',
                        dataAccessInstructions = 'syn10848316/wiki/551287'),
   
@@ -277,14 +277,14 @@ tables.annotations = list(
   'syn17116695' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
-                       numberParticipants= '', 
+                       numberParticipants= 328, 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('control'), 
                        reportedOutcome =c(''),
                        dataType=c('surveyData'),
                        dataSubtype=c('raw', 'metadata'),# metadata?
                        metadataType = c(''), # assessment?
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = 'syn10848316/wiki/587778',
                        dataAccessInstructions = 'syn10848316/wiki/551287'),
   
@@ -292,14 +292,14 @@ tables.annotations = list(
   'syn17060502' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
-                       numberParticipants= '', 
+                       numberParticipants= 39, 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('control'), 
                        reportedOutcome =c(''),
                        dataType=c('surveyData'),
                        dataSubtype=c('raw', 'metadata'),# metadata?
                        metadataType = c(''), # assessment?
-                       dhPortalIndex = 'TRUE',
+                       dhPortalIndex = 'FALSE',
                        dataDescriptionLocation = 'syn10848316/wiki/587778',
                        dataAccessInstructions = 'syn10848316/wiki/551287')
   
