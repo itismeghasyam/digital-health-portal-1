@@ -39,7 +39,7 @@ projects.annotations <- list(
   ## mPower 1.0 (check anno - Larsson)
   'syn4993293' = list(consortium = 'mHealth',
                       study = 'mPower Mobile Parkinson Disease Study',
-                      numberParticipants= 9520, # number who opted to share broadly 
+                      numberParticipants= 8320, # number who opted to share broadly 
                       dataCollectionMethod= c('active', 'patient reported outcome',
                                               'clinical assessment'),
                       deviceType = c('handheld'),
