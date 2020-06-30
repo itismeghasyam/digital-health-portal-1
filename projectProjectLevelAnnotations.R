@@ -40,6 +40,10 @@ mpowerurl=paste('[mPower Mobile Parkinson Disease Study](/Explore/Studies/Detail
                 URLencode('mPower Mobile Parkinson Disease Study', reserved = FALSE, repeated = FALSE),
                 ')', sep = "")
 
+mpowerurlshort=paste('[mPower](/Explore/Studies/DetailsPage?study=',
+                URLencode('mPower', reserved = FALSE, repeated = FALSE),
+                ')', sep = "")
+
 asthmaurl=paste('[Asthma Mobile Health Study](/Explore/Studies/DetailsPage?study=',
                 URLencode('Asthma Mobile Health Study', reserved = FALSE, repeated = FALSE),
                 ')', sep = "")
