@@ -103,7 +103,7 @@ projects.annotations <- list(
 #                    dataUsed = c('syn20681023', 'syn4993293'),
                     #MJFF l-dopa & mPower
                     dataUsed = c(mjffurl, mpowerurl),
-                    studyDescription = "The Parkinson’s Disease Digital Biomarker DREAM Challenge was a first of it's kind challenge, designed to benchmark methods for the processing of sensor data for development of digital signatures reflective of Parkinson's Disease.",
+                    studyDescription = "The Parkinson’s Disease Digital Biomarker DREAM Challenge was a first of its kind challenge, designed to benchmark methods for the processing of sensor data for development of digital signatures reflective of Parkinson's Disease.",
                     dataAccessInstructions = '',
                     isDHProject='TRUE'),
 
