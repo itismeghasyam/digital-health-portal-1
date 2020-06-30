@@ -56,6 +56,7 @@ asthmaurl=paste('[Asthma Mobile Health Study](/Explore/Studies/DetailsPage?study
 #               URLencode('SleepHealth', reserved = FALSE, repeated = FALSE),
 #               ')', sep = "")
 
+
 elevatemsurl=paste('[elevateMS](/Explore/Studies/DetailsPage?study=',
                    URLencode('ElevateMS', reserved = FALSE, repeated = FALSE),
                    ')', sep = "")
