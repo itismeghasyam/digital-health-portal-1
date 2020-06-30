@@ -95,7 +95,7 @@ projects.annotations <- list(
                                                  'opening a water bottle and pouring', 
                                                  'arranging paper','assembling nuts and bolts',
                                                  'folding towels'),
-                    investigator= '',
+                    # investigator= '',
                     resourceType = c('analysis', 'challenge'),
                     keywords = c('neurodegeneration', 'neurology', "Parkinson's", 'DREAM Challenge'),
                     dhPortalIndex = 'TRUE', # Change after filling annotations
@@ -104,7 +104,7 @@ projects.annotations <- list(
                     #MJFF l-dopa & mPower
                     dataUsed = c(mjffurl, mpowerurl),
                     studyDescription = "The Parkinson’s Disease Digital Biomarker DREAM Challenge was a first of it's kind challenge, designed to benchmark methods for the processing of sensor data for development of digital signatures reflective of Parkinson's Disease.",
-                    dataAccessInstructions = '',
+                    # dataAccessInstructions = '',
                     isDHProject='TRUE'),
 
 ## Participant Retention in Digital Health Studies
@@ -112,13 +112,13 @@ projects.annotations <- list(
                     study = 'Participant Retention in Digital Health Studies',
                     dataCollectionMethod= c('active', 'passive', 'patient reported outcome'),
                     deviceType = c('handheld'),
-                    sensorType = '',
+                    # sensorType = '',
                     devicePlatform = c('iOS', 'Android'), 
-                    deviceLocation = '',
+                    # deviceLocation = '',
                     diagnosis=  c('depression', 'endometriosis', 'multiple sclerosis', "Parkinson's disease", 'sleep related disorder', "control"), 
-                    reportedOutcome ='',
+                    # reportedOutcome ='',
                     digitalAssessmentCategory= c('participant engagement'),
-                    digitalAssessmentDetails = c(''),
+                    # digitalAssessmentDetails = c(''),
                     investigator= 'Sage Bionetworks',
                     resourceType = c('analysis'),
                     keywords = c('participant engagement', 'remote studies'),
