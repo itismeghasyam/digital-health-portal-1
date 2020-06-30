@@ -266,7 +266,7 @@ projects.annotations <- list(
                        # opening a bottle and pouring water (three times), arranging sheets of paper in a folder (twice), 
                        # assembling nuts and bolts for 30s, folding a towel three times, and sitting
                        sensorDataType = 'raw',
-                       investigator= c('MJFF', 'Bonato'),
+                       investigator= c('Michael J. Fox Foundation', 'Bonato'),
                        resourceType = 'experimentalData',
                        intervention = 'levodopa',
                        keywords = c('neurodegeneration', 'neurology', "Parkinson's"),
