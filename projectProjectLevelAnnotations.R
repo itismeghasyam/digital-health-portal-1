@@ -43,18 +43,37 @@ mpowerurl=paste('[mPower Mobile Parkinson Disease Study](/Explore/Studies/Detail
 asthmaurl=paste('[Asthma Mobile Health Study](/Explore/Studies/DetailsPage?study=',
                 URLencode('Asthma Mobile Health Study', reserved = FALSE, repeated = FALSE),
                 ')', sep = "")
-elevatemsurl=paste('[elevateMS Study](/Explore/Studies/DetailsPage?study=',
-                   URLencode('elevateMS Study', reserved = FALSE, repeated = FALSE),
+#elevatemsurl=paste('[elevateMS Study](/Explore/Studies/DetailsPage?study=',
+#                   URLencode('elevateMS Study', reserved = FALSE, repeated = FALSE),
+#                   ')', sep = "")
+#myhearturl=paste('[MyHeart Counts Cardiovascular Health Study](/Explore/Studies/DetailsPage?study=',
+#                 URLencode('MyHeart Counts Cardiovascular Health Study', reserved = FALSE, repeated = FALSE),
+#                 ')', sep = "")
+#brightenurl=paste('[Brighten Study](/Explore/Studies/DetailsPage?study=',
+#                  URLencode('Brighten Study', reserved = FALSE, repeated = FALSE),
+#                  ')', sep = "")
+#sleepurl=paste('[SleepHealth](/Explore/Studies/DetailsPage?study=',
+#               URLencode('SleepHealth', reserved = FALSE, repeated = FALSE),
+#               ')', sep = "")
+
+
+elevatemsurl=paste('[elevateMS](/Explore/Studies/DetailsPage?study=',
+                   URLencode('ElevateMS', reserved = FALSE, repeated = FALSE),
                    ')', sep = "")
-myhearturl=paste('[MyHeart Counts Cardiovascular Health Study](/Explore/Studies/DetailsPage?study=',
-                 URLencode('MyHeart Counts Cardiovascular Health Study', reserved = FALSE, repeated = FALSE),
+myhearturl=paste('[MyHeart Counts](/Explore/Studies/DetailsPage?study=',
+                 URLencode('MyHeart Counts', reserved = FALSE, repeated = FALSE),
                  ')', sep = "")
-brightenurl=paste('[Brighten Study](/Explore/Studies/DetailsPage?study=',
-                  URLencode('Brighten Study', reserved = FALSE, repeated = FALSE),
+brightenurl=paste('[Brighten](/Explore/Studies/DetailsPage?study=',
+                  URLencode('Brighten', reserved = FALSE, repeated = FALSE),
                   ')', sep = "")
 sleepurl=paste('[SleepHealth](/Explore/Studies/DetailsPage?study=',
                URLencode('SleepHealth', reserved = FALSE, repeated = FALSE),
                ')', sep = "")
+
+# mPower, elevateMS, MyHeart Counts, Brighten and SleepHealth links shortened here for the purposes of keeping
+# list of links less than 500 characters
+
+
 
 molemapperurl = paste('[Mole Mapper Study](/Explore/Studies/DetailsPage?study=',
                       URLencode('Mole Mapper Study', reserved = FALSE, repeated = FALSE),
@@ -95,7 +114,7 @@ projects.annotations <- list(
                                                  'opening a water bottle and pouring', 
                                                  'arranging paper','assembling nuts and bolts',
                                                  'folding towels'),
-                    investigator= '',
+                    # investigator= '',
                     resourceType = c('analysis', 'challenge'),
                     keywords = c('neurodegeneration', 'neurology', "Parkinson's", 'DREAM Challenge'),
                     dhPortalIndex = 'TRUE', # Change after filling annotations
@@ -103,8 +122,8 @@ projects.annotations <- list(
 #                    dataUsed = c('syn20681023', 'syn4993293'),
                     #MJFF l-dopa & mPower
                     dataUsed = c(mjffurl, mpowerurl),
-                    studyDescription = "The Parkinson’s Disease Digital Biomarker DREAM Challenge was a first of it's kind challenge, designed to benchmark methods for the processing of sensor data for development of digital signatures reflective of Parkinson's Disease.",
-                    dataAccessInstructions = '',
+                    studyDescription = "The Parkinson’s Disease Digital Biomarker DREAM Challenge was a first of its kind challenge, designed to benchmark methods for the processing of sensor data for development of digital signatures reflective of Parkinson's Disease.",
+                    # dataAccessInstructions = '',
                     isDHProject='TRUE'),
 
 ## Participant Retention in Digital Health Studies
@@ -112,13 +131,13 @@ projects.annotations <- list(
                     study = 'Participant Retention in Digital Health Studies',
                     dataCollectionMethod= c('active', 'passive', 'patient reported outcome'),
                     deviceType = c('handheld'),
-                    sensorType = '',
+                    # sensorType = '',
                     devicePlatform = c('iOS', 'Android'), 
-                    deviceLocation = '',
+                    # deviceLocation = '',
                     diagnosis=  c('depression', 'endometriosis', 'multiple sclerosis', "Parkinson's disease", 'sleep related disorder', "control"), 
-                    reportedOutcome ='',
+                    # reportedOutcome ='',
                     digitalAssessmentCategory= c('participant engagement'),
-                    digitalAssessmentDetails = c(''),
+                    # digitalAssessmentDetails = c(''),
                     investigator= 'Sage Bionetworks',
                     resourceType = c('analysis'),
                     keywords = c('participant engagement', 'remote studies'),

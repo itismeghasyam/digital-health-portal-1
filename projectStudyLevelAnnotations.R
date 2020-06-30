@@ -39,7 +39,7 @@ projects.annotations <- list(
   ## mPower 1.0 (check anno - Larsson)
   'syn4993293' = list(consortium = 'mHealth',
                       study = 'mPower Mobile Parkinson Disease Study',
-                      numberParticipants= '', 
+                      numberParticipants= as.integer(8320), # number who opted to share broadly 
                       dataCollectionMethod= c('active', 'patient reported outcome',
                                               'clinical assessment'),
                       deviceType = c('handheld'),
@@ -58,8 +58,8 @@ projects.annotations <- list(
                       sensorDataType = c('raw', 'processed'),
                       investigator= c('Sage Bionetworks'),
                       resourceType = 'curatedData',
-                      intervention = '',
-                      keywords = c(''),
+                      # intervention = '',
+                      # keywords = c(''),
                       dhPortalIndex = 'TRUE', # Change after filling annotations
                       studyDescriptionLocation = 'syn4993293', 
                       studyDataDescriptionLocation = 'syn4993293/wiki/247861',
@@ -69,7 +69,7 @@ projects.annotations <- list(
   ## MoleMapper Public Researcher Portal (check anno - Dan)
   'syn5576734' = list(consortium = 'mHealth',
                       study = 'Mole Mapper Study',
-                      numberParticipants= '', 
+                      numberParticipants= as.integer(1920), 
                       dataCollectionMethod= c('active', 'patient reported outcome'),
                       deviceType = c('handheld'),
                       sensorType = c('touchscreen', 'camera'),
@@ -82,18 +82,18 @@ projects.annotations <- list(
                       sensorDataType = 'processed',
                       investigator= c('Sancy Leachman'),
                       resourceType = 'experimentalData',
-                      intervention = '',
-                      keywords = c(''),
+                      # intervention = '',
+                      # keywords = c(''),
                       dhPortalIndex = 'TRUE', # Change after filling annotations
                       studyDescriptionLocation = 'syn5576734', 
                       studyDataDescriptionLocation = 'syn5576734/wiki/406009',
                       studyDescription = 'MoleMapper is an iPhone based study to track and document mole abnormalities that may signal a progression towards melanoma.',
                       dataAccessInstructions = 'syn5576734/wiki/391119'),
   
-  ## Asthma Health Public Researcher Portal (check anno - Larsson)
+  ## Asthma Health Public Researcher Portal
   'syn8361748' = list(consortium = 'mHealth',
                       study = 'Asthma Mobile Health Study',
-                      numberParticipants= '', 
+                      numberParticipants= as.integer(5875), 
                       dataCollectionMethod= c('active', 'patient reported outcome'),
                       deviceType = c('handheld'),
                       sensorType = c('touchscreen'),
@@ -108,7 +108,7 @@ projects.annotations <- list(
                       sensorDataType = 'processed',
                       investigator= c('Yu-Feng Yvonne Chan'),
                       resourceType = 'experimentalData',
-                      intervention = '',
+                      # intervention = '',
                       keywords = c('asthma', 'lung disease'),
                       dhPortalIndex = 'TRUE', 
                       studyDescriptionLocation = 'syn8361748', 
@@ -116,10 +116,10 @@ projects.annotations <- list(
                       studyDescription = 'The Asthma Health Study was an iPhone-based observational study to understand symptom triggers through the collection of symptom and medication surveys, along with passive geolocation, weather, and air quality monitoring.',
                       dataAccessInstructions = 'syn8361748/wiki/415364'),
   
-  ## elevateMS (check anno - Abhi)
+  ## elevateMS
   'syn21140362' = list(consortium = 'mHealth',
                       study = 'elevateMS Study',
-                      numberParticipants= '', 
+                      numberParticipants= as.integer(540), 
                       dataCollectionMethod= c('active', 'passive'),
                       deviceType = c('handheld'),
                       sensorType = c('accelerometer', 'gyroscope',
@@ -139,9 +139,9 @@ projects.annotations <- list(
                       sensorDataType = c('raw', 'derived'),
                       investigator= c('Sage Bionetworks' , 'Novartis Pharmaceuticals Corporation'),
                       resourceType = c('curatedData'),
-                      intervention = '',
+                      # intervention = '',
                       keywords = c('neurodegenerative disorders'),
-                      dhPortalIndex = 'FALSE', # Change after filling annotations
+                      dhPortalIndex = 'TRUE', # Change after filling annotations
                       studyDescriptionLocation = 'syn21140362', 
                       studyDataDescriptionLocation = 'syn21140362/wiki/602267',
                       studyDescription = 'elevateMS was a smartphone-based study designed to monitor and understand the variations in symptoms and triggers in Multiple Sclerosis (MS), through surveys, passive data collection, and physical and cognitive assessments.',
@@ -152,7 +152,7 @@ projects.annotations <- list(
   ## Heart Snapshot (checked anno - Dan/Megha/Solly)
   'syn22107959' = list(consortium = 'mHealth',
                        study = 'Heart Snapshot Study',
-                       numberParticipants= '', 
+                       numberParticipants= as.integer(124), 
                        dataCollectionMethod= c('active', 'passive', 'patient reported outcome',
                                                'clinical assessment'),
                        deviceType = c('handheld', 'wearable'),
@@ -170,8 +170,8 @@ projects.annotations <- list(
                        sensorDataType = 'processed',
                        investigator= c('Scripps Translational Sciences Institute', 'Sage Bionetworks'),
                        resourceType = 'curatedData',
-                       intervention = '',
-                       keywords = c(''),
+                       # intervention = '',
+                       # keywords = c(''),
                        dhPortalIndex = 'FALSE', # Change after filling annotations
                        studyDescriptionLocation = '', 
                        studyDataDescriptionLocation = '',
@@ -181,7 +181,7 @@ projects.annotations <- list(
   ## MyHeart Counts Public Researcher Portal (check anno - Larsson)
   'syn11269541' = list(consortium = 'mHealth',
                        study = 'MyHeart Counts Cardiovascular Health Study',
-                       numberParticipants= '', 
+                       numberParticipants= as.integer(26902), 
                        dataCollectionMethod= c('active' , 'passive', 'patient reported outcome'),
                        deviceType = c('handheld', 'wearable'),
                        sensorType = c('accelerometer', 'gyroscope',
@@ -200,50 +200,50 @@ projects.annotations <- list(
                        sensorDataType = c('raw', 'processed'),
                        investigator= c('Stanford Medicine'), 
                        resourceType = 'experimentalData',
-                       intervention = '',
-                       keywords = c(''),
+                       # intervention = '',
+                       # keywords = c(''),
                        dhPortalIndex = 'TRUE', # Change after filling annotations
                        studyDescriptionLocation = 'syn11269541', 
                        studyDataDescriptionLocation = 'syn11269541/wiki/485635',
                        studyDescription = 'The MyHeart Counts Cardiovascular Health Study is a smartphone-based study of cardiovascular health, consisting of records of daily physical activity, health questionnaires, and 6-minute walk fitness tests.',
                        dataAccessInstructions = 'syn11269541/wiki/485634'),
   
-  ## PKU Study Project (check anno - Dan/Megha)
-  # SKIP FOR NOW- get back later
-  'syn20486872' = list(consortium = 'mHealth',
-                       study = 'BioMarin PKU Study',
-                       numberParticipants= 18, # recruitment ongoing 
-                       dataCollectionMethod= c('active', 'passive', 'patient reported outcome',
-                                               'clinical assessment'),
-                       deviceType = c('handheld', 'wearable'),
-                       sensorType = c('accelerometer', 'gyroscope', 'magnetometer',
-                                      'fitbit'),
-                       devicePlatform = c('iOS'), 
-                       deviceLocation = c('hand', 'wrist', 'pocket'),
-                       diagnosis=  c('phenylketonuria', 'control'), 
-                       reportedOutcome =c('tremor'),
-                       digitalAssessmentCategory= c('Resting tremor', 'kinetic tremor',
-                                                    'cognition',  'sleep', 'heart rate'),
-                       digitalAssessmentDetails = c('tapping', 'hand-in-lap', 'finger-to-nose',
-                                                    'alternating hand movements', 'drawing',
-                                                    'typing', 'opening a water bottle and pouring', 
-                                                    'arranging paper','assembling nuts and bolts',
-                                                    'folding towels'),
-                       sensorDataType = 'raw',
-                       investigator= c('BioMarin', 'Sage Bionetworks'),
-                       resourceType = 'curatedData',
-                       intervention = '',
-                       keywords = c('Phenylketonuria', 'PKU', 'rare disease'),
-                       dhPortalIndex = 'FALSE', # Change after filling annotations
-                       studyDescriptionLocation = '', # syn ID of the public facing project
-                       studyDataDescriptionLocation = '',
-                       studyDescription = '',
-                       dataAccessInstructions = ''),
+  # ## PKU Study Project (check anno - Dan/Megha)
+  # # SKIP FOR NOW- get back later
+  # 'syn20486872' = list(consortium = 'mHealth',
+  #                      study = 'BioMarin PKU Study',
+  #                      numberParticipants= as.integer(18), # recruitment ongoing 
+  #                      dataCollectionMethod= c('active', 'passive', 'patient reported outcome',
+  #                                              'clinical assessment'),
+  #                      deviceType = c('handheld', 'wearable'),
+  #                      sensorType = c('accelerometer', 'gyroscope', 'magnetometer',
+  #                                     'fitbit'),
+  #                      devicePlatform = c('iOS'), 
+  #                      deviceLocation = c('hand', 'wrist', 'pocket'),
+  #                      diagnosis=  c('phenylketonuria', 'control'), 
+  #                      reportedOutcome =c('tremor'),
+  #                      digitalAssessmentCategory= c('Resting tremor', 'kinetic tremor',
+  #                                                   'cognition',  'sleep', 'heart rate'),
+  #                      digitalAssessmentDetails = c('tapping', 'hand-in-lap', 'finger-to-nose',
+  #                                                   'alternating hand movements', 'drawing',
+  #                                                   'typing', 'opening a water bottle and pouring', 
+  #                                                   'arranging paper','assembling nuts and bolts',
+  #                                                   'folding towels'),
+  #                      sensorDataType = 'raw',
+  #                      investigator= c('BioMarin', 'Sage Bionetworks'),
+  #                      resourceType = 'curatedData',
+  #                      intervention = '',
+  #                      keywords = c('Phenylketonuria', 'PKU', 'rare disease'),
+  #                      dhPortalIndex = 'FALSE', # Change after filling annotations
+  #                      studyDescriptionLocation = '', # syn ID of the public facing project
+  #                      studyDataDescriptionLocation = '',
+  #                      studyDescription = '',
+  #                      dataAccessInstructions = ''),
 
   ## MJFF Levodopa Response Study (check anno - solly)
   'syn20681023' = list(consortium = 'mHealth',
                        study = 'MJFF Levodopa Response Study',
-                       numberParticipants= 29, 
+                       numberParticipants= as.integer(29), 
                        dataCollectionMethod= c('active', 'passive', 'patient reported outcome',
                                                'clinical assessment'),
                        deviceType = c('handheld', 'wearable'),
@@ -266,7 +266,7 @@ projects.annotations <- list(
                        # opening a bottle and pouring water (three times), arranging sheets of paper in a folder (twice), 
                        # assembling nuts and bolts for 30s, folding a towel three times, and sitting
                        sensorDataType = 'raw',
-                       investigator= c('MJFF', 'Bonato'),
+                       investigator= c('Michael J. Fox Foundation', 'Bonato'),
                        resourceType = 'experimentalData',
                        intervention = 'levodopa',
                        keywords = c('neurodegeneration', 'neurology', "Parkinson's"),
@@ -279,7 +279,7 @@ projects.annotations <- list(
   ## BRIGHTEN Study
   'syn10848316' = list(consortium = 'mHealth',
                       study = 'Brighten Study',
-                      numberParticipants= '', 
+                      numberParticipants= as.integer(2258), 
                       dataCollectionMethod= c('passive', 'patient reported outcome',
                                               'clinical assessment'),
                       deviceType = c('handheld'),
@@ -292,12 +292,12 @@ projects.annotations <- list(
                                          'physical activity'),
                       digitalAssessmentCategory= c('cognition', 'sleep', 'mood',
                                                    'mobility', 'mental health'),
-                      digitalAssessmentDetails = c(''),
+                      # digitalAssessmentDetails = c(''),
                       sensorDataType = 'raw',
                       investigator= c('UW', 'UCSF'),
                       resourceType = c('curatedData'),
-                      intervention = '',
-                      keywords = c(''),
+                      # intervention = '',
+                      # keywords = c(''),
                       dhPortalIndex = 'FALSE', # Change after filling annotations
                       studyDescriptionLocation = 'syn10848316', 
                       studyDataDescriptionLocation = 'syn10848316/wiki/548728',
