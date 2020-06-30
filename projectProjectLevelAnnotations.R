@@ -126,7 +126,7 @@ projects.annotations <- list(
                     studyDescriptionLocation = 'syn22123360', 
                     #dataUsed = c('syn4993293', 'syn8361748', 'syn21140362', 'syn11269541', 'syn10848316', 'syn18492837'), 
                     # syn21140362 = unknown
-                    dataUsed = c(mpowerurl, asthmaurl, elevatemsurl, myhearturl, brightenurl, sleepurl,
+                    dataUsed = c(mpowerurlshort, asthmaurl, elevatemsurl, myhearturl, brightenurl, sleepurl,
                                  '[Phendo](http://citizenendo.org/phendo/)', '[START](https://www.goodrx.com/)'
                     ),
 #                    externalDataUsed = c('[Phendo](http://citizenendo.org/phendo/)', '[START](https://www.goodrx.com/)'),
