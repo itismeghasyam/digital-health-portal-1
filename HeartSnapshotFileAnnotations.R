@@ -49,8 +49,8 @@ tables.annotations = list(
                        dataType= c('sensor', 'surveyData'),
                        dataSubtype= c('raw'),
                        dhPortalIndex = 'FALSE',
-                       dataDescriptionLocation = '',
-                       dataAccessInstructions = ''),
+                       # dataDescriptionLocation = '',
+                       dataAccessInstructions = 'syn22107959/wiki/603642'),
   
   ## CRF_HR_validation
   'syn22123905' = list(consortium = 'mHealth',
@@ -69,8 +69,8 @@ tables.annotations = list(
                        dataSubtype=c('raw', 'metadata'),
                        metadataType= c('individual'),
                        dhPortalIndex = 'FALSE',
-                       dataDescriptionLocation = '',
-                       dataAccessInstructions = ''),
+                       # dataDescriptionLocation = '',
+                       dataAccessInstructions = 'syn22107959/wiki/603642'),
   
   ## Heart Rate Measurement
   'syn22124385' = list(consortium = 'mHealth',
@@ -89,8 +89,8 @@ tables.annotations = list(
                        dataSubtype=c('processed', 'metadata'),
                        metadataType= c('assessment'),
                        dhPortalIndex = 'FALSE',
-                       dataDescriptionLocation = '',
-                       dataAccessInstructions = ''),
+                       # dataDescriptionLocation = '',
+                       dataAccessInstructions = 'syn22107959/wiki/603642'),
   
   ## DailyActivitiesSummary.activities
   'syn22119579' = list(consortium = 'mHealth',
@@ -107,8 +107,8 @@ tables.annotations = list(
                        dataSubtype=c('processed', 'metadata'),
                        metadataType= c('assessment'),
                        dhPortalIndex = 'FALSE',
-                       dataDescriptionLocation = '',
-                       dataAccessInstructions = ''),
+                       # dataDescriptionLocation = '',
+                       dataAccessInstructions = 'syn22107959/wiki/603642'),
   
   ## HeartRate.activities.heart
   'syn22119590' = list(consortium = 'mHealth',
@@ -126,8 +126,8 @@ tables.annotations = list(
                        dataType=c('sensor'),
                        dataSubtype=c('processed'),
                        dhPortalIndex = 'FALSE',
-                       dataDescriptionLocation = '',
-                       dataAccessInstructions = ''),
+                       # dataDescriptionLocation = '',
+                       dataAccessInstructions = 'syn22107959/wiki/603642'),
   
   ## HeartRate.activities.heart-intraday
   'syn22123686' = list(consortium = 'mHealth',
@@ -145,8 +145,8 @@ tables.annotations = list(
                        dataType=c('sensor'),
                        dataSubtype=c('processed'),
                        dhPortalIndex = 'FALSE',
-                       dataDescriptionLocation = '',
-                       dataAccessInstructions = ''),
+                       # dataDescriptionLocation = '',
+                       dataAccessInstructions = 'syn22107959/wiki/603642'),
   
   ## DailyActivitiesSummary.summary
   'syn22119575' = list(consortium = 'mHealth',
@@ -164,8 +164,8 @@ tables.annotations = list(
                        dataType=c('sensor'),
                        dataSubtype=c('processed'),
                        dhPortalIndex = 'FALSE',
-                       dataDescriptionLocation = '',
-                       dataAccessInstructions = ''),
+                       # dataDescriptionLocation = '',
+                       dataAccessInstructions = 'syn22107959/wiki/603642'),
   
   ## Cardio 12MT
   'syn22119312' = list(consortium = 'mHealth',
@@ -184,8 +184,8 @@ tables.annotations = list(
                        dataSubtype=c('raw', 'processed', 'metadata'),
                        metadataType = c('assessment'), 
                        dhPortalIndex = 'FALSE',
-                       dataDescriptionLocation = '',
-                       dataAccessInstructions = ''),
+                       # dataDescriptionLocation = '',
+                       dataAccessInstructions = 'syn22107959/wiki/603642'),
   
   ## Cardio Stress Test
   'syn22119505' = list(consortium = 'mHealth',
@@ -204,8 +204,8 @@ tables.annotations = list(
                        dataSubtype=c('raw', 'processed', 'metadata'),
                        metadataType= c('assessment'), 
                        dhPortalIndex = 'FALSE',
-                       dataDescriptionLocation = '',
-                       dataAccessInstructions = ''),
+                       # dataDescriptionLocation = '',
+                       dataAccessInstructions = 'syn22107959/wiki/603642'),
   
   ## Background Survey
   'syn22125202' = list(consortium = 'mHealth',
@@ -219,8 +219,8 @@ tables.annotations = list(
                        dataSubtype=c('metadata'),
                        metadataType= c('individual'),
                        dhPortalIndex = 'FALSE',
-                       dataDescriptionLocation = '',
-                       dataAccessInstructions = ''),
+                       # dataDescriptionLocation = '',
+                       dataAccessInstructions = 'syn22107959/wiki/603642'),
   
   ## Cardio Stair Step
   'syn22119475' = list(consortium = 'mHealth',
@@ -239,8 +239,8 @@ tables.annotations = list(
                        dataSubtype=c('raw', 'processed', 'metadata'),
                        metadataType= c('assessment'), 
                        dhPortalIndex = 'FALSE',
-                       dataDescriptionLocation = '',
-                       dataAccessInstructions = '')
+                       # dataDescriptionLocation = '',
+                       dataAccessInstructions = 'syn22107959/wiki/603642')
   
 )
 
