@@ -36,7 +36,7 @@ synLogin()
 # Project Synapse ID vs annotations needed
 projects.annotations <- list(
   
-  ## mPower 1.0 (check anno - Larsson)
+  ## mPower 1.0
   'syn4993293' = list(consortium = 'mHealth',
                       study = 'mPower Mobile Parkinson Disease Study',
                       numberParticipants= as.integer(8320), # number who opted to share broadly 
@@ -47,7 +47,7 @@ projects.annotations <- list(
                                      'gyroscope', 'magnetometer'),
                       devicePlatform = c('iOS'), 
                       deviceLocation = c('hand', 'pocket', 'flat surface'),
-                      diagnosis=  c("Parkinson's Disease", 'control'), 
+                      diagnosis=  c("Parkinson's disease", 'control'), 
                       reportedOutcome = c('medication intake', 'PDQ-8', 'MDS-UPDRS',
                                           'demographics survey'),
                       digitalAssessmentCategory= c('phonation', 'gait',
@@ -66,7 +66,7 @@ projects.annotations <- list(
                       studyDescription = 'mPower is a large, longitudinal study which piloted new approaches to monitoring key indicators of Parkinson Disease progression and diagnosis incorporating traditional behavioral symptom measurements along with novel metrics gleaned from sensor-rich mobile devices.',
                       dataAccessInstructions = 'syn4993293/wiki/247860'),
   
-  ## MoleMapper Public Researcher Portal (check anno - Dan)
+  ## MoleMapper Public Researcher Portal 
   'syn5576734' = list(consortium = 'mHealth',
                       study = 'Mole Mapper Study',
                       numberParticipants= as.integer(1920), 
@@ -126,7 +126,7 @@ projects.annotations <- list(
                                      'magnetometer', 'touchscreen', 'gps'),
                       devicePlatform = c('iOS'), 
                       deviceLocation = c('hand', 'pocket'),
-                      diagnosis=  c('Multiple Sclerosis', 'control'), 
+                      diagnosis=  c('Multiple sclerosis', 'control'), 
                       reportedOutcome =c('tremor', 'dyskinesia', 'bradykinesia',
                                          'freezing of gait', 'medication report', 'symptoms report',
                                        'triggers report', 'relapses report', 'NeuroQOL-Cognition',
@@ -149,7 +149,7 @@ projects.annotations <- list(
   
 
   
-  ## Heart Snapshot (checked anno - Dan/Megha/Solly)
+  ## Heart Snapshot
   'syn22107959' = list(consortium = 'mHealth',
                        study = 'Heart Snapshot Study',
                        numberParticipants= as.integer(124), 
@@ -178,7 +178,7 @@ projects.annotations <- list(
                        studyDescription = '',
                        dataAccessInstructions = ''),
   
-  ## MyHeart Counts Public Researcher Portal (check anno - Larsson)
+  ## MyHeart Counts Public Researcher Portal 
   'syn11269541' = list(consortium = 'mHealth',
                        study = 'MyHeart Counts Cardiovascular Health Study',
                        numberParticipants= as.integer(26902), 
@@ -240,7 +240,7 @@ projects.annotations <- list(
   #                      studyDescription = '',
   #                      dataAccessInstructions = ''),
 
-  ## MJFF Levodopa Response Study (check anno - solly)
+  ## MJFF Levodopa Response Study 
   'syn20681023' = list(consortium = 'mHealth',
                        study = 'MJFF Levodopa Response Study',
                        numberParticipants= as.integer(29), 
@@ -250,7 +250,7 @@ projects.annotations <- list(
                        sensorType = 'accelerometer',
                        devicePlatform = c('Shimmer', 'GENEActiv', 'Android', 'Pebble OS'), 
                        deviceLocation = c('wrist', 'waist', 'forearm', 'shank', 'back'),
-                       diagnosis= "Parkinson's Disease", 
+                       diagnosis= "Parkinson's disease", 
                        reportedOutcome =c('MDS-UPDRS', 'tremor', 'dyskinesia', 'bradykinesia',
                                           'freezing of gait', 'medication report', 'sleep report'),
                        digitalAssessmentCategory= c('resting tremor', 'action tremor', 'gait'),
