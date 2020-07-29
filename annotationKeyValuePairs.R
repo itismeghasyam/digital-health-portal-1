@@ -143,6 +143,31 @@ tools.anno <- getAnnotationsFromFileView(tools.fileview)
 # Merge all the annotations
 all.anno <- rbind(rbind(study.project.anno, data.anno), tools.anno) 
 
+# There might be spaces that crept in before the value or after ('control' vs ' control'/ 'control ')
+# because of how we process the STRING_LIST type columns. For eg., let's look at a sample diagnosis key
+# "[control, multiple sclerosis]" leads to 'control' and ' multiple sclerosis', note the space (' ') 
+# before multiple in multiple sclerosis
+all.anno.corrected <- apply(all.anno,1, function(x){
+  curr_str <- x[['val']]
+  curr_len <- stringr::str_length(curr_str)
+  if(substr(curr_str, curr_len, curr_len) == ' '){
+    curr_str <- substr(curr_str, 1, curr_len-1)
+  }
+  
+  curr_len <- stringr::str_length(curr_str)
+  if(substr(curr_str, 1, 1) == ' '){
+    curr_str <- substr(curr_str, 2, curr_len)
+  }
+  
+  x[['val']] <- curr_str
+  
+  x
+  
+  
+}) %>% t() %>%  as.data.frame() %>% 
+  unique()
+
+
 ##############
 # Upload to Synapse
 ##############
@@ -154,7 +179,7 @@ thisRepo <- getRepo(repository = "itismeghasyam/digital-health-portal", ref="bra
 thisFile <- getPermlink(repository = thisRepo, repositoryPath=thisFileName)
 
 # Write to Synapse
-write.csv(all.anno,file = paste0('annotation_key_value_pairs','.csv'),na="")
+write.csv(all.anno.corrected,file = paste0('annotation_key_value_pairs','.csv'),na="")
 obj = File(paste0('annotation_key_value_pairs','.csv'),
            name = paste0('annotation_key_value_pairs','.csv'),
            parentId = 'syn21574434')
