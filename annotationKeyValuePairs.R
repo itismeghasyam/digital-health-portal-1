@@ -167,6 +167,27 @@ all.anno.corrected <- apply(all.anno,1, function(x){
 }) %>% t() %>%  as.data.frame() %>% 
   unique()
 
+# Subset key-value pairs by removing un-necessary keys
+nonAnnotationKeys <- c('name',
+                       'id',
+                       'numberParticipants',
+                       'dataAccessInstructions',
+                       'dataUsed',
+                       'study',
+                       'studyDescription',
+                       'studyDescriptionLocation',
+                       'studyDataDescriptionLocation',
+                       'studyOrProject',
+                       'projectId',
+                       'dataAccessInstructions',
+                       'dataDescriptionLocation',
+                       'suggestedStudies',
+                       'summary',
+                       'url'
+                       )
+
+just.annotations <- all.anno.corrected %>% 
+  dplyr::filter(!(key %in% nonAnnotationKeys))
 
 ##############
 # Upload to Synapse
@@ -179,8 +200,16 @@ thisRepo <- getRepo(repository = "itismeghasyam/digital-health-portal", ref="bra
 thisFile <- getPermlink(repository = thisRepo, repositoryPath=thisFileName)
 
 # Write to Synapse
-write.csv(all.anno.corrected,file = paste0('annotation_key_value_pairs','.csv'),na="")
+write.csv(just.annotations,file = paste0('annotation_key_value_pairs','.csv'),na="")
 obj = File(paste0('annotation_key_value_pairs','.csv'),
            name = paste0('annotation_key_value_pairs','.csv'),
            parentId = 'syn21574434')
 obj = synStore(obj, executed = thisFile, used = all.used.ids)
+
+# Write to Synapse
+write.csv(all.anno.corrected,file = paste0('All_key_value_pairs','.csv'),na="")
+obj = File(paste0('All_key_value_pairs','.csv'),
+           name = paste0('All_key_value_pairs','.csv'),
+           parentId = 'syn21574434')
+obj = synStore(obj, executed = thisFile, used = all.used.ids)
+
