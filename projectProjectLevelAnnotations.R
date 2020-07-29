@@ -138,7 +138,7 @@ projects.annotations <- list(
                     # sensorType = '',
                     devicePlatform = c('iOS', 'Android'), 
                     # deviceLocation = '',
-                    diagnosis=  c('depression', 'endometriosis', 'Multiple sclerosis', "Parkinson's disease", 'sleep related disorder', "control"), 
+                    diagnosis=  c('depression', 'endometriosis', 'multiple sclerosis', "Parkinson's disease", 'sleep related disorder', "control"), 
                     # reportedOutcome ='',
                     digitalAssessmentCategory= c('participant engagement'),
                     # digitalAssessmentDetails = c(''),

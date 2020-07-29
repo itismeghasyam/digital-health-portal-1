@@ -126,7 +126,7 @@ projects.annotations <- list(
                                      'magnetometer', 'touchscreen', 'gps'),
                       devicePlatform = c('iOS'), 
                       deviceLocation = c('hand', 'pocket'),
-                      diagnosis=  c('Multiple sclerosis', 'control'), 
+                      diagnosis=  c('multiple sclerosis', 'control'), 
                       reportedOutcome =c('tremor', 'dyskinesia', 'bradykinesia',
                                          'freezing of gait', 'medication report', 'symptoms report',
                                        'triggers report', 'relapses report', 'NeuroQOL-Cognition',
@@ -144,7 +144,7 @@ projects.annotations <- list(
                       dhPortalIndex = 'TRUE', # Change after filling annotations
                       studyDescriptionLocation = 'syn21140362', 
                       studyDataDescriptionLocation = 'syn21140362/wiki/602267',
-                      studyDescription = 'elevateMS was a smartphone-based study designed to monitor and understand the variations in symptoms and triggers in Multiple Sclerosis (MS), through surveys, passive data collection, and physical and cognitive assessments.',
+                      studyDescription = 'elevateMS was a smartphone-based study designed to monitor and understand the variations in symptoms and triggers in multiple sclerosis (MS), through surveys, passive data collection, and physical and cognitive assessments.',
                       dataAccessInstructions = 'syn21140362/wiki/602266'),
   
 
