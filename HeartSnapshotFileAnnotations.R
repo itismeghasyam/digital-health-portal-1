@@ -32,8 +32,8 @@ projectlink = paste("[", study, "](/Explore/Studies/DetailsPage?study=",
 ##############
 tables.annotations = list(
   
-  ## spectrocolorimetry
-  'syn22123894' = list(consortium = 'mHealth',
+  ## spectrocolorimetry - calibration
+  'syn22268040' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= as.integer(124), 
@@ -52,8 +52,8 @@ tables.annotations = list(
                        # dataDescriptionLocation = '',
                        dataAccessInstructions = 'syn22107959/wiki/603642'),
   
-  ## CRF_HR_validation
-  'syn22123905' = list(consortium = 'mHealth',
+  ## Baseline and PulseOx - calibration
+  'syn22268058' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= as.integer(124), 
@@ -72,8 +72,8 @@ tables.annotations = list(
                        # dataDescriptionLocation = '',
                        dataAccessInstructions = 'syn22107959/wiki/603642'),
   
-  ## Heart Rate Measurement
-  'syn22124385' = list(consortium = 'mHealth',
+  ## Heart Rate Measurement - calibration
+  'syn22268054' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= as.integer(124), 
@@ -92,8 +92,8 @@ tables.annotations = list(
                        # dataDescriptionLocation = '',
                        dataAccessInstructions = 'syn22107959/wiki/603642'),
   
-  ## DailyActivitiesSummary.activities
-  'syn22119579' = list(consortium = 'mHealth',
+  ## Fitbit activities
+  'syn22254978' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= as.integer(10), 
@@ -110,8 +110,8 @@ tables.annotations = list(
                        # dataDescriptionLocation = '',
                        dataAccessInstructions = 'syn22107959/wiki/603642'),
   
-  ## HeartRate.activities.heart
-  'syn22119590' = list(consortium = 'mHealth',
+  ## Fitbit Heart rate summary
+  'syn22254919' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= as.integer(108), 
@@ -129,8 +129,8 @@ tables.annotations = list(
                        # dataDescriptionLocation = '',
                        dataAccessInstructions = 'syn22107959/wiki/603642'),
   
-  ## HeartRate.activities.heart-intraday
-  'syn22123686' = list(consortium = 'mHealth',
+  ## Fitbit Heart rate intraday
+  'syn22254943' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= as.integer(108), 
@@ -148,8 +148,8 @@ tables.annotations = list(
                        # dataDescriptionLocation = '',
                        dataAccessInstructions = 'syn22107959/wiki/603642'),
   
-  ## DailyActivitiesSummary.summary
-  'syn22119575' = list(consortium = 'mHealth',
+  ## Fitbit activities summary
+  'syn22254977' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= as.integer(108), 
@@ -167,8 +167,8 @@ tables.annotations = list(
                        # dataDescriptionLocation = '',
                        dataAccessInstructions = 'syn22107959/wiki/603642'),
   
-  ## Cardio 12MT
-  'syn22119312' = list(consortium = 'mHealth',
+  ## 12-MRT
+  'syn22254983' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= as.integer(98), 
@@ -207,8 +207,8 @@ tables.annotations = list(
                        # dataDescriptionLocation = '',
                        dataAccessInstructions = 'syn22107959/wiki/603642'),
   
-  ## Background Survey
-  'syn22125202' = list(consortium = 'mHealth',
+  ## Baseline Characteristics - Validation
+  'syn22254979' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= as.integer(115), 
@@ -222,8 +222,8 @@ tables.annotations = list(
                        # dataDescriptionLocation = '',
                        dataAccessInstructions = 'syn22107959/wiki/603642'),
   
-  ## Cardio Stair Step
-  'syn22119475' = list(consortium = 'mHealth',
+  ## 3-MST
+  'syn22254980' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= as.integer(98), 
