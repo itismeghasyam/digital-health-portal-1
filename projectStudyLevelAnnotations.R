@@ -103,7 +103,7 @@ projects.annotations <- list(
                       reportedOutcome =c('ZIP code','demographics survey','medication report', 
                                          'EQ-5D', 'medical history', 'asthma symptoms',
                                          'asthma triggers', 'asthma management'),
-                      digitalAssessmentCategory= c('lung disease severity'),
+                      digitalAssessmentCategory= c('respiratory'),
                       digitalAssessmentDetails = c('survey'),
                       sensorDataType = 'processed',
                       investigator= c('Yu-Feng Yvonne Chan'),
