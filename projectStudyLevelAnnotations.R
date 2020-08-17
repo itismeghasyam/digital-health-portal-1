@@ -48,7 +48,7 @@ projects.annotations <- list(
                       devicePlatform = c('iOS'), 
                       deviceLocation = c('hand', 'pocket', 'flat surface'),
                       diagnosis=  c("Parkinson's disease", 'control'), 
-                      reportedOutcome = c('medication intake', 'PDQ-8', 'MDS-UPDRS',
+                      reportedOutcome = c('medication report', 'PDQ-8', 'MDS-UPDRS',
                                           'demographics survey'),
                       digitalAssessmentCategory= c('phonation', 'gait',
                                                    'motor coordination', 'cognition'),
