@@ -287,7 +287,7 @@ projects.annotations <- list(
                       devicePlatform = c('iOS', 'Android'), 
                       deviceLocation = c('hand'),
                       diagnosis=  c('control'), 
-                      reportedOutcome =c('PHQ-9', 'PHQ-2', 'SDS', 'GAD-7',
+                      reportedOutcome =c('PHQ-9', 'PHQ-2', 'Sheehan Disability Scale (SDS)', 'GAD-7',
                                          'sleep report', 'AUDIT-C', 'phone usage',
                                          'physical activity'),
                       digitalAssessmentCategory= c('cognition', 'sleep', 'mood',
