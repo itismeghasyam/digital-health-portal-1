@@ -43,7 +43,7 @@ tables.annotations = list(
                        devicePlatform = c('Pantone'), 
                        deviceLocation = c('face', 'finger'),
                        diagnosis= c('control'), 
-                       digitalAssessmentCategory= c('skintone'),
+                       digitalAssessmentCategory= c('skin color'),
                        digitalAssessmentDetails = c('facial skin color',
                                                     'finger skin color'),
                        dataType= c('sensor', 'surveyData'),
