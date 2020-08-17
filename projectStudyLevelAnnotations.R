@@ -288,7 +288,7 @@ projects.annotations <- list(
                       deviceLocation = c('hand'),
                       diagnosis=  c('control'), 
                       reportedOutcome =c('PHQ-9', 'PHQ-2', 'SDS', 'GAD-7',
-                                         'Sleep report', 'AUDIT-C', 'phone usage',
+                                         'sleep report', 'AUDIT-C', 'phone usage',
                                          'physical activity'),
                       digitalAssessmentCategory= c('cognition', 'sleep', 'mood',
                                                    'mobility', 'mental health'),
