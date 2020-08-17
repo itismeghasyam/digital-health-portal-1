@@ -1,6 +1,6 @@
 ########################################################################
 # Digital Health Portal
-# Purpose: To Annotate the Data in Heart Snapshot Project (Cardio Respiratory Fitness)
+# Purpose: To Annotate the Data in Heart Snapshot Project (Cardiorespiratory Fitness)
 # Author: Meghasyam Tummalacherla
 # email: meghasyam@sagebase.org
 ########################################################################
@@ -178,7 +178,7 @@ tables.annotations = list(
                        devicePlatform = c('iOS', 'Android'), 
                        deviceLocation = c('finger'),
                        diagnosis= c('control'), 
-                       digitalAssessmentCategory= c('cardio respitatory fitness'),
+                       digitalAssessmentCategory= c('cardiorespiratory fitness'),
                        digitalAssessmentDetails = c('12-min run test'),
                        dataType=c('sensor'),
                        dataSubtype=c('raw', 'processed', 'metadata'),
@@ -198,7 +198,7 @@ tables.annotations = list(
                        devicePlatform = c('iOS', 'Android'), 
                        deviceLocation = c('finger'),
                        diagnosis= c('control'), 
-                       digitalAssessmentCategory= c('cardio respiratory fitness'),
+                       digitalAssessmentCategory= c('cardiorespiratory fitness'),
                        digitalAssessmentDetails = c('treadmill stresstest'),
                        dataType=c('sensor'),
                        dataSubtype=c('raw', 'processed', 'metadata'),
@@ -233,7 +233,7 @@ tables.annotations = list(
                        devicePlatform = c('iOS', 'Android'), 
                        deviceLocation = c('finger'),
                        diagnosis= c('control'), 
-                       digitalAssessmentCategory= c('cardio respiratory fitness'),
+                       digitalAssessmentCategory= c('cardiorespiratory fitness'),
                        digitalAssessmentDetails = c('tecumseh test'),
                        dataType=c('sensor'),
                        dataSubtype=c('raw', 'processed', 'metadata'),
