@@ -222,7 +222,7 @@ projects.annotations <- list(
   #                      deviceLocation = c('hand', 'wrist', 'pocket'),
   #                      diagnosis=  c('phenylketonuria', 'control'), 
   #                      reportedOutcome =c('tremor'),
-  #                      digitalAssessmentCategory= c('Resting tremor', 'kinetic tremor',
+  #                      digitalAssessmentCategory= c('resting tremor', 'kinetic tremor',
   #                                                   'cognition',  'sleep', 'heart rate'),
   #                      digitalAssessmentDetails = c('tapping', 'hand-in-lap', 'finger-to-nose',
   #                                                   'alternating hand movements', 'drawing',
