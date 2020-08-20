@@ -190,7 +190,7 @@ projects.annotations <- list(
                        deviceLocation = c('hand' , 'pocket', 'wrist'),
                        diagnosis=  c('control'), 
                        reportedOutcome =c('inclusion survey', 'PAR-Q', 'diet survey',
-                                          'sleep report', 'activity report',
+                                          'sleep report', 'physical activity',
                                           'medical history', 'demographics survey',
                                           'quality of life', 'disease risk',
                                           "blood pressure", "fasting glucose",
