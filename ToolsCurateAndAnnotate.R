@@ -38,7 +38,7 @@ tools.list = list(
                        softwareRepository = 'GitHub',
                        inputDataType = c('accelerometer', 'gyroscope', 'camera', 'touchscreen'),
                        outputDataType = c('sensor features', 'heart rate', 'accelerometer features',
-                                          'gyroscope features', 'walk features', 'tap features',
+                                          'gyroscope features', 'walk features', 'tapping features',
                                           'tremor features'),
                        summary = 'An R package for extracting features from mobile and wearable sensor data',
                        digitalAssessmentCategory = c('resting tremor', 'postural tremor', 'gait', 'cardiovascular'),
