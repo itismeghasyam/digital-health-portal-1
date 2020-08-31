@@ -40,6 +40,10 @@ mpowerurl=paste('[mPower Mobile Parkinson Disease Study](/Explore/Studies/Detail
                 URLencode('mPower Mobile Parkinson Disease Study', reserved = FALSE, repeated = FALSE),
                 ')', sep = "")
 
+mpowerurlshort=paste('[mPower](/Explore/Studies/DetailsPage?study=',
+                URLencode('mPower', reserved = FALSE, repeated = FALSE),
+                ')', sep = "")
+
 asthmaurl=paste('[Asthma Mobile Health Study](/Explore/Studies/DetailsPage?study=',
                 URLencode('Asthma Mobile Health Study', reserved = FALSE, repeated = FALSE),
                 ')', sep = "")
@@ -105,7 +109,7 @@ projects.annotations <- list(
                     sensorType = c('accelerometer', 'gyroscope'),
                     devicePlatform = c('GENEActiv', 'Pebble OS', 'iOS'), 
                     deviceLocation = c('wrist', 'pocket'),
-                    diagnosis=  c("Parkinson's Disease", "control"), 
+                    diagnosis=  c("Parkinson's disease", "control"), 
                     reportedOutcome =c('MDS-UPDRS', 'tremor', 'dyskinesia', 'bradykinesia',
                                       'medication report'),
                     digitalAssessmentCategory= c('resting tremor', 'action tremor', 'gait'),
