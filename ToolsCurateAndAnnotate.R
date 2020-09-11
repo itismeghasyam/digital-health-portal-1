@@ -37,9 +37,11 @@ tools.list = list(
                        softwareLanguage = 'R',
                        softwareRepository = 'GitHub',
                        inputDataType = c('accelerometer', 'gyroscope', 'camera', 'touchscreen'),
-                       outputDataType = c('sensor features', 'heart rate', 'activity features'),
+                       outputDataType = c('sensor features', 'heart rate', 'accelerometer features',
+                                          'gyroscope features', 'walk features', 'tapping features',
+                                          'tremor features'),
                        summary = 'An R package for extracting features from mobile and wearable sensor data',
-                       digitalAssessmentCategory = c('resting tremor', 'postural tremor', 'active tremor', 'gait', 'heart rate'),
+                       digitalAssessmentCategory = c('resting tremor', 'postural tremor', 'gait', 'cardiovascular'),
                        dhPortalIndex = 'TRUE',
                        suggestedStudies =c('syn4993293', 'syn9746170'))
 )

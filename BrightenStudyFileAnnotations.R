@@ -93,14 +93,14 @@ tables.annotations = list(
                        dataDescriptionLocation = 'syn10848316/wiki/548733',
                        dataAccessInstructions = 'syn10848316/wiki/551287'),
   
-  # SDS
+  # Sheehan Disability Scale (SDS)
   'syn17022658' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= as.integer(1016), 
                        dataCollectionMethod= c('patient reported outcome'),
                        diagnosis=  c('control'), 
-                       reportedOutcome =c('SDS'),
+                       reportedOutcome =c('Sheehan Disability Scale (SDS)'),
                        dataType=c('surveyData'),
                        dataSubtype=c('raw', 'metadata'),# metadata?
                        # metadataType = c(''), # assessment?

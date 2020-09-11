@@ -109,7 +109,7 @@ projects.annotations <- list(
                     sensorType = c('accelerometer', 'gyroscope'),
                     devicePlatform = c('GENEActiv', 'Pebble OS', 'iOS'), 
                     deviceLocation = c('wrist', 'pocket'),
-                    diagnosis=  c("Parkinson's Disease", "control"), 
+                    diagnosis=  c("Parkinson's disease", "control"), 
                     reportedOutcome =c('MDS-UPDRS', 'tremor', 'dyskinesia', 'bradykinesia',
                                       'medication report'),
                     digitalAssessmentCategory= c('resting tremor', 'action tremor', 'gait'),

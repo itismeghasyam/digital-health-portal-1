@@ -36,19 +36,19 @@ synLogin()
 # Project Synapse ID vs annotations needed
 projects.annotations <- list(
   
-  ## mPower 1.0 (check anno - Larsson)
+  ## mPower 1.0
   'syn4993293' = list(consortium = 'mHealth',
                       study = 'mPower Mobile Parkinson Disease Study',
                       numberParticipants= as.integer(8320), # number who opted to share broadly 
                       dataCollectionMethod= c('active', 'patient reported outcome',
                                               'clinical assessment'),
                       deviceType = c('handheld'),
-                      sensorType = c('touchscreen', 'accelerometer',
+                      sensorType = c('touchscreen', 'accelerometer', 'microphone',
                                      'gyroscope', 'magnetometer'),
                       devicePlatform = c('iOS'), 
                       deviceLocation = c('hand', 'pocket', 'flat surface'),
-                      diagnosis=  c("Parkinson's Disease", 'control'), 
-                      reportedOutcome = c('medication intake', 'PDQ-8', 'MDS-UPDRS',
+                      diagnosis=  c("Parkinson's disease", 'control'), 
+                      reportedOutcome = c('medication report', 'PDQ-8', 'MDS-UPDRS',
                                           'demographics survey'),
                       digitalAssessmentCategory= c('phonation', 'gait',
                                                    'motor coordination', 'cognition'),
@@ -66,20 +66,20 @@ projects.annotations <- list(
                       studyDescription = 'mPower is a large, longitudinal study which piloted new approaches to monitoring key indicators of Parkinson Disease progression and diagnosis incorporating traditional behavioral symptom measurements along with novel metrics gleaned from sensor-rich mobile devices.',
                       dataAccessInstructions = 'syn4993293/wiki/247860'),
   
-  ## MoleMapper Public Researcher Portal (check anno - Dan)
+  ## MoleMapper Public Researcher Portal 
   'syn5576734' = list(consortium = 'mHealth',
                       study = 'Mole Mapper Study',
                       numberParticipants= as.integer(1920), 
                       dataCollectionMethod= c('active', 'patient reported outcome'),
                       deviceType = c('handheld'),
                       sensorType = c('touchscreen', 'camera'),
-                      devicePlatform = c('iOS', 'android'), 
+                      devicePlatform = c('iOS', 'Android'), 
                       deviceLocation = c('hand'),
                       diagnosis=  c('melanoma', 'control'), 
                       reportedOutcome =c('mole diameter', 'mole location'),
                       digitalAssessmentCategory= c('dermatologic phenotype'),
                       digitalAssessmentDetails = c('photograph'),
-                      sensorDataType = 'processed',
+                      sensorDataType = 'raw',
                       investigator= c('Sancy Leachman'),
                       resourceType = 'experimentalData',
                       # intervention = '',
@@ -94,7 +94,7 @@ projects.annotations <- list(
   'syn8361748' = list(consortium = 'mHealth',
                       study = 'Asthma Mobile Health Study',
                       numberParticipants= as.integer(5875), 
-                      dataCollectionMethod= c('active', 'patient reported outcome'),
+                      dataCollectionMethod= c('patient reported outcome'),
                       deviceType = c('handheld'),
                       sensorType = c('touchscreen'),
                       devicePlatform = c('iOS'), 
@@ -103,9 +103,9 @@ projects.annotations <- list(
                       reportedOutcome =c('ZIP code','demographics survey','medication report', 
                                          'EQ-5D', 'medical history', 'asthma symptoms',
                                          'asthma triggers', 'asthma management'),
-                      digitalAssessmentCategory= c('lung disease severity'),
+                      digitalAssessmentCategory= c('respiratory'),
                       digitalAssessmentDetails = c('survey'),
-                      sensorDataType = 'processed',
+                      # sensorDataType = 'processed',
                       investigator= c('Yu-Feng Yvonne Chan'),
                       resourceType = 'experimentalData',
                       # intervention = '',
@@ -120,23 +120,24 @@ projects.annotations <- list(
   'syn21140362' = list(consortium = 'mHealth',
                       study = 'elevateMS Study',
                       numberParticipants= as.integer(540), 
-                      dataCollectionMethod= c('active', 'passive'),
+                      dataCollectionMethod= c('active', 'passive', 'patient reported outcome'),
                       deviceType = c('handheld'),
                       sensorType = c('accelerometer', 'gyroscope',
-                                     'magnetometer', 'touchscreen', 'gps'),
-                      devicePlatform = c('iOS'), 
-                      deviceLocation = c('hand', 'pocket'),
-                      diagnosis=  c('Multiple Sclerosis', 'control'), 
-                      reportedOutcome =c('tremor', 'dyskinesia', 'bradykinesia',
+                                     'magnetometer', 'touchscreen', 'microphone'),
+                      devicePlatform = c('iOS', 'Android'), 
+                      deviceLocation = c('hand', 'pocket', 'flat surface'),
+                      diagnosis=  c('multiple sclerosis', 'control'), 
+                      reportedOutcome =c('dyskinesia', 'bradykinesia','step count', 'distance',
                                          'freezing of gait', 'medication report', 'symptoms report',
                                        'triggers report', 'relapses report', 'NeuroQOL-Cognition',
                                        'NeuroQOL-LowerExtremity', 'NeuroQOL-UpperExtremity'),
-                      digitalAssessmentCategory= c('postural tremor', 'gait', 
-                                                   'cognition', 'quality of life'),
+                      digitalAssessmentCategory= c('postural tremor', 'gait', 'motor coordination',
+                                                   'cognition', 'quality of life','phonation',
+                                                   'action tremor'),
                       digitalAssessmentDetails = c('finger-to-nose', 'walking (flat)',
-                                                   'standing',
+                                                   'standing', 'tapping', 'alternating hand movements',
                                                    'visual/digit symbol substitution task(vsst/dsst)'),
-                      sensorDataType = c('raw', 'derived'),
+                      sensorDataType = c('raw', 'processed'),
                       investigator= c('Sage Bionetworks' , 'Novartis Pharmaceuticals Corporation'),
                       resourceType = c('curatedData'),
                       # intervention = '',
@@ -144,30 +145,33 @@ projects.annotations <- list(
                       dhPortalIndex = 'TRUE', # Change after filling annotations
                       studyDescriptionLocation = 'syn21140362', 
                       studyDataDescriptionLocation = 'syn21140362/wiki/602267',
-                      studyDescription = 'elevateMS was a smartphone-based study designed to monitor and understand the variations in symptoms and triggers in Multiple Sclerosis (MS), through surveys, passive data collection, and physical and cognitive assessments.',
+                      studyDescription = 'elevateMS was a smartphone-based study designed to monitor and understand the variations in symptoms and triggers in multiple sclerosis (MS), through surveys, passive data collection, and physical and cognitive assessments.',
                       dataAccessInstructions = 'syn21140362/wiki/602266'),
   
 
   
-  ## Heart Snapshot (checked anno - Dan/Megha/Solly)
+  ## Heart Snapshot
   'syn22107959' = list(consortium = 'mHealth',
                        study = 'Heart Snapshot Study',
                        numberParticipants= as.integer(124), 
-                       dataCollectionMethod= c('active', 'passive', 'patient reported outcome',
-                                               'clinical assessment'),
+                       dataCollectionMethod= c('active', 'passive', 'patient reported outcome'),
                        deviceType = c('handheld', 'wearable'),
-                       sensorType =  c('accelerometer', 'gyroscope', 'magnetometer',
-                                        'oximeter', 'camera', 'spectrocolorimeter'),
-                       devicePlatform = c('iOS', 'android', 'fitbit', 'polar'), 
-                       deviceLocation = c('hand', 'pocket', 'chest', 'finger', 'wrist', 'face'),
+                       sensorType =  c('accelerometer', 'gyroscope',
+                                        'oximeter', 'camera', 'spectrocolorimeter',
+                                       'photosensor'),
+                       devicePlatform = c('iOS', 'Android', 'Fitbit', 'Pantone', 'Windows'), 
+                       deviceLocation = c('hand', 'pocket', 'finger', 'wrist', 'face'),
                        diagnosis=  c('control'), 
                        reportedOutcome =c('vo2max', 'resting heart rate'),
-                       digitalAssessmentCategory= c('respiratory', 'cardiovascular'),
-                       digitalAssessmentDetails = c('12-min run test',
-                                                    '3-min stair  step test',
-                                                    'resting',
-                                                    'phone camera heart rate'),
-                       sensorDataType = 'processed',
+                       digitalAssessmentCategory= c('cardiorespiratory fitness',
+                                                    'cardiovascular',
+                                                    'skin color', 'physical activity'),
+                       digitalAssessmentDetails = c('12-min run test', 'facial skin color',
+                                                    'finger skin color', 'heart rate',
+                                                    'daily physical activity',
+                                                    'treadmill stresstest',
+                                                    'tecumseh test'),
+                       sensorDataType = c('raw', 'processed'),
                        investigator= c('Scripps Translational Sciences Institute', 'Sage Bionetworks'),
                        resourceType = 'curatedData',
                        # intervention = '',
@@ -178,7 +182,7 @@ projects.annotations <- list(
                        studyDescription = '',
                        dataAccessInstructions = ''),
   
-  ## MyHeart Counts Public Researcher Portal (check anno - Larsson)
+  ## MyHeart Counts Public Researcher Portal 
   'syn11269541' = list(consortium = 'mHealth',
                        study = 'MyHeart Counts Cardiovascular Health Study',
                        numberParticipants= as.integer(26902), 
@@ -190,9 +194,9 @@ projects.annotations <- list(
                        deviceLocation = c('hand' , 'pocket', 'wrist'),
                        diagnosis=  c('control'), 
                        reportedOutcome =c('inclusion survey', 'PAR-Q', 'diet survey',
-                                          'sleep report', 'activity report',
+                                          'sleep report', 'physical activity',
                                           'medical history', 'demographics survey',
-                                          'quality of life', 'disease risk',
+                                          'quality of life', 'disease risk', 'heart age',
                                           "blood pressure", "fasting glucose",
                                           "cholesterol", "diabetes", "hypertension"),
                        digitalAssessmentCategory= c('gait', 'physical activity', 'sleep'),
@@ -217,13 +221,13 @@ projects.annotations <- list(
   #                                              'clinical assessment'),
   #                      deviceType = c('handheld', 'wearable'),
   #                      sensorType = c('accelerometer', 'gyroscope', 'magnetometer',
-  #                                     'fitbit'),
+  #                                     'Fitbit'),
   #                      devicePlatform = c('iOS'), 
   #                      deviceLocation = c('hand', 'wrist', 'pocket'),
   #                      diagnosis=  c('phenylketonuria', 'control'), 
   #                      reportedOutcome =c('tremor'),
-  #                      digitalAssessmentCategory= c('Resting tremor', 'kinetic tremor',
-  #                                                   'cognition',  'sleep', 'heart rate'),
+  #                      digitalAssessmentCategory= c('resting tremor', 'kinetic tremor',
+  #                                                   'cognition',  'sleep', 'cardiovascular'),
   #                      digitalAssessmentDetails = c('tapping', 'hand-in-lap', 'finger-to-nose',
   #                                                   'alternating hand movements', 'drawing',
   #                                                   'typing', 'opening a water bottle and pouring', 
@@ -240,7 +244,7 @@ projects.annotations <- list(
   #                      studyDescription = '',
   #                      dataAccessInstructions = ''),
 
-  ## MJFF Levodopa Response Study (check anno - solly)
+  ## MJFF Levodopa Response Study 
   'syn20681023' = list(consortium = 'mHealth',
                        study = 'MJFF Levodopa Response Study',
                        numberParticipants= as.integer(29), 
@@ -250,12 +254,14 @@ projects.annotations <- list(
                        sensorType = 'accelerometer',
                        devicePlatform = c('Shimmer', 'GENEActiv', 'Android', 'Pebble OS'), 
                        deviceLocation = c('wrist', 'waist', 'forearm', 'shank', 'back'),
-                       diagnosis= "Parkinson's Disease", 
+                       diagnosis= "Parkinson's disease", 
                        reportedOutcome =c('MDS-UPDRS', 'tremor', 'dyskinesia', 'bradykinesia',
-                                          'freezing of gait', 'medication report', 'sleep report'),
-                       digitalAssessmentCategory= c('resting tremor', 'action tremor', 'gait'),
+                                          'freezing of gait', 'medication report', 'sleep report',
+                                          'feedback survey'),
+                       digitalAssessmentCategory= c('resting tremor', 'action tremor', 'gait',
+                                                    'postural tremor'),
                        digitalAssessmentDetails = c('walking (flat)', 'walking (stairs)',
-                                                    'standing', 'sitting', 
+                                                    'standing', 'sitting', 'finger-to-nose',
                                                     'alternating hand movements', 'drawing',
                                                     'typing', 'opening a water bottle and pouring', 
                                                     'arranging paper','assembling nuts and bolts',
@@ -280,20 +286,19 @@ projects.annotations <- list(
   'syn10848316' = list(consortium = 'mHealth',
                       study = 'Brighten Study',
                       numberParticipants= as.integer(2258), 
-                      dataCollectionMethod= c('passive', 'patient reported outcome',
-                                              'clinical assessment'),
+                      dataCollectionMethod= c('patient reported outcome'),
                       deviceType = c('handheld'),
                       sensorType = c('touchscreen'),
-                      devicePlatform = c('iOS', 'android'), 
+                      devicePlatform = c('iOS', 'Android'), 
                       deviceLocation = c('hand'),
                       diagnosis=  c('control'), 
-                      reportedOutcome =c('PHQ-9', 'PHQ-2', 'SDS', 'GAD-7',
-                                         'Sleep report', 'AUDIT-C', 'phone usage',
+                      reportedOutcome =c('PHQ-9', 'PHQ-2', 'Sheehan Disability Scale (SDS)', 'GAD-7',
+                                         'sleep report', 'AUDIT-C', 'phone usage', 'mood', 'demographics survey',
                                          'physical activity'),
                       digitalAssessmentCategory= c('cognition', 'sleep', 'mood',
                                                    'mobility', 'mental health'),
                       # digitalAssessmentDetails = c(''),
-                      sensorDataType = 'raw',
+                      # sensorDataType = 'raw',
                       investigator= c('UW', 'UCSF'),
                       resourceType = c('curatedData'),
                       # intervention = '',
@@ -320,51 +325,3 @@ for(proj.id in projects.list){
   print(projects.annotations[[proj.id]])
 }
 
-##############
-# Update list of Annotations (key-value pairs) in Synapse
-##############  
-# initialization
-annotations.key.value.list <- NULL
-
-# Run through all possible annotations to generate a key-value pair  
-for(proj.id in projects.list){
-  
-  current.annotation <- projects.annotations[[proj.id]]
-  
-  for(key in names(current.annotation)){
-    if(is.null(annotations.key.value.list[[key]])){
-      annotations.key.value.list[[key]] <- current.annotation[[key]] %>% unique() %>% as.list()
-    }else{
-      annotations.key.value.list[[key]] <- c(annotations.key.value.list[[key]],
-                                             current.annotation[[key]]) %>% unique()
-    }
-    print(key)
-  }
-}
-
-# Merge a list of values for a given key into a string
-for(key in names(annotations.key.value.list)){
-  annotations.key.value.list[[key]] <- as.data.frame(annotations.key.value.list[[key]]) %>%
-    t() %>% as.data.frame()
-}
-
-# Make a table out of the previous list
-annotations.key.value.tbl <- annotations.key.value.list %>% 
-  data.table::rbindlist(use.names = T, idcol = T, fill = T) %>% 
-  `colnames<-`(c('key','val')) %>% 
-  dplyr::filter(!val == '') # remove empty fields
-
-# Upload to Synapse
-# Github link
-gtToken = 'github_token.txt';
-githubr::setGithubToken(as.character(read.table(gtToken)$V1))
-thisFileName <- 'projectStudyLevelAnnotations.R'
-thisRepo <- getRepo(repository = "itismeghasyam/digital-health-portal", ref="branch", refName='master')
-thisFile <- getPermlink(repository = thisRepo, repositoryPath=thisFileName)
-
-# Write to Synapse
-write.csv(annotations.key.value.tbl,file = paste0('annotation_key_value_pairs','.csv'),na="")
-obj = File(paste0('annotation_key_value_pairs','.csv'),
-           name = paste0('annotation_key_value_pairs','.csv'),
-           parentId = 'syn21574434')
-obj = synStore(obj, executed = thisFile)

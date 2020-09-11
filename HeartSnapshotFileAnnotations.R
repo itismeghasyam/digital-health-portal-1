@@ -1,6 +1,6 @@
 ########################################################################
 # Digital Health Portal
-# Purpose: To Annotate the Data in Heart Snapshot Project (Cardio Respiratory Fitness)
+# Purpose: To Annotate the Data in Heart Snapshot Project (Cardiorespiratory Fitness)
 # Author: Meghasyam Tummalacherla
 # email: meghasyam@sagebase.org
 ########################################################################
@@ -32,18 +32,18 @@ projectlink = paste("[", study, "](/Explore/Studies/DetailsPage?study=",
 ##############
 tables.annotations = list(
   
-  ## spectrocolorimetry
-  'syn22123894' = list(consortium = 'mHealth',
+  ## spectrocolorimetry - calibration
+  'syn22268040' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= as.integer(124), 
                        dataCollectionMethod= c('active'), # clinician reported outcome? RA is recording
                        deviceType = c('handheld'),
                        sensorType = c('spectrocolorimeter'), 
-                       devicePlatform = c('pantone'), 
+                       devicePlatform = c('Pantone'), 
                        deviceLocation = c('face', 'finger'),
                        diagnosis= c('control'), 
-                       digitalAssessmentCategory= c('skintone'),
+                       digitalAssessmentCategory= c('skin color'),
                        digitalAssessmentDetails = c('facial skin color',
                                                     'finger skin color'),
                        dataType= c('sensor', 'surveyData'),
@@ -52,18 +52,18 @@ tables.annotations = list(
                        # dataDescriptionLocation = '',
                        dataAccessInstructions = 'syn22107959/wiki/603642'),
   
-  ## CRF_HR_validation
-  'syn22123905' = list(consortium = 'mHealth',
+  ## Baseline and PulseOx - calibration
+  'syn22268058' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= as.integer(124), 
                        dataCollectionMethod= c('active'),
-                       deviceType = c('pulse oximeter'),
-                       sensorType = c('photodetector'),
-                       devicePlatform = c('windows'), 
+                       deviceType = c('wearable'),
+                       sensorType = c('oximeter',  'photosensor'),
+                       devicePlatform = c('Windows'), 
                        deviceLocation = c('finger'),
                        diagnosis= c('control'), 
-                       digitalAssessmentCategory= c('heart rate'),
+                       digitalAssessmentCategory= c('cardiovascular'),
                        digitalAssessmentDetails = c('heart rate'),
                        dataType=c('surveyData'),
                        dataSubtype=c('raw', 'metadata'),
@@ -72,18 +72,18 @@ tables.annotations = list(
                        # dataDescriptionLocation = '',
                        dataAccessInstructions = 'syn22107959/wiki/603642'),
   
-  ## Heart Rate Measurement
-  'syn22124385' = list(consortium = 'mHealth',
+  ## Heart Rate Measurement - calibration
+  'syn22268054' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= as.integer(124), 
                        dataCollectionMethod= c('active'),
                        deviceType = c('handheld'),
                        sensorType = c('camera'),
-                       devicePlatform = c('iOS', 'android'), 
+                       devicePlatform = c('iOS', 'Android'), 
                        deviceLocation = c('finger'),
                        diagnosis= c('control'), 
-                       digitalAssessmentCategory= c('heart rate'),
+                       digitalAssessmentCategory= c('cardiovascular'),
                        digitalAssessmentDetails = c('heart rate'),
                        dataType=c('sensor'),
                        dataSubtype=c('processed', 'metadata'),
@@ -92,15 +92,15 @@ tables.annotations = list(
                        # dataDescriptionLocation = '',
                        dataAccessInstructions = 'syn22107959/wiki/603642'),
   
-  ## DailyActivitiesSummary.activities
-  'syn22119579' = list(consortium = 'mHealth',
+  ## Fitbit activities
+  'syn22254978' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= as.integer(10), 
                        dataCollectionMethod= c('passive'),
                        deviceType = c('wearable'),
                        sensorType = c('photosensor', 'accelerometer', 'gyroscope'),
-                       devicePlatform = c('fitbit'), 
+                       devicePlatform = c('Fitbit'), 
                        deviceLocation = c('wrist'),
                        diagnosis= c('control'), 
                        dataType= c('sensor', 'surveyData'),
@@ -110,18 +110,18 @@ tables.annotations = list(
                        # dataDescriptionLocation = '',
                        dataAccessInstructions = 'syn22107959/wiki/603642'),
   
-  ## HeartRate.activities.heart
-  'syn22119590' = list(consortium = 'mHealth',
+  ## Fitbit Heart rate summary
+  'syn22254919' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= as.integer(108), 
                        dataCollectionMethod= c('passive'),
                        deviceType = c('wearable'),
                        sensorType = c('photosensor'),
-                       devicePlatform = c('fitbit'), 
+                       devicePlatform = c('Fitbit'), 
                        deviceLocation = c('wrist'),
                        diagnosis= c('control'), 
-                       digitalAssessmentCategory= c('heart rate'),
+                       digitalAssessmentCategory= c('cardiovascular'),
                        digitalAssessmentDetails = c('heart rate'),
                        dataType=c('sensor'),
                        dataSubtype=c('processed'),
@@ -129,18 +129,18 @@ tables.annotations = list(
                        # dataDescriptionLocation = '',
                        dataAccessInstructions = 'syn22107959/wiki/603642'),
   
-  ## HeartRate.activities.heart-intraday
-  'syn22123686' = list(consortium = 'mHealth',
+  ## Fitbit Heart rate intraday
+  'syn22254943' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= as.integer(108), 
                        dataCollectionMethod= c('passive'),
                        deviceType = c('wearable'),
                        sensorType = c('photosensor'),
-                       devicePlatform = c('fitbit'), 
+                       devicePlatform = c('Fitbit'), 
                        deviceLocation = c('wrist'),
                        diagnosis= c('control'), 
-                       digitalAssessmentCategory= c('heart rate'),
+                       digitalAssessmentCategory= c('cardiovascular'),
                        digitalAssessmentDetails = c('heart rate'),
                        dataType=c('sensor'),
                        dataSubtype=c('processed'),
@@ -148,15 +148,15 @@ tables.annotations = list(
                        # dataDescriptionLocation = '',
                        dataAccessInstructions = 'syn22107959/wiki/603642'),
   
-  ## DailyActivitiesSummary.summary
-  'syn22119575' = list(consortium = 'mHealth',
+  ## Fitbit activities summary
+  'syn22254977' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= as.integer(108), 
                        dataCollectionMethod= c('passive'),
                        deviceType = c('wearable'),
                        sensorType = c('photosensor'),
-                       devicePlatform = c('fitbit'), 
+                       devicePlatform = c('Fitbit'), 
                        deviceLocation = c('wrist'),
                        diagnosis= c('control'), 
                        digitalAssessmentCategory= c('physical activity'),
@@ -167,19 +167,19 @@ tables.annotations = list(
                        # dataDescriptionLocation = '',
                        dataAccessInstructions = 'syn22107959/wiki/603642'),
   
-  ## Cardio 12MT
-  'syn22119312' = list(consortium = 'mHealth',
+  ## 12-MRT
+  'syn22254983' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= as.integer(98), 
                        dataCollectionMethod= c('active'),
                        deviceType = c('handheld'),
                        sensorType = c('camera'),
-                       devicePlatform = c('iOS', 'android'), 
+                       devicePlatform = c('iOS', 'Android'), 
                        deviceLocation = c('finger'),
                        diagnosis= c('control'), 
-                       digitalAssessmentCategory= c('cardio respitatory fitness'),
-                       digitalAssessmentDetails = c('12-Min Run test'),
+                       digitalAssessmentCategory= c('cardiorespiratory fitness'),
+                       digitalAssessmentDetails = c('12-min run test'),
                        dataType=c('sensor'),
                        dataSubtype=c('raw', 'processed', 'metadata'),
                        metadataType = c('assessment'), 
@@ -195,10 +195,10 @@ tables.annotations = list(
                        dataCollectionMethod= c('active'),
                        deviceType = c('handheld'),
                        sensorType = c('camera'),
-                       devicePlatform = c('iOS', 'android'), 
+                       devicePlatform = c('iOS', 'Android'), 
                        deviceLocation = c('finger'),
                        diagnosis= c('control'), 
-                       digitalAssessmentCategory= c('cardio respiratory fitness'),
+                       digitalAssessmentCategory= c('cardiorespiratory fitness'),
                        digitalAssessmentDetails = c('treadmill stresstest'),
                        dataType=c('sensor'),
                        dataSubtype=c('raw', 'processed', 'metadata'),
@@ -207,8 +207,8 @@ tables.annotations = list(
                        # dataDescriptionLocation = '',
                        dataAccessInstructions = 'syn22107959/wiki/603642'),
   
-  ## Background Survey
-  'syn22125202' = list(consortium = 'mHealth',
+  ## Baseline Characteristics - Validation
+  'syn22254979' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= as.integer(115), 
@@ -222,18 +222,18 @@ tables.annotations = list(
                        # dataDescriptionLocation = '',
                        dataAccessInstructions = 'syn22107959/wiki/603642'),
   
-  ## Cardio Stair Step
-  'syn22119475' = list(consortium = 'mHealth',
+  ## 3-MST
+  'syn22254980' = list(consortium = 'mHealth',
                        study = study,
                        studyOrProject = projectlink,
                        numberParticipants= as.integer(98), 
                        dataCollectionMethod= c('active'),
                        deviceType = c('handheld'),
                        sensorType = c('camera'),
-                       devicePlatform = c('iOS', 'android'), 
+                       devicePlatform = c('iOS', 'Android'), 
                        deviceLocation = c('finger'),
                        diagnosis= c('control'), 
-                       digitalAssessmentCategory= c('cardio respiratory fitness'),
+                       digitalAssessmentCategory= c('cardiorespiratory fitness'),
                        digitalAssessmentDetails = c('tecumseh test'),
                        dataType=c('sensor'),
                        dataSubtype=c('raw', 'processed', 'metadata'),
