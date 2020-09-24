@@ -307,7 +307,31 @@ projects.annotations <- list(
                       studyDescriptionLocation = 'syn10848316', 
                       studyDataDescriptionLocation = 'syn10848316/wiki/548728',
                       studyDescription = 'The Brighten studies(V1 and V2), funded by the National Institute for Mental Health, were designed to tests a new and possibly easier way for individuals to track & manage their depression symptoms.',
-                      dataAccessInstructions = 'syn10848316/wiki/551287')
+                      dataAccessInstructions = 'syn10848316/wiki/551287'),
+  
+  ## SleepHealth Public Researcher Portal
+  'syn18492837' = list(consortium = 'mHealth',
+                       study = 'SleepHealth Mobile App Study ',
+                       numberParticipants= as.integer(), # to be updated
+                       dataCollectionMethod= c('patient reported outcome', 'active', 'passive'),
+                       deviceType = c('handheld', 'wearable'),
+                       sensorType = c('touchscreen', 'pedometer', 'accelerometer'), # to be updated
+                       devicePlatform = c('iOS'), 
+                       deviceLocation = c('hand', 'wrist'),
+                       diagnosis=  c('control'), 
+                       reportedOutcome =c(''), # to be updated
+                       digitalAssessmentCategory= c(''), # to be updated
+                       digitalAssessmentDetails = c(''), # to be updated
+                       sensorDataType = 'processed',
+                       investigator= c('American Sleep Apnea Association', 'UCSD'), # to be updated
+                       resourceType = c('curatedData'),
+                       # intervention = '',
+                       # keywords = c(''),
+                       dhPortalIndex = 'FALSE', # Change after filling annotations
+                       studyDescriptionLocation = 'syn18492837', 
+                       studyDataDescriptionLocation = 'syn18492837/wiki/590797',
+                       studyDescription = 'The SleepHealth Mobile App Study was created to investigate how sleep is associated with general health, daytime alertness, medical conditions, and productivity.',
+                       dataAccessInstructions = 'syn18492837/wiki/590794')
 )
   
 ##############
