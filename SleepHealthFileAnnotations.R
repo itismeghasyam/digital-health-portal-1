@@ -45,7 +45,7 @@ tables.annotations = list(
                        # reportedOutcome = c('reaction time'),
                        digitalAssessmentCategory= c('cognition'),
                        digitalAssessmentDetails = c('3-minute Psychomotor Vigilance Task (PVT-B)',
-                                                    'tapping', 'reaction time'),
+                                                    'tapping'),
                        dataType=c('sensor'),
                        dataSubtype=c('processed'),
                        # metadataType = c(''),

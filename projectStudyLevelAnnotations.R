@@ -330,7 +330,7 @@ projects.annotations <- list(
                                                     '3-minute Psychomotor Vigilance Task (PVT-B)',
                                                     'tapping', 'step count', 'heart rate',
                                                     'flights climbed', 'distance',
-                                                    'resting energy burned','reaction time', 
+                                                    'resting energy burned', 
                                                     'exercise time', 'active energy burned'),
                        sensorDataType = 'processed',
                        investigator= c('American Sleep Apnea Association', 'UCSD'), 
