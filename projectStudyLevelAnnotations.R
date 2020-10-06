@@ -312,18 +312,28 @@ projects.annotations <- list(
   ## SleepHealth Public Researcher Portal
   'syn18492837' = list(consortium = 'mHealth',
                        study = 'SleepHealth Mobile App Study ',
-                       numberParticipants= as.integer(), # to be updated
+                       numberParticipants= as.integer(7250), 
                        dataCollectionMethod= c('patient reported outcome', 'active', 'passive'),
                        deviceType = c('handheld', 'wearable'),
-                       sensorType = c('touchscreen', 'pedometer', 'accelerometer'), # to be updated
+                       sensorType = c('touchscreen', 'pedometer', 'gyroscope', 'accelerometer'), 
                        devicePlatform = c('iOS'), 
-                       deviceLocation = c('hand', 'wrist'),
+                       deviceLocation = c('hand', 'wrist', 'pocket'),
                        diagnosis=  c('control'), 
-                       reportedOutcome =c(''), # to be updated
-                       digitalAssessmentCategory= c(''), # to be updated
-                       digitalAssessmentDetails = c(''), # to be updated
+                       reportedOutcome =c('reaction time', 'sleep report',
+                                          'activity report', 'medical history',
+                                          'quality of life', 'demographics survey',
+                                          'research interest', 'family history',
+                                          'step count', 'height', 'heart rate',
+                                          'flights climbed', 'distance',
+                                          'weight', 'resting energy burned',
+                                          'exercise time', 'active energy burned'), 
+                       digitalAssessmentCategory= c('physical activity', 'cardiovascular',
+                                                    'cognition'), 
+                       digitalAssessmentDetails = c('daily physical activity', 'heart rate',
+                                                    '3-minute Psychomotor Vigilance Task (PVT-B)',
+                                                    'tapping'),
                        sensorDataType = 'processed',
-                       investigator= c('American Sleep Apnea Association', 'UCSD'), # to be updated
+                       investigator= c('American Sleep Apnea Association', 'UCSD'), 
                        resourceType = c('curatedData'),
                        # intervention = '',
                        # keywords = c(''),
