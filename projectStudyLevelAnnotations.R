@@ -59,7 +59,7 @@ projects.annotations <- list(
                       investigator= c('Sage Bionetworks'),
                       resourceType = 'curatedData',
                       # intervention = '',
-                      # keywords = c(''),
+                      keywords = c('neurodegeneration', 'neurology', "Parkinson's"),
                       dhPortalIndex = 'TRUE', # Change after filling annotations
                       studyDescriptionLocation = 'syn4993293', 
                       studyDataDescriptionLocation = 'syn4993293/wiki/247861',
@@ -83,7 +83,8 @@ projects.annotations <- list(
                       investigator= c('Sancy Leachman'),
                       resourceType = 'experimentalData',
                       # intervention = '',
-                      # keywords = c(''),
+                      keywords = c("dermatology", "skin", "neoplasm", "mole",
+                                    "epidermis", "cancer", "lesion", "melanoma",  "nevus" ),
                       dhPortalIndex = 'TRUE', # Change after filling annotations
                       studyDescriptionLocation = 'syn5576734', 
                       studyDataDescriptionLocation = 'syn5576734/wiki/406009',
@@ -205,7 +206,7 @@ projects.annotations <- list(
                        investigator= c('Stanford Medicine'), 
                        resourceType = 'experimentalData',
                        # intervention = '',
-                       # keywords = c(''),
+                       keywords = c('cardiovascular health', 'physical activity'),
                        dhPortalIndex = 'TRUE', # Change after filling annotations
                        studyDescriptionLocation = 'syn11269541', 
                        studyDataDescriptionLocation = 'syn11269541/wiki/485635',
@@ -302,12 +303,46 @@ projects.annotations <- list(
                       investigator= c('UW', 'UCSF'),
                       resourceType = c('curatedData'),
                       # intervention = '',
-                      # keywords = c(''),
-                      dhPortalIndex = 'FALSE', # Change after filling annotations
+                      keywords = c('psychiatry', 'psychology', 'mental health', 'depression'),
+                      dhPortalIndex = 'TRUE', 
                       studyDescriptionLocation = 'syn10848316', 
                       studyDataDescriptionLocation = 'syn10848316/wiki/548728',
                       studyDescription = 'The Brighten studies(V1 and V2), funded by the National Institute for Mental Health, were designed to tests a new and possibly easier way for individuals to track & manage their depression symptoms.',
-                      dataAccessInstructions = 'syn10848316/wiki/551287')
+                      dataAccessInstructions = 'syn10848316/wiki/551287'),
+  
+  ## SleepHealth Public Researcher Portal
+  'syn18492837' = list(consortium = 'mHealth',
+                       study = 'SleepHealth Mobile App Study ',
+                       numberParticipants= as.integer(7250), 
+                       dataCollectionMethod= c('patient reported outcome', 'active', 'passive'),
+                       deviceType = c('handheld', 'wearable'),
+                       sensorType = c('touchscreen', 'pedometer', 'gyroscope', 'accelerometer'), 
+                       devicePlatform = c('iOS'), 
+                       deviceLocation = c('hand', 'wrist', 'pocket'),
+                       diagnosis=  c('control'), 
+                       reportedOutcome =c('sleep report',
+                                          'activity report', 'medical history',
+                                          'quality of life', 'demographics survey',
+                                          'research interest', 'family history',
+                                          'height', 'weight'), 
+                       digitalAssessmentCategory= c('physical activity', 'cardiovascular',
+                                                    'cognition'), 
+                       digitalAssessmentDetails = c('daily physical activity', 'heart rate',
+                                                    '3-minute Psychomotor Vigilance Task (PVT-B)',
+                                                    'tapping', 'step count', 'heart rate',
+                                                    'flights climbed', 'distance',
+                                                    'resting energy burned', 
+                                                    'exercise time', 'active energy burned'),
+                       sensorDataType = 'processed',
+                       investigator= c('American Sleep Apnea Association', 'UCSD'), 
+                       resourceType = c('curatedData'),
+                       # intervention = '',
+                       keywords = c('sleep'),
+                       dhPortalIndex = 'TRUE', 
+                       studyDescriptionLocation = 'syn18492837', 
+                       studyDataDescriptionLocation = 'syn18492837/wiki/590797',
+                       studyDescription = 'The SleepHealth Mobile App Study was created to investigate how sleep is associated with general health, daytime alertness, medical conditions, and productivity.',
+                       dataAccessInstructions = 'syn18492837/wiki/590794')
 )
   
 ##############
