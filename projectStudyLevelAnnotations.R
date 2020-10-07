@@ -304,7 +304,7 @@ projects.annotations <- list(
                       resourceType = c('curatedData'),
                       # intervention = '',
                       keywords = c('psychiatry', 'psychology', 'mental health', 'depression'),
-                      dhPortalIndex = 'FALSE', # Change after filling annotations
+                      dhPortalIndex = 'TRUE', 
                       studyDescriptionLocation = 'syn10848316', 
                       studyDataDescriptionLocation = 'syn10848316/wiki/548728',
                       studyDescription = 'The Brighten studies(V1 and V2), funded by the National Institute for Mental Health, were designed to tests a new and possibly easier way for individuals to track & manage their depression symptoms.',
@@ -338,7 +338,7 @@ projects.annotations <- list(
                        resourceType = c('curatedData'),
                        # intervention = '',
                        keywords = c('sleep'),
-                       dhPortalIndex = 'FALSE', # Change after filling annotations
+                       dhPortalIndex = 'TRUE', 
                        studyDescriptionLocation = 'syn18492837', 
                        studyDataDescriptionLocation = 'syn18492837/wiki/590797',
                        studyDescription = 'The SleepHealth Mobile App Study was created to investigate how sleep is associated with general health, daytime alertness, medical conditions, and productivity.',

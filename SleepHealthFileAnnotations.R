@@ -49,7 +49,7 @@ tables.annotations = list(
                        dataType=c('sensor'),
                        dataSubtype=c('processed'),
                        # metadataType = c(''),
-                       dhPortalIndex = 'FALSE',
+                       dhPortalIndex = 'TRUE',
                        dataDescriptionLocation = 'syn18492837/wiki/593722',
                        dataAccessInstructions = 'syn18492837/wiki/590794'),
   
@@ -70,7 +70,7 @@ tables.annotations = list(
                        dataType=c('surveyData'),
                        dataSubtype=c('raw'),
                        # metadataType = c(''),
-                       dhPortalIndex = 'FALSE',
+                       dhPortalIndex = 'TRUE',
                        dataDescriptionLocation = 'syn18492837/wiki/593728',
                        dataAccessInstructions = 'syn18492837/wiki/590794'),
   
@@ -91,7 +91,7 @@ tables.annotations = list(
                       dataType=c('surveyData'),
                       dataSubtype=c('raw'),
                       # metadataType = c(''),
-                      dhPortalIndex = 'FALSE',
+                      dhPortalIndex = 'TRUE',
                       dataDescriptionLocation = 'syn18492837/wiki/593718',
                       dataAccessInstructions = 'syn18492837/wiki/590794'),
   
@@ -112,7 +112,7 @@ tables.annotations = list(
                       dataType=c('surveyData'),
                       dataSubtype=c('raw'),
                       # metadataType = c(''),
-                      dhPortalIndex = 'FALSE',
+                      dhPortalIndex = 'TRUE',
                       dataDescriptionLocation = 'syn18492837/wiki/593719',
                       dataAccessInstructions = 'syn18492837/wiki/590794'),
   
@@ -133,7 +133,7 @@ tables.annotations = list(
                       dataType=c('surveyData'),
                       dataSubtype=c('raw'),
                       # metadataType = c(''),
-                      dhPortalIndex = 'FALSE',
+                      dhPortalIndex = 'TRUE',
                       dataDescriptionLocation = 'syn18492837/wiki/593726',
                       dataAccessInstructions = 'syn18492837/wiki/590794'),
   
@@ -154,7 +154,7 @@ tables.annotations = list(
                       dataType=c('surveyData'),
                       dataSubtype=c('raw'),
                       # metadataType = c(''),
-                      dhPortalIndex = 'FALSE',
+                      dhPortalIndex = 'TRUE',
                       dataDescriptionLocation = 'syn18492837/wiki/593723',
                       dataAccessInstructions = 'syn18492837/wiki/590794'),
   
@@ -175,7 +175,7 @@ tables.annotations = list(
                       dataType=c('surveyData'),
                       dataSubtype=c('raw'),
                       # metadataType = c(''),
-                      dhPortalIndex = 'FALSE',
+                      dhPortalIndex = 'TRUE',
                       dataDescriptionLocation = 'syn18492837/wiki/593707',
                       dataAccessInstructions = 'syn18492837/wiki/590794'),
   
@@ -196,7 +196,7 @@ tables.annotations = list(
                       dataType=c('surveyData'),
                       dataSubtype=c('raw'),
                       # metadataType = c(''),
-                      dhPortalIndex = 'FALSE',
+                      dhPortalIndex = 'TRUE',
                       dataDescriptionLocation = 'syn18492837/wiki/593720',
                       dataAccessInstructions = 'syn18492837/wiki/590794'),
   
@@ -217,7 +217,7 @@ tables.annotations = list(
                       dataType=c('surveyData'),
                       dataSubtype=c('raw'),
                       # metadataType = c(''),
-                      dhPortalIndex = 'FALSE',
+                      dhPortalIndex = 'TRUE',
                       dataDescriptionLocation = 'syn18492837/wiki/592581',
                       dataAccessInstructions = 'syn18492837/wiki/590794'),
   
@@ -238,7 +238,7 @@ tables.annotations = list(
                       dataType=c('surveyData'),
                       dataSubtype=c('raw'),
                       # metadataType = c(''),
-                      dhPortalIndex = 'FALSE',
+                      dhPortalIndex = 'TRUE',
                       dataDescriptionLocation = 'syn18492837/wiki/590798',
                       dataAccessInstructions = 'syn18492837/wiki/590794'),
   
@@ -259,7 +259,7 @@ tables.annotations = list(
                       dataType=c('surveyData'),
                       dataSubtype=c('raw'),
                       # metadataType = c(''),
-                      dhPortalIndex = 'FALSE',
+                      dhPortalIndex = 'TRUE',
                       dataDescriptionLocation = 'syn18492837/wiki/593721',
                       dataAccessInstructions = 'syn18492837/wiki/590794'),
   
@@ -280,7 +280,7 @@ tables.annotations = list(
                       dataType=c('surveyData'),
                       dataSubtype=c('raw'),
                       # metadataType = c(''),
-                      dhPortalIndex = 'FALSE',
+                      dhPortalIndex = 'TRUE',
                       dataDescriptionLocation = 'syn18492837/wiki/593711',
                       dataAccessInstructions = 'syn18492837/wiki/590794'),
   
@@ -301,7 +301,7 @@ tables.annotations = list(
                       dataType=c('surveyData'),
                       dataSubtype=c('raw'),
                       # metadataType = c(''),
-                      dhPortalIndex = 'FALSE',
+                      dhPortalIndex = 'TRUE',
                       dataDescriptionLocation = 'syn18492837/wiki/593712',
                       dataAccessInstructions = 'syn18492837/wiki/590794'),
   
@@ -322,7 +322,7 @@ tables.annotations = list(
                       dataType=c('sensor'),
                       dataSubtype=c('processed', 'metadata'),
                       metadataType = c('data dictionary', 'assessment'),
-                      dhPortalIndex = 'FALSE',
+                      dhPortalIndex = 'TRUE',
                       dataDescriptionLocation = 'syn18492837/wiki/601925',
                       dataAccessInstructions = 'syn18492837/wiki/590794'),
   
@@ -343,7 +343,7 @@ tables.annotations = list(
                       dataType=c('surveyData'),
                       dataSubtype=c('raw', 'metadata'),
                       metadataType = c('data dictionary', 'assessment'),
-                      dhPortalIndex = 'FALSE',
+                      dhPortalIndex = 'TRUE',
                       dataDescriptionLocation = 'syn18492837/wiki/601925',
                       dataAccessInstructions = 'syn18492837/wiki/590794'),
   
@@ -364,7 +364,7 @@ tables.annotations = list(
                       dataType=c('sensor'),
                       dataSubtype=c('processed', 'metadata'),
                       metadataType = c('data dictionary', 'assessment'),
-                      dhPortalIndex = 'FALSE',
+                      dhPortalIndex = 'TRUE',
                       dataDescriptionLocation = 'syn18492837/wiki/601925',
                       dataAccessInstructions = 'syn18492837/wiki/590794'),
   
@@ -386,7 +386,7 @@ tables.annotations = list(
                       dataType=c('sensor'),
                       dataSubtype=c('processed', 'metadata'),
                       metadataType = c('data dictionary', 'assessment'),
-                      dhPortalIndex = 'FALSE',
+                      dhPortalIndex = 'TRUE',
                       dataDescriptionLocation = 'syn18492837/wiki/601925',
                       dataAccessInstructions = 'syn18492837/wiki/590794'),
   
@@ -407,7 +407,7 @@ tables.annotations = list(
                       dataType=c('sensor'),
                       dataSubtype=c('processed', 'metadata'),
                       metadataType = c('data dictionary', 'assessment'),
-                      dhPortalIndex = 'FALSE',
+                      dhPortalIndex = 'TRUE',
                       dataDescriptionLocation = 'syn18492837/wiki/601925',
                       dataAccessInstructions = 'syn18492837/wiki/590794'),
   
@@ -428,7 +428,7 @@ tables.annotations = list(
                       dataType=c('surveyData'),
                       dataSubtype=c('raw', 'metadata'),
                       metadataType = c('data dictionary', 'assessment'),
-                      dhPortalIndex = 'FALSE',
+                      dhPortalIndex = 'TRUE',
                       dataDescriptionLocation = 'syn18492837/wiki/601925',
                       dataAccessInstructions = 'syn18492837/wiki/590794'),
   
@@ -449,7 +449,7 @@ tables.annotations = list(
                       dataType=c('sensor'),
                       dataSubtype=c('processed', 'metadata'),
                       metadataType = c('data dictionary', 'assessment'),
-                      dhPortalIndex = 'FALSE',
+                      dhPortalIndex = 'TRUE',
                       dataDescriptionLocation = 'syn18492837/wiki/601925',
                       dataAccessInstructions = 'syn18492837/wiki/590794'),
   
@@ -470,7 +470,7 @@ tables.annotations = list(
                       dataType=c('sensor'),
                       dataSubtype=c('processed', 'metadata'),
                       metadataType = c('data dictionary', 'assessment'),
-                      dhPortalIndex = 'FALSE',
+                      dhPortalIndex = 'TRUE',
                       dataDescriptionLocation = 'syn18492837/wiki/601925',
                       dataAccessInstructions = 'syn18492837/wiki/590794'),
   
@@ -491,7 +491,7 @@ tables.annotations = list(
                       dataType=c('sensor'),
                       dataSubtype=c('processed', 'metadata'),
                       metadataType = c('data dictionary', 'assessment'),
-                      dhPortalIndex = 'FALSE',
+                      dhPortalIndex = 'TRUE',
                       dataDescriptionLocation = 'syn18492837/wiki/601925',
                       dataAccessInstructions = 'syn18492837/wiki/590794')
   
