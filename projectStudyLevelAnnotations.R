@@ -59,7 +59,7 @@ projects.annotations <- list(
                       investigator= c('Sage Bionetworks'),
                       resourceType = 'curatedData',
                       # intervention = '',
-                      # keywords = c(''),
+                      keywords = c('neurodegeneration', 'neurology', "Parkinson's"),
                       dhPortalIndex = 'TRUE', # Change after filling annotations
                       studyDescriptionLocation = 'syn4993293', 
                       studyDataDescriptionLocation = 'syn4993293/wiki/247861',
@@ -83,7 +83,8 @@ projects.annotations <- list(
                       investigator= c('Sancy Leachman'),
                       resourceType = 'experimentalData',
                       # intervention = '',
-                      # keywords = c(''),
+                      keywords = c("dermatology", "skin", "neoplasm", "mole",
+                                    "epidermis", "mole", "nevi", "cancer", "lesion", "melanoma",  "nevus" ),
                       dhPortalIndex = 'TRUE', # Change after filling annotations
                       studyDescriptionLocation = 'syn5576734', 
                       studyDataDescriptionLocation = 'syn5576734/wiki/406009',
@@ -205,7 +206,7 @@ projects.annotations <- list(
                        investigator= c('Stanford Medicine'), 
                        resourceType = 'experimentalData',
                        # intervention = '',
-                       # keywords = c(''),
+                       keywords = c('cardiovascular health', 'physical activity'),
                        dhPortalIndex = 'TRUE', # Change after filling annotations
                        studyDescriptionLocation = 'syn11269541', 
                        studyDataDescriptionLocation = 'syn11269541/wiki/485635',
@@ -302,7 +303,7 @@ projects.annotations <- list(
                       investigator= c('UW', 'UCSF'),
                       resourceType = c('curatedData'),
                       # intervention = '',
-                      # keywords = c(''),
+                      keywords = c('psychiatry', 'psychology', 'mental health', 'depression'),
                       dhPortalIndex = 'FALSE', # Change after filling annotations
                       studyDescriptionLocation = 'syn10848316', 
                       studyDataDescriptionLocation = 'syn10848316/wiki/548728',
@@ -336,7 +337,7 @@ projects.annotations <- list(
                        investigator= c('American Sleep Apnea Association', 'UCSD'), 
                        resourceType = c('curatedData'),
                        # intervention = '',
-                       # keywords = c(''),
+                       keywords = c('sleep'),
                        dhPortalIndex = 'FALSE', # Change after filling annotations
                        studyDescriptionLocation = 'syn18492837', 
                        studyDataDescriptionLocation = 'syn18492837/wiki/590797',
