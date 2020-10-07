@@ -84,7 +84,7 @@ projects.annotations <- list(
                       resourceType = 'experimentalData',
                       # intervention = '',
                       keywords = c("dermatology", "skin", "neoplasm", "mole",
-                                    "epidermis", "mole", "nevi", "cancer", "lesion", "melanoma",  "nevus" ),
+                                    "epidermis", "cancer", "lesion", "melanoma",  "nevus" ),
                       dhPortalIndex = 'TRUE', # Change after filling annotations
                       studyDescriptionLocation = 'syn5576734', 
                       studyDataDescriptionLocation = 'syn5576734/wiki/406009',
