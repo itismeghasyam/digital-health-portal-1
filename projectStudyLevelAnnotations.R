@@ -38,6 +38,7 @@ projects.annotations <- list(
   
   ## mPower 1.0
   'syn4993293' = list(consortium = 'mHealth',
+                      collectionType = 'Observational Study',
                       study = 'mPower Mobile Parkinson Disease Study',
                       numberParticipants= as.integer(8320), # number who opted to share broadly 
                       dataCollectionMethod= c('active', 'patient reported outcome',
@@ -59,7 +60,7 @@ projects.annotations <- list(
                       investigator= c('Sage Bionetworks'),
                       resourceType = 'curatedData',
                       # intervention = '',
-                      # keywords = c(''),
+                      keywords = c('neurodegeneration', 'neurology', "Parkinson's"),
                       dhPortalIndex = 'TRUE', # Change after filling annotations
                       studyDescriptionLocation = 'syn4993293', 
                       studyDataDescriptionLocation = 'syn4993293/wiki/247861',
@@ -68,6 +69,7 @@ projects.annotations <- list(
   
   ## MoleMapper Public Researcher Portal 
   'syn5576734' = list(consortium = 'mHealth',
+                      collectionType = 'Observational Study',
                       study = 'Mole Mapper Study',
                       numberParticipants= as.integer(1920), 
                       dataCollectionMethod= c('active', 'patient reported outcome'),
@@ -83,7 +85,8 @@ projects.annotations <- list(
                       investigator= c('Sancy Leachman'),
                       resourceType = 'experimentalData',
                       # intervention = '',
-                      # keywords = c(''),
+                      keywords = c("dermatology", "skin", "neoplasm", "mole",
+                                   "epidermis", "cancer", "lesion", "melanoma",  "nevus" ),
                       dhPortalIndex = 'TRUE', # Change after filling annotations
                       studyDescriptionLocation = 'syn5576734', 
                       studyDataDescriptionLocation = 'syn5576734/wiki/406009',
@@ -92,6 +95,7 @@ projects.annotations <- list(
   
   ## Asthma Health Public Researcher Portal
   'syn8361748' = list(consortium = 'mHealth',
+                      collectionType = 'Observational Study',
                       study = 'Asthma Mobile Health Study',
                       numberParticipants= as.integer(5875), 
                       dataCollectionMethod= c('patient reported outcome'),
@@ -118,46 +122,48 @@ projects.annotations <- list(
   
   ## elevateMS
   'syn21140362' = list(consortium = 'mHealth',
-                      study = 'elevateMS Study',
-                      numberParticipants= as.integer(540), 
-                      dataCollectionMethod= c('active', 'passive', 'patient reported outcome'),
-                      deviceType = c('handheld'),
-                      sensorType = c('accelerometer', 'gyroscope',
-                                     'magnetometer', 'touchscreen', 'microphone'),
-                      devicePlatform = c('iOS', 'Android'), 
-                      deviceLocation = c('hand', 'pocket', 'flat surface'),
-                      diagnosis=  c('multiple sclerosis', 'control'), 
-                      reportedOutcome =c('dyskinesia', 'bradykinesia','step count', 'distance',
-                                         'freezing of gait', 'medication report', 'symptoms report',
-                                       'triggers report', 'relapses report', 'NeuroQOL-Cognition',
-                                       'NeuroQOL-LowerExtremity', 'NeuroQOL-UpperExtremity'),
-                      digitalAssessmentCategory= c('postural tremor', 'gait', 'motor coordination',
-                                                   'cognition', 'quality of life','phonation',
-                                                   'action tremor'),
-                      digitalAssessmentDetails = c('finger-to-nose', 'walking (flat)',
-                                                   'standing', 'tapping', 'alternating hand movements',
-                                                   'visual/digit symbol substitution task(vsst/dsst)'),
-                      sensorDataType = c('raw', 'processed'),
-                      investigator= c('Sage Bionetworks' , 'Novartis Pharmaceuticals Corporation'),
-                      resourceType = c('curatedData'),
-                      # intervention = '',
-                      keywords = c('neurodegenerative disorders'),
-                      dhPortalIndex = 'TRUE', # Change after filling annotations
-                      studyDescriptionLocation = 'syn21140362', 
-                      studyDataDescriptionLocation = 'syn21140362/wiki/602267',
-                      studyDescription = 'elevateMS was a smartphone-based study designed to monitor and understand the variations in symptoms and triggers in multiple sclerosis (MS), through surveys, passive data collection, and physical and cognitive assessments.',
-                      dataAccessInstructions = 'syn21140362/wiki/602266'),
+                       collectionType = 'Observational Study',
+                       study = 'elevateMS Study',
+                       numberParticipants= as.integer(540), 
+                       dataCollectionMethod= c('active', 'passive', 'patient reported outcome'),
+                       deviceType = c('handheld'),
+                       sensorType = c('accelerometer', 'gyroscope',
+                                      'magnetometer', 'touchscreen', 'microphone'),
+                       devicePlatform = c('iOS', 'Android'), 
+                       deviceLocation = c('hand', 'pocket', 'flat surface'),
+                       diagnosis=  c('multiple sclerosis', 'control'), 
+                       reportedOutcome =c('dyskinesia', 'bradykinesia','step count', 'distance',
+                                          'freezing of gait', 'medication report', 'symptoms report',
+                                          'triggers report', 'relapses report', 'NeuroQOL-Cognition',
+                                          'NeuroQOL-LowerExtremity', 'NeuroQOL-UpperExtremity'),
+                       digitalAssessmentCategory= c('postural tremor', 'gait', 'motor coordination',
+                                                    'cognition', 'quality of life','phonation',
+                                                    'action tremor'),
+                       digitalAssessmentDetails = c('finger-to-nose', 'walking (flat)',
+                                                    'standing', 'tapping', 'alternating hand movements',
+                                                    'visual/digit symbol substitution task(vsst/dsst)'),
+                       sensorDataType = c('raw', 'processed'),
+                       investigator= c('Sage Bionetworks' , 'Novartis Pharmaceuticals Corporation'),
+                       resourceType = c('curatedData'),
+                       # intervention = '',
+                       keywords = c('neurodegenerative disorders'),
+                       dhPortalIndex = 'TRUE', # Change after filling annotations
+                       studyDescriptionLocation = 'syn21140362', 
+                       studyDataDescriptionLocation = 'syn21140362/wiki/602267',
+                       studyDescription = 'elevateMS was a smartphone-based study designed to monitor and understand the variations in symptoms and triggers in multiple sclerosis (MS), through surveys, passive data collection, and physical and cognitive assessments.',
+                       dataAccessInstructions = 'syn21140362/wiki/602266'),
   
-
+  
   
   ## Heart Snapshot
   'syn22107959' = list(consortium = 'mHealth',
+                       collectionType = 'Validation Study',
                        study = 'Heart Snapshot Study',
                        numberParticipants= as.integer(124), 
                        dataCollectionMethod= c('active', 'passive', 'patient reported outcome'),
                        deviceType = c('handheld', 'wearable'),
                        sensorType =  c('accelerometer', 'gyroscope',
-                                        'oximeter', 'camera', 'spectrocolorimeter',
+                                       'oximeter', 'camera', 'spectrocolorimeter',
                                        'photosensor'),
                        devicePlatform = c('iOS', 'Android', 'Fitbit', 'Pantone', 'Windows'), 
                        deviceLocation = c('hand', 'pocket', 'finger', 'wrist', 'face'),
@@ -184,6 +190,7 @@ projects.annotations <- list(
   
   ## MyHeart Counts Public Researcher Portal 
   'syn11269541' = list(consortium = 'mHealth',
+                       collectionType = 'Observational Study',
                        study = 'MyHeart Counts Cardiovascular Health Study',
                        numberParticipants= as.integer(26902), 
                        dataCollectionMethod= c('active' , 'passive', 'patient reported outcome'),
@@ -205,7 +212,7 @@ projects.annotations <- list(
                        investigator= c('Stanford Medicine'), 
                        resourceType = 'experimentalData',
                        # intervention = '',
-                       # keywords = c(''),
+                       keywords = c('cardiovascular health', 'physical activity'),
                        dhPortalIndex = 'TRUE', # Change after filling annotations
                        studyDescriptionLocation = 'syn11269541', 
                        studyDataDescriptionLocation = 'syn11269541/wiki/485635',
@@ -243,9 +250,10 @@ projects.annotations <- list(
   #                      studyDataDescriptionLocation = '',
   #                      studyDescription = '',
   #                      dataAccessInstructions = ''),
-
+  
   ## MJFF Levodopa Response Study 
   'syn20681023' = list(consortium = 'mHealth',
+                       collectionType = 'Interventional Study',
                        study = 'MJFF Levodopa Response Study',
                        numberParticipants= as.integer(29), 
                        dataCollectionMethod= c('active', 'passive', 'patient reported outcome',
@@ -284,39 +292,75 @@ projects.annotations <- list(
   
   ## BRIGHTEN Study
   'syn10848316' = list(consortium = 'mHealth',
-                      study = 'Brighten Study',
-                      numberParticipants= as.integer(2258), 
-                      dataCollectionMethod= c('patient reported outcome'),
-                      deviceType = c('handheld'),
-                      sensorType = c('touchscreen'),
-                      devicePlatform = c('iOS', 'Android'), 
-                      deviceLocation = c('hand'),
-                      diagnosis=  c('control'), 
-                      reportedOutcome =c('PHQ-9', 'PHQ-2', 'Sheehan Disability Scale (SDS)', 'GAD-7',
-                                         'sleep report', 'AUDIT-C', 'phone usage', 'mood', 'demographics survey',
-                                         'physical activity'),
-                      digitalAssessmentCategory= c('cognition', 'sleep', 'mood',
-                                                   'mobility', 'mental health'),
-                      # digitalAssessmentDetails = c(''),
-                      # sensorDataType = 'raw',
-                      investigator= c('UW', 'UCSF'),
-                      resourceType = c('curatedData'),
-                      # intervention = '',
-                      # keywords = c(''),
-                      dhPortalIndex = 'FALSE', # Change after filling annotations
-                      studyDescriptionLocation = 'syn10848316', 
-                      studyDataDescriptionLocation = 'syn10848316/wiki/548728',
-                      studyDescription = 'The Brighten studies(V1 and V2), funded by the National Institute for Mental Health, were designed to tests a new and possibly easier way for individuals to track & manage their depression symptoms.',
-                      dataAccessInstructions = 'syn10848316/wiki/551287')
-)
+                       collectionType = 'Observational Study',
+                       study = 'Brighten Study',
+                       numberParticipants= as.integer(2258), 
+                       dataCollectionMethod= c('patient reported outcome'),
+                       deviceType = c('handheld'),
+                       sensorType = c('touchscreen'),
+                       devicePlatform = c('iOS', 'Android'), 
+                       deviceLocation = c('hand'),
+                       diagnosis=  c('control'), 
+                       reportedOutcome =c('PHQ-9', 'PHQ-2', 'Sheehan Disability Scale (SDS)', 'GAD-7',
+                                          'sleep report', 'AUDIT-C', 'phone usage', 'mood', 'demographics survey',
+                                          'physical activity'),
+                       digitalAssessmentCategory= c('cognition', 'sleep', 'mood',
+                                                    'mobility', 'mental health'),
+                       # digitalAssessmentDetails = c(''),
+                       # sensorDataType = 'raw',
+                       investigator= c('UW', 'UCSF'),
+                       resourceType = c('curatedData'),
+                       # intervention = '',
+                       keywords = c('psychiatry', 'psychology', 'mental health', 'depression'),
+                       dhPortalIndex = 'TRUE', 
+                       studyDescriptionLocation = 'syn10848316', 
+                       studyDataDescriptionLocation = 'syn10848316/wiki/548728',
+                       studyDescription = 'The Brighten studies(V1 and V2), funded by the National Institute for Mental Health, were designed to tests a new and possibly easier way for individuals to track & manage their depression symptoms.',
+                       dataAccessInstructions = 'syn10848316/wiki/551287'),
   
+  ## SleepHealth Public Researcher Portal
+  'syn18492837' = list(consortium = 'mHealth',
+                       collectionType = 'Observational Study',
+                       study = 'SleepHealth Mobile App Study ',
+                       numberParticipants= as.integer(7250), 
+                       dataCollectionMethod= c('patient reported outcome', 'active', 'passive'),
+                       deviceType = c('handheld', 'wearable'),
+                       sensorType = c('touchscreen', 'pedometer', 'gyroscope', 'accelerometer'), 
+                       devicePlatform = c('iOS'), 
+                       deviceLocation = c('hand', 'wrist', 'pocket'),
+                       diagnosis=  c('control'), 
+                       reportedOutcome =c('sleep report',
+                                          'activity report', 'medical history',
+                                          'quality of life', 'demographics survey',
+                                          'research interest', 'family history',
+                                          'height', 'weight'), 
+                       digitalAssessmentCategory= c('physical activity', 'cardiovascular',
+                                                    'cognition'), 
+                       digitalAssessmentDetails = c('daily physical activity', 'heart rate',
+                                                    '3-minute Psychomotor Vigilance Task (PVT-B)',
+                                                    'tapping', 'step count', 'heart rate',
+                                                    'flights climbed', 'distance',
+                                                    'resting energy burned', 
+                                                    'exercise time', 'active energy burned'),
+                       sensorDataType = 'processed',
+                       investigator= c('American Sleep Apnea Association', 'UCSD'), 
+                       resourceType = c('curatedData'),
+                       # intervention = '',
+                       keywords = c('sleep'),
+                       dhPortalIndex = 'TRUE', 
+                       studyDescriptionLocation = 'syn18492837', 
+                       studyDataDescriptionLocation = 'syn18492837/wiki/590797',
+                       studyDescription = 'The SleepHealth Mobile App Study was created to investigate how sleep is associated with general health, daytime alertness, medical conditions, and productivity.',
+                       dataAccessInstructions = 'syn18492837/wiki/590794')
+)
+
 ##############
 # Update Annotations in Synapse
 ##############  
 # Update annotations
 projects.list <- names(projects.annotations) 
 for(proj.id in projects.list){
-
+  
   #### Uncomment this before updating for real
   # synSetAnnotations(proj.id, annotations = projects.annotations[[proj.id]])
   ####
