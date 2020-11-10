@@ -1,11 +1,11 @@
 # digital-health-portal
 Code for Synapse Digital Health Portal
 
+
 ## List of files
-#### projectStudyLevelAnnotations.R
-Update the project/study level annotations for all digital health projects in Synapse. 
+Study/Project level annotations are indexed in projectStudyLevelAnnotations.R and projectProjectLevelAnnotations.R. Data level annotations are separated into files by study.
 
 
 # Annotations
 
-See https://drive.google.com/file/d/19VZ0dWVzFBnWj11xSU0seiFU0pFpVkRK/view?usp=sharing for working list of annotations.
+See the Digital Health Annotation Schema (https://github.com/Sage-Bionetworks/digital-health-portal/blob/master/Digital%20Health%20Annotation%20Schema.csv) for working list of annotations.
