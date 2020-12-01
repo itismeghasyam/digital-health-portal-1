@@ -220,37 +220,6 @@ projects.annotations <- list(
                        studyDescription = 'The MyHeart Counts Cardiovascular Health Study is a smartphone-based study of cardiovascular health, consisting of records of daily physical activity, health questionnaires, and 6-minute walk fitness tests.',
                        dataAccessInstructions = 'syn11269541/wiki/485634'),
   
-  # ## PKU Study Project (check anno - Dan/Megha)
-  # # SKIP FOR NOW- get back later
-  # 'syn20486872' = list(consortium = 'mHealth',
-  #                      study = 'BioMarin PKU Study',
-  #                      numberParticipants= as.integer(18), # recruitment ongoing 
-  #                      dataCollectionMethod= c('active', 'passive', 'patient reported outcome',
-  #                                              'clinical assessment'),
-  #                      deviceType = c('handheld', 'wearable'),
-  #                      sensorType = c('accelerometer', 'gyroscope', 'magnetometer',
-  #                                     'Fitbit'),
-  #                      devicePlatform = c('iOS'), 
-  #                      deviceLocation = c('hand', 'wrist', 'pocket'),
-  #                      diagnosis=  c('phenylketonuria', 'control'), 
-  #                      reportedOutcome =c('tremor'),
-  #                      digitalAssessmentCategory= c('resting tremor', 'kinetic tremor',
-  #                                                   'cognition',  'sleep', 'cardiovascular'),
-  #                      digitalAssessmentDetails = c('tapping', 'hand-in-lap', 'finger-to-nose',
-  #                                                   'alternating hand movements', 'drawing',
-  #                                                   'typing', 'opening a water bottle and pouring', 
-  #                                                   'arranging paper','assembling nuts and bolts',
-  #                                                   'folding towels'),
-  #                      sensorDataType = 'raw',
-  #                      investigator= c('BioMarin', 'Sage Bionetworks'),
-  #                      resourceType = 'curatedData',
-  #                      intervention = '',
-  #                      keywords = c('Phenylketonuria', 'PKU', 'rare disease'),
-  #                      dhPortalIndex = 'FALSE', # Change after filling annotations
-  #                      studyDescriptionLocation = '', # syn ID of the public facing project
-  #                      studyDataDescriptionLocation = '',
-  #                      studyDescription = '',
-  #                      dataAccessInstructions = ''),
   
   ## MJFF Levodopa Response Study 
   'syn20681023' = list(consortium = 'mHealth',
