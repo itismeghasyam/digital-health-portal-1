@@ -181,12 +181,13 @@ projects.annotations <- list(
                        investigator= c('Scripps Translational Sciences Institute', 'Sage Bionetworks'),
                        resourceType = 'curatedData',
                        # intervention = '',
-                       # keywords = c(''),
+                       keywords = c('cardiorespiratory fitness', 'physical activity',
+                                    'heart rate'),
                        dhPortalIndex = 'FALSE', # Change after filling annotations
-                       studyDescriptionLocation = '', 
-                       studyDataDescriptionLocation = '',
-                       studyDescription = '',
-                       dataAccessInstructions = ''),
+                       studyDescriptionLocation = 'syn22107959', 
+                       studyDataDescriptionLocation = 'syn22107959/wiki/605543',
+                       studyDescription = 'Heart Snapshot is a validation study for smartphone based measurement of VO2 max in clinical and real world settings',
+                       dataAccessInstructions = 'syn22107959/wiki/605542'),
   
   ## MyHeart Counts Public Researcher Portal 
   'syn11269541' = list(consortium = 'mHealth',
